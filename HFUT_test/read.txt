@@ -4,4 +4,3 @@ HFUT report爬虫的测试版代码
 1.保存文件夹为’/var/lib/spider_save/HFUT’
 2.每一天的文件被单独保存在一个文件夹中
 3.每次运行crawl.py会清空上一次(当日)爬取的所有内容
-
