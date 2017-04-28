@@ -31,6 +31,7 @@ class Spider_starter(object):
     def USTC(self):
         self.run_spider('USTC001')
         self.run_spider('USTC002')
+        self.run_spider('USTC003')
 
 if __name__ == '__main__':
     starter = Spider_starter()
