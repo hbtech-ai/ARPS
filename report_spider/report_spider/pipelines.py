@@ -7,6 +7,7 @@ sys.setdefaultencoding('utf-8')
 import os
 import time
 import requests
+import pymongo as pm
 from settings import SAVEDIR
 from spiders.HFUT000 import get_localtime
 
@@ -27,7 +28,15 @@ class ReportSpiderPipeline(object):
             self.img_save(item['img_url'], filename)
         # text save
         self.text_save(item, filename)
+        # save to database
+        self.DB_save(item)
         return item
+
+    def DB_save(self, all_messages):
+        conn = pm.MongoClient('localhost', 27017)
+        db = conn.get_database('report_db')
+        col = db.get_collection('col' + now_time)
+        col.insert(all_messages)
 
     def text_save(self, all_messages, filename):
         filename += '.txt'
