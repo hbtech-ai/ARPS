@@ -32,7 +32,7 @@ class USTC002_Spider(scrapy.Spider):
 				sign = 1
 				continue
 			self.counts += 1
-			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url})
+			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': self.counts})
 
 		# The report time of this page is not sorted, so we only stop the procedure in the end of a page.
 		if sign:
@@ -81,8 +81,8 @@ class USTC002_Spider(scrapy.Spider):
 		if img_url != '':
 			img_url = self.domain + img_url[1:]
 
-		all_messages = save_messages('USTC', self.name, title, time, address, speaker,
-		                             person_introduce, content, img_url, response.meta['link'])
+		all_messages = save_messages('USTC', self.name, title, time, address, speaker, person_introduce,
+		                             content, img_url, response.meta['link'], response.meta['number'])
 
 		return all_messages
 

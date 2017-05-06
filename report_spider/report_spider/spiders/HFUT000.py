@@ -14,7 +14,7 @@ inf = 0x3f3f3f3f
 
 # local time
 now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
-# now_time = 20170410
+# now_time = 20170420
 
 # HFUT spider for report
 class HFUT000_Spider(scrapy.Spider):
@@ -36,7 +36,7 @@ class HFUT000_Spider(scrapy.Spider):
 				return
 			self.counts += 1
 			report_url = self.domain + links[i][1:]
-			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url})
+			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': self.counts})
 
 		number = int(response.url.split('-')[-1].split('.')[0])
 		last_number = response.xpath("//div[@id='pages']/a/text()").extract()[-2]
@@ -68,12 +68,8 @@ class HFUT000_Spider(scrapy.Spider):
 
 		person_introduce, content = self.get_person_and_content(response)
 
-
-		all_messages = {'school':'HFUT', 'faculty': self.name, 'title': title, 'time': time,
-		                'address': address, 'speaker':speaker,
-		                'person_introduce': person_introduce,
-		                'content': content, 'link': response.meta['link']}
-		all_messages = save_messages('HFUT', self.name, title, time, address, speaker, person_introduce, content, '', response.meta['link'])
+		all_messages = save_messages('HFUT', self.name, title, time, address, speaker, person_introduce,
+		                             content, '', response.meta['link'], response.meta['number'])
 
 		return all_messages
 
@@ -84,10 +80,7 @@ class HFUT000_Spider(scrapy.Spider):
 		person_introduce = ''
 		content = ''
 		if person_name == '' and content_name == '':
-			if person_introduce == '':
-				person_introduce = u'无' + '\n'
-			if content == '':
-				content = u'无' + '\n'
+			pass
 		else:
 			person_position = inf
 			content_position = inf
@@ -105,10 +98,6 @@ class HFUT000_Spider(scrapy.Spider):
 				person_introduce += person_and_content[i] + '\n'
 			for i in range(content_start, l):
 				content += person_and_content[i] + '\n'
-			if person_introduce == '':
-				person_introduce = u'无' + '\n'
-			if content == '':
-				content = u'无' + '\n'
 
 		return person_introduce, content
 

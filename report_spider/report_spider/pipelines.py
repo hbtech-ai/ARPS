@@ -7,27 +7,33 @@ sys.setdefaultencoding('utf-8')
 import os
 import time
 import requests
+import pymongo as pm
 from settings import SAVEDIR
-from spiders.HFUT000 import get_localtime
+from spiders.Global_function import get_localtime
 
 now_time = str(get_localtime(time.strftime("%Y-%m-%d", time.localtime())))
 class ReportSpiderPipeline(object):
     def process_item(self, item, spider):
-        # the space in the title will get error
-        title = item['title'].replace(' ', '_')
-
         # find or make the dir for school and faculty
-        dirname = SAVEDIR + '/' + now_time + '/' + item['school'] + '/' + item['faculty'] + '/' + title
+        dirname = SAVEDIR + '/' + now_time + '/' + item['school'] + '/' + item['faculty'] + '/' + str(item['number'])
         if not os.path.exists(dirname):
             os.makedirs(dirname)
 
-        filename = dirname + '/' + title
+        filename = dirname + '/' + str(item['number'])
         # if the img exist, we should save the img
         if item.has_key('img_url'):
             self.img_save(item['img_url'], filename)
         # text save
         self.text_save(item, filename)
+        # save to database
+        self.DB_save(item)
         return item
+
+    def DB_save(self, all_messages):
+        conn = pm.MongoClient('localhost', 27017)
+        db = conn.get_database('report_db')
+        col = db.get_collection('col' + now_time)
+        col.insert(all_messages)
 
     def text_save(self, all_messages, filename):
         filename += '.txt'

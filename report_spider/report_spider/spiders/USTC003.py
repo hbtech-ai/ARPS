@@ -8,8 +8,8 @@ import time
 import scrapy
 from Global_function import get_localtime, print_new_number, save_messages
 
-now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
-# now_time = 20170420
+# now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
+now_time = 20170420
 
 class USTC003_Spider(scrapy.Spider):
 	name = 'USTC003'
@@ -30,7 +30,7 @@ class USTC003_Spider(scrapy.Spider):
 			if u'本周报告' in report_title:
 				continue
 			self.counts += 1
-			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url})
+			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': self.counts})
 
 		now_number = int(response.xpath("//a[@href='#']").xpath(".//text()").extract()[0])
 		last_number = int(response.xpath("//a[@href='#']").xpath(".//text()").extract()[-1][1:])
@@ -49,23 +49,25 @@ class USTC003_Spider(scrapy.Spider):
 		title = ''; time = ''; address = ''; speaker = ''; content = ''
 		# the order of message is not stable, so we can only use the key words. And some messages not only have one section.
 		for i in range(len(messages) - 1):
-			if 'Title' in messages[i] or u'题目' in messages[i]:
+			if 'Title：' in messages[i] or u'题目：' in messages[i] or 'Title:' in messages[i] or u'题目:' in messages[i]:
 				sign = 0
-				title += self.get_message(messages[i])
-			elif 'Time' in messages[i] or u'时间' in messages[i]:
+				title += self.get_message(messages[i], '：') if 'Title：' in messages[i] or u'题目：' in messages[i] else self.get_message(messages[i], ':')
+			elif 'Time：' in messages[i] or u'时间：' in messages[i] or 'Time:' in messages[i] or u'时间:' in messages[i]:
 				sign = 1
-				time += self.get_message(messages[i])
-			elif 'Room' in messages[i] or u'地点' in messages[i]:
+				time += self.get_message(messages[i], '：') if 'Time：' in messages[i] or u'时间：' in messages[i] else self.get_message(messages[i], ':')
+			elif 'Place：' in messages[i] or u'地点：' in messages[i] or 'Place:' in messages[i] or u'地点:' in messages[i]:
 				sign = 2
-				address += self.get_message(messages[i])
-			elif 'Speaker' in messages[i] or u'报告人' in messages[i]:
+				address += self.get_message(messages[i], '：') if 'Place：' in messages[i] or u'地点：' in messages[i] else self.get_message(messages[i], ':')
+			elif 'Speaker：' in messages[i] or u'报告人：' in messages[i] or 'Speaker:' in messages[i] or u'报告人:' in messages[i]:
 				sign = 3
-				speaker += self.get_message(messages[i])
-			elif 'Abstract' in messages[i] or u'摘要' in messages[i]:
+				speaker += self.get_message(messages[i], '：') if 'Speaker：' in messages[i] or u'报告人：' in messages[i] else self.get_message(messages[i], ':')
+			elif 'Abstract：' in messages[i] or u'摘要：' in messages[i] or 'Abstract:' in messages[i] or u'摘要:' in messages[i]:
 				sign = 4
-				content += self.get_message(messages[i])
-			elif '：' not in messages[i] and ':' not in messages[i]:
-				if sign == 0:
+				content += self.get_message(messages[i], '：') if 'Abstract：' in messages[i] or u'摘要：' in messages[i] else self.get_message(messages[i], ':')
+			else:
+				if u'欢迎' in messages[i]:
+					pass
+				elif sign == 0:
 					title += messages[i]
 				elif sign == 1:
 					time += messages[i]
@@ -76,28 +78,26 @@ class USTC003_Spider(scrapy.Spider):
 				else:
 					content += messages[i]
 
-		all_messages = save_messages('USTC', self.name, title, time, address, speaker,
-		                             '', content, '', response.meta['link'])
+		all_messages = save_messages('USTC', self.name, title, time, address, speaker, '',
+		                             content, '', response.meta['link'], response.meta['number'])
 
 		return all_messages
 
 	# Sometimes they use ':', sometimes '：'
-	def get_message(self, messages):
-		message = messages.split('：')
-		if len(message) > 1:
-			return self.connent_message(messages, '：')
-		else:
-			message = messages.split(':')
-			if len(message) > 1:
-				return self.connent_message(messages, ':')
-			else:
-				return message[0].strip()
+	def get_message(self, messages, sign):
+		message = messages.split(sign)[1:]
+		text = ''
+		for i in xrange(len(message)):
+			if i > 0:
+				text += '：'
+			text += message[i].strip()
+		return text
 
 	# connent multi secitons to one message
 	def connent_message(self, messages, sign):
 		message_list = messages.split(sign)
 		message = ''
-		for i in range(len(message_list)):
+		for i in range(1, len(message_list)):
 			if u'欢迎' in messages[i]:
 				continue
 			message += message_list[i].strip()
