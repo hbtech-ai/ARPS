@@ -13,6 +13,7 @@ class Spider_starter(object):
         # running the spider
         self.HFUT()
         self.USTC()
+        self.WHU()
 
     def run_spider(self, spider_name):
         dirname = SAVEDIR + '/' + str(now_time) + '/' + spider_name[0:len(spider_name)-3] + '/' + spider_name
@@ -32,6 +33,11 @@ class Spider_starter(object):
         self.run_spider('USTC001')
         self.run_spider('USTC002')
         self.run_spider('USTC003')
+        self.run_spider('USTC004')
+        self.run_spider('USTC005')
+
+    def WHU(self):
+        self.run_spider('WHU001')
 
 if __name__ == '__main__':
     starter = Spider_starter()

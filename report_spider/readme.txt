@@ -6,7 +6,7 @@ scrapy 1.3.3
 1.自建同名scrapy工程
 2.用report_spider整个文件夹进行覆盖
 3.cd至report_spider根目录下
-4.bash setup.py
+4.bash setup.sh
 5.python crawl.py
 
 说明：
