@@ -29,7 +29,7 @@ class USTC001_Spider(scrapy.Spider):
 				print_new_number(self.counts, 'USTC', self.name)
 				return
 			self.counts += 1
-			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url})
+			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': self.counts})
 
 	def parse_pages(self, response):
 		# title
@@ -46,6 +46,7 @@ class USTC001_Spider(scrapy.Spider):
 		img_url += url
 
 		# save
-		all_messages = save_messages('USTC', self.name, title, '', '', '', '', '', img_url, response.meta['link'])
+		all_messages = save_messages('USTC', self.name, title, '', '', '', '', '', img_url,
+		                             response.meta['link'], response.meta['number'])
 
 		return all_messages

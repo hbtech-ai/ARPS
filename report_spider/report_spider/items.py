@@ -20,3 +20,4 @@ class ReportSpiderItem(scrapy.Item):
     person_abstract = scrapy.Field()
     content = scrapy.Field()
     link = scrapy.Field()
+    number = scrapy.Field()

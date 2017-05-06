@@ -9,20 +9,17 @@ import time
 import requests
 import pymongo as pm
 from settings import SAVEDIR
-from spiders.HFUT000 import get_localtime
+from spiders.Global_function import get_localtime
 
 now_time = str(get_localtime(time.strftime("%Y-%m-%d", time.localtime())))
 class ReportSpiderPipeline(object):
     def process_item(self, item, spider):
-        # the space in the title will get error
-        title = item['title'].replace(' ', '_')
-
         # find or make the dir for school and faculty
-        dirname = SAVEDIR + '/' + now_time + '/' + item['school'] + '/' + item['faculty'] + '/' + title
+        dirname = SAVEDIR + '/' + now_time + '/' + item['school'] + '/' + item['faculty'] + '/' + str(item['number'])
         if not os.path.exists(dirname):
             os.makedirs(dirname)
 
-        filename = dirname + '/' + title
+        filename = dirname + '/' + str(item['number'])
         # if the img exist, we should save the img
         if item.has_key('img_url'):
             self.img_save(item['img_url'], filename)
