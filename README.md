@@ -3,5 +3,5 @@
 ### 开发人员
 + 张习伟 zhangxiwei@hubing-ai.com
 + 陈名杨 anselcmy@outlook.com
-+ 李静远
++ 李静远 lijingyuan@gmail.com
 + 戴瑞
