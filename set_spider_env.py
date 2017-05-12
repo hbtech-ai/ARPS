@@ -1,18 +1,20 @@
 #!/use/bin/env python3
-import os
+import os, sys
 
-os.system('mv report_spider report_spider_temp')
-os.system('scrapy startproject report_spider')
+spider_name = sys.argv[1]
 
-for f in os.listdir('./report_spider_temp'):
+os.system('mv {0} {0}_temp'.format(spider_name))
+os.system('scrapy startproject {}'.format(spider_name))
+
+for f in os.listdir('./{}_temp'.format(spider_name)):
 	if os.path.isdir(f):
-		os.system('cp -r ./report_spider_temp/{} ./report_spider'.format(f))
+		os.system('cp -r ./{0}_temp/{1} ./{0}'.format(spider_name, f))
 	else:
-		os.system('cp ./report_spider_temp/{} ./report_spider'.format(f))
+		os.system('cp ./{0}_temp/{1} ./{0}'.format(spider_name, f))
 
-os.system('rm -r -f report_spider_temp')
+os.system('rm -r -f {}_temp'.format(spider_name))
 
-os.chdir('./report_spider')
+os.chdir('./{}'.format(spider_name))
 os.system('bash setup.sh')
 
 		
