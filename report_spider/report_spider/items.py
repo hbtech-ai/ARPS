@@ -21,3 +21,4 @@ class ReportSpiderItem(scrapy.Item):
     content = scrapy.Field()
     link = scrapy.Field()
     number = scrapy.Field()
+    school_name = scrapy.Field()

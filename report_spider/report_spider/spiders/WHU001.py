@@ -19,21 +19,19 @@ class WHU001_Spider(scrapy.Spider):
 
 	def parse(self, response):
 		messages = response.xpath("//div[@id='container']/dl/dd")
+		print_new_number(self.counts, 'WHU', self.name)
 
-		for message in messages:
-			report_url = self.domain + message.xpath(".//a/@href").extract()[0][1:]
-			report_time = get_localtime(message.xpath(".//i/text()").extract()[0].split(' ')[0])
+		for i in xrange(len(messages)):
+			report_url = self.domain + messages[i].xpath(".//a/@href").extract()[0][1:]
+			report_time = get_localtime(messages[i].xpath(".//i/text()").extract()[0].split(' ')[0])
 			if report_time < now_time:
-				print_new_number(self.counts, 'WHU', self.name)
 				return
-			self.counts += 1
-			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': self.counts})
+			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})
 
 		now_number = int(response.xpath("//div[@class='page fn_clear']/ul/li[@class='thisclass']/text()").extract()[0])
 		last_number = int(response.xpath("//span[@class='pageinfo']/strong")[0].xpath(".//text()").extract()[0])
 
 		if not (now_number < last_number):
-			print_new_number(self.counts, 'WHU', self.name)
 			return
 		new_url = 'http://cs.whu.edu.cn/a/xueshujiangzuofabu/list_39_{}.html'.format(now_number + 1)
 		yield scrapy.Request(new_url, callback=self.parse)
@@ -68,8 +66,12 @@ class WHU001_Spider(scrapy.Spider):
 			else:
 				pass
 
+		if title != '':
+			self.counts += 1
+			print_new_number(self.counts, 'WHU', self.name)
+
 		all_messages = save_messages('WHU', self.name, title, time, address, speaker, person_introduce,
-		                             content, '', response.meta['link'], response.meta['number'])
+		                             content, '', response.meta['link'], response.meta['number'], u'武汉大学')
 
 		return all_messages
 

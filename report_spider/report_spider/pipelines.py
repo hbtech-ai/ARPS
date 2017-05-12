@@ -13,6 +13,8 @@ from spiders.Global_function import get_localtime
 now_time = str(get_localtime(time.strftime("%Y-%m-%d", time.localtime())))
 class ReportSpiderPipeline(object):
     def process_item(self, item, spider):
+        if item['title'] == '':
+            return
         # find or make the dir for school and faculty
         dirname = SAVEDIR + '/' + now_time + '/' + item['school'] + '/' + item['faculty'] + '/' + str(item['number'])
         if not os.path.exists(dirname):
@@ -23,6 +25,8 @@ class ReportSpiderPipeline(object):
         if item.has_key('img_url'):
             self.img_save(item['img_url'], filename)
         # text save
+        if item.has_key('address'):
+            item['address'] = item['school_name'] + '：' + item['address']
         self.text_save(item, filename)
         return item
 
