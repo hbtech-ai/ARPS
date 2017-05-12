@@ -20,16 +20,16 @@ class USTC001_Spider(scrapy.Spider):
 	def parse(self, response):
 		links = response.xpath("//li[@width='30%']/a/@href").extract()
 		times = response.xpath("//li[@width='30%']/span/text()").extract()
+		print_new_number(self.counts, 'USTC', self.name)
 
 		l = len(links)
 		for i in range(l):
 			report_url = self.domain + links[i][2:]
 			report_time = get_localtime(times[i])
+
 			if report_time < now_time:
-				print_new_number(self.counts, 'USTC', self.name)
 				return
-			self.counts += 1
-			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': self.counts})
+			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})
 
 	def parse_pages(self, response):
 		# title
@@ -45,8 +45,12 @@ class USTC001_Spider(scrapy.Spider):
 			img_url += img_domain[i] + '/'
 		img_url += url
 
+		if title != '':
+			self.counts += 1
+			print_new_number(self.counts, 'USTC', self.name)
+
 		# save
 		all_messages = save_messages('USTC', self.name, title, '', '', '', '', '', img_url,
-		                             response.meta['link'], response.meta['number'])
+		                             response.meta['link'], response.meta['number'], u'中国科学技术大学')
 
 		return all_messages

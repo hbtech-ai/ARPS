@@ -18,19 +18,18 @@ class SYSU001_Spider(scrapy.Spider):
 
 	def parse(self, response):
 		messages = response.xpath("//div[@class='full-page-list']/ul/li")
+		print_new_number(self.counts, 'SYSU', self.name)
 
-		for message in messages:
-			report_name = message.xpath(".//a/text()").extract()[0]
+		for i in xrange(len(messages)):
+			report_name = messages[i].xpath(".//a/text()").extract()[0]
 			if u'学术报告：' not in report_name and u'学术报告:' not in report_name:
 				continue
-			report_url = self.domains + message.xpath(".//a/@href").extract()[0][1:]
-			report_time = get_localtime(message.xpath(".//span/text()").extract()[0].replace('/', '-'))
+			report_url = self.domains + messages[i].xpath(".//a/@href").extract()[0][1:]
+			report_time = get_localtime(messages[i].xpath(".//span/text()").extract()[0].replace('/', '-'))
 
 			if report_time < now_time:
-				print_new_number(self.counts, 'SYSU', self.name)
 				return
-			self.counts += 1
-			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': self.counts})
+			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})
 
 	def parse_pages(self, response):
 		messages = response.xpath("//div[@class='field-items']").xpath(".//p")
@@ -64,8 +63,12 @@ class SYSU001_Spider(scrapy.Spider):
 					content += text
 		time = (date + ' ' + time).strip()
 
+		if title != '':
+			self.counts += 1
+			print_new_number(self.counts, 'SYSU', self.name)
+
 		all_messages = save_messages('SYSU', self.name, title, time, address, speaker, person_introduce,
-		                             content, '', response.meta['link'], response.meta['number'])
+		                             content, '', response.meta['link'], response.meta['number'], u'中山大学')
 
 		return all_messages
 
