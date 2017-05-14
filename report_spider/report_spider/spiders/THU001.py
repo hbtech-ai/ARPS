@@ -18,16 +18,15 @@ class THU001_Spider(scrapy.Spider):
 
 	def parse(self, response):
 		messages = response.xpath("//div[@class='box_list']/ul/li")
+		print_new_number(self.counts, 'THU', self.name)
 
-		for message in messages:
-			report_url = self.domain + message.xpath(".//a/@href").extract()[0][1:]
-			report_time = get_localtime(message.xpath(".//p/text()").extract()[0].strip())
+		for i in xrange(len(messages)):
+			report_url = self.domain + messages[i].xpath(".//a/@href").extract()[0][1:]
+			report_time = get_localtime(messages[i].xpath(".//p/text()").extract()[0].strip())
 
 			if report_time < now_time:
-				print_new_number(self.counts, 'THU', self.name)
 				return
-			self.counts += 1
-			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': self.counts})
+			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})
 
 
 	def parse_pages(self, response):
@@ -68,8 +67,12 @@ class THU001_Spider(scrapy.Spider):
 				else:
 					pass
 
+		if title != '':
+			self.counts += 1
+			print_new_number(self.counts, 'THU', self.name)
+
 		all_messages = save_messages('THU', self.name, title, time, address, speaker, person_introduce,
-		                             content, '', response.meta['link'], response.meta['number'])
+		                             content, '', response.meta['link'], response.meta['number'], u'清华大学')
 
 		return all_messages
 

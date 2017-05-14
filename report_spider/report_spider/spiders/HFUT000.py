@@ -8,6 +8,8 @@ sys.path.append(os.path.abspath(os.path.dirname(__file__) + '/' + '..'))
 
 import scrapy
 import time
+from scrapy.crawler import CrawlerProcess
+from scrapy.utils.project import get_project_settings
 from Global_function import get_localtime, print_new_number, save_messages
 
 inf = 0x3f3f3f3f
@@ -29,14 +31,14 @@ class HFUT000_Spider(scrapy.Spider):
 		times = response.xpath("//div[@class='container row main in2']/div/ul/li/span/text()").extract()
 
 		l = len(links)
+		print_new_number(self.counts, 'HFUT', self.name)
 		for i in range(l):
 			report_time = get_localtime(times[i])
+
 			if report_time < now_time:
-				print_new_number(self.counts, 'HFUT', self.name)
 				return
-			self.counts += 1
 			report_url = self.domain + links[i][1:]
-			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': self.counts})
+			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})
 
 		number = int(response.url.split('-')[-1].split('.')[0])
 		last_number = response.xpath("//div[@id='pages']/a/text()").extract()[-2]
@@ -44,7 +46,6 @@ class HFUT000_Spider(scrapy.Spider):
 			new_url = 'http://news.hfut.edu.cn/list-28-%d.html' % (number + 1)
 			yield scrapy.Request(new_url, callback=self.parse)
 		else:
-			print_new_number(self.counts, 'HFUT', self.name)
 			return
 
 	# get the information
@@ -68,8 +69,12 @@ class HFUT000_Spider(scrapy.Spider):
 
 		person_introduce, content = self.get_person_and_content(response)
 
+		if title != '':
+			self.counts += 1
+			print_new_number(self.counts, 'HFUT', self.name)
+
 		all_messages = save_messages('HFUT', self.name, title, time, address, speaker, person_introduce,
-		                             content, '', response.meta['link'], response.meta['number'])
+		                             content, '', response.meta['link'], response.meta['number'], u'合肥工业大学')
 
 		return all_messages
 

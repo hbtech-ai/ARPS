@@ -19,21 +19,20 @@ class USTC005_Spider(scrapy.Spider):
 
 	def parse(self, response):
 		messages = response.xpath("//div[@class='list']/ul/li")
+		print_new_number(self.counts, 'USTC', self.name)
 
-		for message in messages:
-			if u'青年论坛' in message.xpath(".//a/text()").extract()[0]:
-				report_url = message.xpath(".//a/@href").extract()[0]
+		for i in xrange(len(messages)):
+			if u'青年论坛' in messages[i].xpath(".//a/text()").extract()[0]:
+				report_url = messages[i].xpath(".//a/@href").extract()[0]
 			else:
-				report_url = self.domain + message.xpath(".//a/@href").extract()[0][9:]
+				report_url = self.domain + messages[i].xpath(".//a/@href").extract()[0][9:]
 			if 'Colloquium' in report_url:
 				continue
-			report_time = get_localtime('20' + message.xpath(".//span/text()").extract()[0].strip('[]'))
+			report_time = get_localtime('20' + messages[i].xpath(".//span/text()").extract()[0].strip('[]'))
 
 			if report_time < now_time:
-				print_new_number(self.counts, 'USTC', self.name)
 				return
-			self.counts += 1
-			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': self.counts})
+			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})
 
 	def parse_pages(self, response):
 		messages = response.xpath("//div[@class='TRS_Editor']").xpath(".//p")
@@ -64,8 +63,12 @@ class USTC005_Spider(scrapy.Spider):
 				elif sign == 2:
 					content += text.strip()
 
+		if title != '':
+			self.counts += 1
+			print_new_number(self.counts, 'USTC', self.name)
+
 		all_messages = save_messages('USTC', self.name, title, time, address, speaker, person_introduce,
-		                             content, '', response.meta['link'], response.meta['number'])
+		                             content, '', response.meta['link'], response.meta['number'], u'中国科学技术大学')
 
 		return all_messages
 

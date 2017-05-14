@@ -19,10 +19,11 @@ class USTC002_Spider(scrapy.Spider):
 
 	def parse(self, response):
 		messages = response.xpath("//div[@class='view-content']/table/tbody/tr")
+		print_new_number(self.counts, 'USTC', self.name)
 
 		sign = 0
-		for each in messages:
-			message = each.xpath(".//td")
+		for i in xrange(len(messages)):
+			message = messages[i].xpath(".//td")
 			report_url = self.domain + message[0].xpath(".//a/@href").extract()[0][1:]
 			report_class = message[1].xpath(".//text()").extract()[0].strip()
 			report_time = get_localtime(message[2].xpath(".//text()").extract()[0].strip())
@@ -31,12 +32,10 @@ class USTC002_Spider(scrapy.Spider):
 			if report_time < now_time:
 				sign = 1
 				continue
-			self.counts += 1
-			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': self.counts})
+			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})
 
 		# The report time of this page is not sorted, so we only stop the procedure in the end of a page.
 		if sign:
-			print_new_number(self.counts, 'USTC', self.name)
 			return
 		now_number = response.xpath("//ul[@class='pager']/li[@class='pager-current first']/text()").extract()
 		if len(now_number) == 0:
@@ -81,8 +80,12 @@ class USTC002_Spider(scrapy.Spider):
 		if img_url != '':
 			img_url = self.domain + img_url[1:]
 
+		if title != '':
+			self.counts += 1
+			print_new_number(self.counts, 'USTC', self.name)
+
 		all_messages = save_messages('USTC', self.name, title, time, address, speaker, person_introduce,
-		                             content, img_url, response.meta['link'], response.meta['number'])
+		                             content, img_url, response.meta['link'], response.meta['number'], u'中国科学技术大学')
 
 		return all_messages
 

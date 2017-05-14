@@ -33,7 +33,7 @@ def print_new_number(counts, school, faculty):
 		f.write("We got %d new reports." % counts + '\n')
 		f.write('-' * (21+count_number(counts)) + '\n')
 
-def save_messages(school, faculty, title, time, address, speaker, person_introduce, content, img_url, link, number):
+def save_messages(school, faculty, title, time, address, speaker, person_introduce, content, img_url, link, number, school_name):
 	all_messages = {}
 
 	# message that must have
@@ -42,6 +42,7 @@ def save_messages(school, faculty, title, time, address, speaker, person_introdu
 	all_messages['title'] = title
 	all_messages['link'] = link
 	all_messages['number'] = number
+	all_messages['school_name'] = school_name
 
 	# message that may have
 	if time != '':

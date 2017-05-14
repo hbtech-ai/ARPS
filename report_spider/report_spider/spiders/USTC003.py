@@ -19,23 +19,21 @@ class USTC003_Spider(scrapy.Spider):
 
 	def parse(self, response):
 		messages = response.xpath("//td[@class='middle']").xpath(".//tr")
+		print_new_number(self.counts, 'USTC', self.name)
 
-		for message in messages:
-			report_title = message.xpath(".//span/a/text()").extract()[0]
-			report_url = self.domain + message.xpath(".//span/a/@href").extract()[0]
-			report_time = get_localtime(message.xpath(".//span/a/text()").extract()[-1].strip('()'))
+		for i in xrange(len(messages)):
+			report_title = messages[i].xpath(".//span/a/text()").extract()[0]
+			report_url = self.domain + messages[i].xpath(".//span/a/@href").extract()[0]
+			report_time = get_localtime(messages[i].xpath(".//span/a/text()").extract()[-1].strip('()'))
 			if report_time < now_time:
-				print_new_number(self.counts, 'USTC', self.name)
 				return
 			if u'本周报告' in report_title:
 				continue
-			self.counts += 1
-			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': self.counts})
+			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})
 
 		now_number = int(response.xpath("//a[@href='#']").xpath(".//text()").extract()[0])
 		last_number = int(response.xpath("//a[@href='#']").xpath(".//text()").extract()[-1][1:])
 		if now_number > last_number:
-			print_new_number(self.counts, 'USTC', self.name)
 			return
 		next_url = 'http://math.ustc.edu.cn/new/list.php?fid=35&page=%d' % (now_number + 1)
 
@@ -78,8 +76,12 @@ class USTC003_Spider(scrapy.Spider):
 				else:
 					content += messages[i]
 
+		if title != '':
+			self.counts += 1
+			print_new_number(self.counts, 'USTC', self.name)
+
 		all_messages = save_messages('USTC', self.name, title, time, address, speaker, '',
-		                             content, '', response.meta['link'], response.meta['number'])
+		                             content, '', response.meta['link'], response.meta['number'], u'中国科学技术大学')
 
 		return all_messages
 
