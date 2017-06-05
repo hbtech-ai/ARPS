@@ -59,3 +59,34 @@ def save_messages(school, faculty, title, time, address, speaker, person_introdu
 		all_messages['img_url'] = img_url
 
 	return all_messages
+
+def get_last(school, faculty):
+	filename = os.path.join('report_spider/spiders/last_name/' + school, faculty + '.txt')
+	with open(filename, 'r') as f:
+		title = f.readline()
+		f.close()
+	return title
+
+def sent_first(school, faculty, title):
+	filename = os.path.join('report_spider/spiders/last_name/' + school, faculty + '.txt')
+	with open(filename, 'w') as f:
+		f.write(title)
+		f.close()
+	return
+
+def get_messages(messages):
+	message = messages.xpath(".//text()").extract()
+	text = ''
+	for each in message:
+		text += each.strip()
+	return text
+
+def connect_messages(messages, sign):
+	message = messages.split(sign)[1:]
+	text = ''
+	for i in xrange(len(message)):
+		if i > 0:
+			text += '：'
+		text += message[i].strip()
+	return text
+

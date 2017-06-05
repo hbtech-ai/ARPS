@@ -46,6 +46,7 @@ class Spider_starter(object):
         self.run_spider('THU001')
         self.run_spider('THU002')
         self.run_spider('THU003')
+        self.run_spider('THU007')
 
     def WHU(self):
         self.run_spider('WHU001')
