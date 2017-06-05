@@ -9,7 +9,7 @@ import scrapy
 from Global_function import get_localtime, print_new_number, save_messages
 
 now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
-# now_time = 20170301
+now_time = 20170301
 
 class WHU001_Spider(scrapy.Spider):
 	name = 'WHU001'
@@ -27,15 +27,6 @@ class WHU001_Spider(scrapy.Spider):
 			if report_time < now_time:
 				return
 			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})
-
-		now_number = int(response.xpath("//div[@class='page fn_clear']/ul/li[@class='thisclass']/text()").extract()[0])
-		last_number = int(response.xpath("//span[@class='pageinfo']/strong")[0].xpath(".//text()").extract()[0])
-
-		if not (now_number < last_number):
-			return
-		new_url = 'http://cs.whu.edu.cn/a/xueshujiangzuofabu/list_39_{}.html'.format(now_number + 1)
-		yield scrapy.Request(new_url, callback=self.parse)
-
 
 	def parse_pages(self, response):
 		messages = response.xpath("//dd[@class='info']").xpath(".//text()").extract()
@@ -71,7 +62,7 @@ class WHU001_Spider(scrapy.Spider):
 			print_new_number(self.counts, 'WHU', self.name)
 
 		all_messages = save_messages('WHU', self.name, title, time, address, speaker, person_introduce,
-		                             content, '', response.meta['link'], response.meta['number'], u'武汉大学')
+		                             content, '', response.meta['link'], response.meta['number'], u'武汉大学', u'计算机学院')
 
 		return all_messages
 

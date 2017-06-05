@@ -51,6 +51,6 @@ class USTC001_Spider(scrapy.Spider):
 
 		# save
 		all_messages = save_messages('USTC', self.name, title, '', '', '', '', '', img_url,
-		                             response.meta['link'], response.meta['number'], u'中国科学技术大学')
+		                             response.meta['link'], response.meta['number'], u'中国科学技术大学', u'计算机科学与技术学院')
 
 		return all_messages
