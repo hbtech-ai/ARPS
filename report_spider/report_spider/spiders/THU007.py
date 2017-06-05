@@ -52,7 +52,7 @@ class THU007_Spider(scrapy.Spider):
 				time = connect_messages(text, '：') if '时间：' in text else connect_messages(text, ':')
 			elif '地点：' in text or '地点:' in text:
 				address = connect_messages(text, '：') if '地点：' in text else connect_messages(text, ':')
-			if '人：' in text or '人:' in text:
+			elif '人：' in text or '人:' in text:
 				speaker = connect_messages(text, '：') if '人：' in text else connect_messages(text, ':')
 			elif '摘要：' in text or '摘要:' in text:
 				sign = 1
@@ -65,7 +65,7 @@ class THU007_Spider(scrapy.Spider):
 			print_new_number(self.counts, 'THU', self.name)
 
 		all_messages = save_messages('THU', self.name, title, time, address, speaker, '',
-		                             content, '', response.meta['link'], response.meta['number'], u'清华大学')
+		                             content, '', response.meta['link'], response.meta['number'], u'清华大学', u'物理系')
 
 		return all_messages
 

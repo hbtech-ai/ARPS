@@ -50,7 +50,7 @@ class USTC006_Spider(scrapy.Spider):
 				sign = 2
 				person_introduce = self.connect_messages(message, '：') if u'简介：' in message else self.connect_messages(message, ':')
 			else:
-				if u'联系人' in message:
+				if u'联系人' in message or u'欢迎老师' in message:
 					continue
 				if sign == 1:
 					content += '\n' + message.strip()
@@ -64,7 +64,7 @@ class USTC006_Spider(scrapy.Spider):
 			print_new_number(self.counts, 'USTC', self.name)
 
 		all_messages = save_messages('USTC', self.name, title, time, address, speaker, person_introduce,
-		                             content, '', response.meta['link'], response.meta['number'], u'中国科学技术大学')
+		                             content, '', response.meta['link'], response.meta['number'], u'中国科学技术大学', u'生命科学学院')
 
 		return all_messages
 

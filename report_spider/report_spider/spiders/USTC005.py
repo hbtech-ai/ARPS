@@ -68,7 +68,7 @@ class USTC005_Spider(scrapy.Spider):
 			print_new_number(self.counts, 'USTC', self.name)
 
 		all_messages = save_messages('USTC', self.name, title, time, address, speaker, person_introduce,
-		                             content, '', response.meta['link'], response.meta['number'], u'中国科学技术大学')
+		                             content, '', response.meta['link'], response.meta['number'], u'中国科学技术大学', u'天文与空间科学学院')
 
 		return all_messages
 

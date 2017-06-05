@@ -48,7 +48,7 @@ class THU004_Spider(scrapy.Spider):
 			print_new_number(self.counts, 'THU', self.name)
 
 		all_messages = save_messages('THU', self.name, title, time, address, speaker, '',
-		                             '', img_url, response.meta['link'], response.meta['number'], u'清华大学')
+		                             '', img_url, response.meta['link'], response.meta['number'], u'清华大学', u'化学工程系')
 
 		return all_messages
 
