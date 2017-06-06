@@ -4,7 +4,7 @@ from __future__ import unicode_literals, print_function, division
 import os
 from six import string_types
 
-import keras.models
+import jieba
 import numpy as np
 
 from model.base.document import Document
@@ -22,7 +22,7 @@ class Multi_Label_Model(object):
         self.labels = labels
 
         if isinstance(keras_model, string_types):
-            self.load_model(keras_model)
+            self.load_model_weights(keras_model, self.labels)
         else:
             self.keras_model = keras_model
 
@@ -136,11 +136,17 @@ class Multi_Label_Model(object):
 
         return text_label
 
-    def _predict(self, doc, labels=None):
+    def predict_with_string(self, string_list, labels=None):
+        """ Use string to predict directly """
+        return map(lambda x: self._predict(x, labels, use_type="string"), [string for string in string_list])
+
+    def _predict(self, doc, labels=None, use_type="text"):
         """
         Predict labels for a given Document object. If 'self.labels' is None, labels can't be None.
 
         :param doc: Document object
+        :param labels: If the model is reset, user should transmit the labels again.
+        :param use_type: The type of input for predicting, text or string.
 
         :return: list of labels with corresponding confidence intervals
         """
@@ -149,14 +155,17 @@ class Multi_Label_Model(object):
         else:
             _, sample_length, embedding_size = self.keras_model.input_shape
 
-        words = doc.get_all_words()[:sample_length]
+        if use_type == "text":
+            words = doc.get_all_words()[:sample_length]
+        else:
+            words = '/'.join(jieba.cut(doc)).split('/')[:sample_length]
         x_matrix = np.zeros((1, sample_length, embedding_size))
 
         for i, w in enumerate(words):
             if w in self.word2vec_model:
                 word_vector = self.word2vec_model[w].reshape(1, -1)
                 scaled_vector = self.scaler.transform(word_vector, copy=True)[0]
-                x_matrix[doc.doc_id][i] = scaled_vector
+                x_matrix[0][i] = scaled_vector
 
         if type(self.keras_model.input) == list:
             x = [x_matrix] * len(self.keras_model.input)
@@ -234,14 +243,21 @@ class Multi_Label_Model(object):
         """ Load the word2vec model from a file """
         self.word2vec_model = load_from_disk(filepath)
 
-    def save_model(self, filepath):
+    def save_model_weights(self, filepath):
         """ Save the keras NN model to a HDF5 file """
         if os.path.exists(filepath):
             raise ValueError("File " + filepath + " already exists!")
-        self.keras_model.save(filepath)
+        self.keras_model.save_weights(filepath)
 
-    def load_model(self, filepath):
+    def load_model_weights(self, filepath, labels=None, nn_model=NN_ARCHITECTURE):
         """ Load the keras NN model from a HDF5 file """
         if not os.path.exists(filepath):
             raise ValueError("File " + filepath + " does not exist")
-        self.keras_model = keras.models.load_model(filepath)
+
+        self.keras_model = get_nn_model(
+            nn_model,
+            embedding=self.word2vec_model.vector_size,
+            output_length=len(labels)
+        )
+
+        self.keras_model.load_weights(filepath)

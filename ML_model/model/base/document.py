@@ -11,6 +11,7 @@ from nltk.tokenize import WordPunctTokenizer, sent_tokenize, word_tokenize
 
 nltk.download('punkt', quiet=True)  # make sure it's downloaded before using
 
+
 class Document(object):
     """ Class representing a document that the keywords are extracted from """
     def __init__(self, doc_id, filepath, text=None):
@@ -40,16 +41,10 @@ class Document(object):
         lowercase = [t.lower() for t in tokens]
         return set(lowercase) - {',', '.', '!', ';', ':', '-', '', None}
 
-    # def get_all_words(self):
-    #     """ Return all words tokenized, in lowercase and without punctuation """
-    #     return [w.lower() for w in word_tokenize(self.text)
-    #             if w not in string.punctuation]
-
     def get_all_words(self):
         """ Return the Chinese words """
         return [w for w in '/'.join(jieba.cut(self.text.strip())).split('/')
                 if w not in string.punctuation]
-
 
     def read_sentences(self):
         lines = self.text.split('\n')

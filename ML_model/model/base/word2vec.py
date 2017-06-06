@@ -7,9 +7,9 @@ import numpy as np
 from gensim.models import Word2Vec
 from sklearn.preprocessing import StandardScaler
 
-from magpie.base.document import Document
-from magpie.config import EMBEDDING_SIZE
-from magpie.utils import get_documents, save_to_disk
+from model.base.document import Document
+from model.config import EMBEDDING_SIZE
+from model.utils import get_documents, save_to_disk
 
 
 def train_word2vec_in_memory(docs, vec_dim=EMBEDDING_SIZE):

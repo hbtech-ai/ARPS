@@ -14,8 +14,9 @@ labels = [u'计算机网络', u'信息安全', u'云计算&大数据', u'机器�
 
 model.load_word2vec_model('model/word2vec_model.txt')
 model.load_scaler('model/scaler.txt')
-model.load_model('model/nn_model.h5')
-a = model.predict_class_from_file('train_data/0.txt', labels)
+model.load_model_weights('model/nn_model.h5', labels)
+a = model.predict_with_string([u'一种微阵列数据降维新方法', u'基于网络自有信号的网络线缆故障的检测方法研究'], labels)
 print(a[0])
+print(a[1])
 
 
