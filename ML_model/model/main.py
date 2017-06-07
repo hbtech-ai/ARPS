@@ -7,6 +7,8 @@ from six import string_types
 import jieba
 import numpy as np
 
+from keras.models import model_from_json
+
 from model.base.document import Document
 from model.base.word2vec import train_word2vec, fit_scaler
 from model.config import NN_ARCHITECTURE, BATCH_SIZE, EMBEDDING_SIZE, NB_EPOCHS, THRESHOLD
@@ -22,7 +24,7 @@ class Multi_Label_Model(object):
         self.labels = labels
 
         if isinstance(keras_model, string_types):
-            self.load_model_weights(keras_model, self.labels)
+            self.load_model(keras_model)
         else:
             self.keras_model = keras_model
 
@@ -123,22 +125,25 @@ class Multi_Label_Model(object):
         doc = Document(0, None, text=text)
         return self._predict(doc, labels)
 
-    def predict_class_from_file(self, filepath, labels=None):
-        """ Predict class for data """
-        class_probability = self.predict_from_file(filepath, labels)
-
-        text_label = []
-        for (label, probability) in class_probability:
-            if probability > THRESHOLD:
-                text_label.append(label)
-        if len(text_label) == 0:
-            text_label.append(class_probability[0][0])
-
-        return text_label
-
     def predict_with_string(self, string_list, labels=None):
         """ Use string to predict directly """
         return map(lambda x: self._predict(x, labels, use_type="string"), [string for string in string_list])
+
+    def predict_class_with_string(self, string_list, labels=None):
+        """ Predict class for data using string directly """
+        class_probability = self.predict_with_string(string_list, labels)
+
+        examples = []
+        for i, example in enumerate(class_probability):
+            text_label = []
+            for (label, probability) in example:
+                if probability > THRESHOLD:
+                    text_label.append(label)
+            if len(text_label) == 0:
+                text_label.append(class_probability[i][0][0])
+            examples.append(text_label)
+
+        return examples
 
     def _predict(self, doc, labels=None, use_type="text"):
         """
@@ -243,21 +248,40 @@ class Multi_Label_Model(object):
         """ Load the word2vec model from a file """
         self.word2vec_model = load_from_disk(filepath)
 
-    def save_model_weights(self, filepath):
-        """ Save the keras NN model to a HDF5 file """
-        if os.path.exists(filepath):
-            raise ValueError("File " + filepath + " already exists!")
-        self.keras_model.save_weights(filepath)
+    def save_model(self, filepath):
+        """ Save the keras NN model's architecture to a json file and weights to a HDF5 file """
+        arch_file = os.path.join(filepath, 'nn_arch.json')
+        weight_file = os.path.join(filepath, 'nn_weights.h5')
 
-    def load_model_weights(self, filepath, labels=None, nn_model=NN_ARCHITECTURE):
-        """ Load the keras NN model from a HDF5 file """
+        if os.path.exists(arch_file):
+            raise ValueError("File " + arch_file + " already exists!")
+
+        if os.path.exists(weight_file):
+            raise ValueError("File " + weight_file + " already exists!")
+
+        open(arch_file, 'w').write(self.keras_model.to_json())
+
+        self.keras_model.save_weights(weight_file)
+
+    def load_model(self, filepath):
+        """ Load the keras NN model's architecture from a json file and weights from a HDF5 file """
         if not os.path.exists(filepath):
-            raise ValueError("File " + filepath + " does not exist")
+            raise ValueError("File " + filepath + " does not exist!")
 
-        self.keras_model = get_nn_model(
-            nn_model,
-            embedding=self.word2vec_model.vector_size,
-            output_length=len(labels)
-        )
+        list_dir = os.listdir(filepath)
+        arch_file, weights_file = '', ''
+        for dir in list_dir:
+            if dir.split('.')[-1] == 'json':
+                arch_file = os.path.join(filepath, dir)
+            elif dir.split('.')[-1] == 'h5':
+                weights_file = os.path.join(filepath, dir)
 
-        self.keras_model.load_weights(filepath)
+        if arch_file == '':
+            raise ValueError("The json file for NN's architecture is not exist!")
+
+        if weights_file == '':
+            raise ValueError("The HDF5 file for NN's weights is not exist!")
+
+        self.keras_model = model_from_json(open(arch_file).read())
+
+        self.keras_model.load_weights(weights_file)
