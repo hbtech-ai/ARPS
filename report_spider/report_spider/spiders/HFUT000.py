@@ -10,13 +10,13 @@ import scrapy
 import time
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
-from Global_function import get_localtime, print_new_number, save_messages
+from report_spider.spiders.Global_function import get_localtime, print_new_number, save_messages
 
 inf = 0x3f3f3f3f
 
 # local time
-now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
-# now_time = 20170420
+# now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
+now_time = 20170420
 
 # HFUT spider for report
 class HFUT000_Spider(scrapy.Spider):
@@ -74,7 +74,7 @@ class HFUT000_Spider(scrapy.Spider):
 			print_new_number(self.counts, 'HFUT', self.name)
 
 		all_messages = save_messages('HFUT', self.name, title, time, address, speaker, person_introduce,
-		                             content, '', response.meta['link'], response.meta['number'], u'合肥工业大学')
+		                             content, '', response.meta['link'], response.meta['number'], u'合肥工业大学', u'合肥工业大学')
 
 		return all_messages
 

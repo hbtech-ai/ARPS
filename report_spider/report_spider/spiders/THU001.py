@@ -9,6 +9,7 @@ import scrapy
 from Global_function import get_localtime, print_new_number, save_messages
 
 now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
+# now_time = 20170320
 
 class THU001_Spider(scrapy.Spider):
 	name = 'THU001'
@@ -72,7 +73,7 @@ class THU001_Spider(scrapy.Spider):
 			print_new_number(self.counts, 'THU', self.name)
 
 		all_messages = save_messages('THU', self.name, title, time, address, speaker, person_introduce,
-		                             content, '', response.meta['link'], response.meta['number'], u'清华大学')
+		                             content, '', response.meta['link'], response.meta['number'], u'清华大学', u'计算机科学与技术系')
 
 		return all_messages
 

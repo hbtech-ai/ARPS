@@ -39,16 +39,16 @@ class THU002_Spider(scrapy.Spider):
 
 		speaker = messages.xpath(".//p")[2].xpath(".//text()").extract()[1]
 
-		other = response.xpath("//div[@class='show-new']")
+		# other = response.xpath("//div[@class='show-new']")
 
-		if len(other) == 0:
-			content = ''
-		else:
-			content = other.xpath(".//text()").extract()[0].strip()
-			if u'简介：' in content or 'Abstract：' in content or u'简介:' in content or 'Abstract:' in content:
-				content = self.connect_messages(content, '：') if u'简介：' in content or 'Abstract：' in content else self.connect_messages(content, ':')
-			else:
-				pass
+		# if len(other) == 0:
+		# 	content = ''
+		# else:
+		# 	content = other.xpath(".//text()").extract()[0].strip()
+		# 	if u'简介：' in content or 'Abstract：' in content or u'简介:' in content or 'Abstract:' in content:
+		# 		content = self.connect_messages(content, '：') if u'简介：' in content or 'Abstract：' in content else self.connect_messages(content, ':')
+		# 	else:
+		# 		pass
 
 		report_time = get_localtime(response.xpath("//div[@class='wtime']/text()").extract()[0].strip())
 		if report_time < now_time:
@@ -58,7 +58,7 @@ class THU002_Spider(scrapy.Spider):
 		print_new_number(self.counts, 'THU', self.name)
 
 		all_messages = save_messages('THU', self.name, title, time, address, speaker, '',
-		                             content, '', response.meta['link'], response.meta['number'], u'清华大学')
+		                             '', '', response.meta['link'], response.meta['number'], u'清华大学', u'地球系统科学系')
 
 		return all_messages
 

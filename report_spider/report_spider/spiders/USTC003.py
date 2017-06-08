@@ -31,14 +31,6 @@ class USTC003_Spider(scrapy.Spider):
 				continue
 			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})
 
-		now_number = int(response.xpath("//a[@href='#']").xpath(".//text()").extract()[0])
-		last_number = int(response.xpath("//a[@href='#']").xpath(".//text()").extract()[-1][1:])
-		if now_number > last_number:
-			return
-		next_url = 'http://math.ustc.edu.cn/new/list.php?fid=35&page=%d' % (now_number + 1)
-
-		yield scrapy.Request(next_url, callback=self.parse)
-
 	# get the report message
 	def parse_pages(self, response):
 		messages = response.xpath("//table[@width='96%']").xpath(".//td[@align='left' and @class='dh01']").xpath(".//text()").extract()
@@ -62,6 +54,9 @@ class USTC003_Spider(scrapy.Spider):
 			elif 'Abstract：' in messages[i] or u'摘要：' in messages[i] or 'Abstract:' in messages[i] or u'摘要:' in messages[i]:
 				sign = 4
 				content += self.get_message(messages[i], '：') if 'Abstract：' in messages[i] or u'摘要：' in messages[i] else self.get_message(messages[i], ':')
+			elif 'Abstract.' in messages[i] or u'摘要.' in messages[i]:
+				sign = 4
+				content += self.get_message(messages[i], '.')
 			else:
 				if u'欢迎' in messages[i]:
 					pass
@@ -73,7 +68,7 @@ class USTC003_Spider(scrapy.Spider):
 					address += messages[i]
 				elif sign == 3:
 					speaker += messages[i]
-				else:
+				elif sign == 4:
 					content += messages[i]
 
 		if title != '':
@@ -81,7 +76,7 @@ class USTC003_Spider(scrapy.Spider):
 			print_new_number(self.counts, 'USTC', self.name)
 
 		all_messages = save_messages('USTC', self.name, title, time, address, speaker, '',
-		                             content, '', response.meta['link'], response.meta['number'], u'中国科学技术大学')
+		                             content, '', response.meta['link'], response.meta['number'], u'中国科学技术大学', u'数学科学学院')
 
 		return all_messages
 

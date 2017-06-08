@@ -34,18 +34,6 @@ class USTC002_Spider(scrapy.Spider):
 				continue
 			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})
 
-		# The report time of this page is not sorted, so we only stop the procedure in the end of a page.
-		if sign:
-			return
-		now_number = response.xpath("//ul[@class='pager']/li[@class='pager-current first']/text()").extract()
-		if len(now_number) == 0:
-			now_number = int(response.xpath("//ul[@class='pager']/li[@class='pager-current']/text()").extract()[0])
-		else:
-			now_number = int(now_number[0])
-		next_url = 'http://ess.ustc.edu.cn/notice?page=%d' % now_number
-
-		yield scrapy.Request(next_url, callback=self.parse)
-
 	def parse_pages(self, response):
 		messages = response.xpath("//div[@class='inside panels-flexible-region-inside panels-flexible-region-jcjz-center-inside panels-flexible-region-inside-first']/div")
 
@@ -85,7 +73,7 @@ class USTC002_Spider(scrapy.Spider):
 			print_new_number(self.counts, 'USTC', self.name)
 
 		all_messages = save_messages('USTC', self.name, title, time, address, speaker, person_introduce,
-		                             content, img_url, response.meta['link'], response.meta['number'], u'中国科学技术大学')
+		                             content, img_url, response.meta['link'], response.meta['number'], u'中国科学技术大学', u'地球和空间科学学院')
 
 		return all_messages
 
