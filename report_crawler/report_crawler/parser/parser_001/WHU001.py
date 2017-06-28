@@ -2,7 +2,7 @@
 import re
 
 
-def WHU001_Parser(text, sub_linefeed):
+def Parser(text, sub_linefeed):
     text = text.decode('utf-8')
     messages = {}
 

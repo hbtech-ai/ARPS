@@ -20,9 +20,13 @@ now_time = str(get_localtime(time.strftime("%Y-%m-%d", time.localtime())))
 
 class ReportCrawlerPipeline(object):
     def process_item(self, item, spider):
+        # self.deal_with(item)
+        # return
         text = ''
-        for each in item['text']:
-            text += each
+        for message in item['text']:
+            for each in message.xpath(".//text()").extract():
+                text += each
+            text += '\n'
         messages = get_information(text, item['faculty'])
 
         if messages['title'] is None or messages['time'] is None or messages['address'] is None or messages['speaker'] is None:
@@ -47,3 +51,11 @@ class ReportCrawlerPipeline(object):
 
         return
 
+    def deal_with(self, item):
+        text = ''
+        for message in item['text']:
+            for each in message.xpath(".//text()").extract():
+                text += each
+            text += '\n'
+        with open('WHU001/{}.txt'.format(item['number']), 'w') as f:
+            f.write(str(text))

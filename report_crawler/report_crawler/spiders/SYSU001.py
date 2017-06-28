@@ -3,8 +3,8 @@ import time
 import scrapy
 from Global_function import get_localtime
 
-# now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
-now_time = 20170101
+now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
+# now_time = 20170101
 
 
 class SYSU001_Spider(scrapy.Spider):
@@ -28,20 +28,3 @@ class SYSU001_Spider(scrapy.Spider):
 		messages = response.xpath("//div[@class='field-items']").xpath(".//text()").extract()
 
 		return {'text': messages, 'number': response.meta['number'], 'organizer': u'中山大学计算机学院', 'faculty': self.name}
-
-	def get_messages(self, messages, sign):
-		text = ''
-		message = messages.split(sign)[1:]
-		for i in xrange(len(message)):
-			if i > 0:
-				text += '：'
-			text += message[i].strip()
-		return text
-
-	def connect_messages(self, messages):
-		text = ''
-		replace = ''
-		for message in messages:
-			text += message.strip()
-			replace += message.strip().replace(' ', '')
-		return text, replace

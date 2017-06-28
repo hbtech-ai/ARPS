@@ -27,12 +27,3 @@ class WHU001_Spider(scrapy.Spider):
 		messages = response.xpath("//dd[@class='info']").xpath(".//text()").extract()
 
 		return {'text': messages, 'number': response.meta['number'], 'organizer': u'武汉大学计算机学院', 'faculty': self.name}
-
-	def connect_message(self, message, sign):
-		ans = ''
-		message = message.split(sign)[1:]
-		for i in range(len(message)):
-			if i > 0:
-				ans += '：'
-			ans += message[i].strip()
-		return ans
