@@ -39,4 +39,5 @@ class NPU001_Spider(scrapy.Spider):
 	def parse_pages(self, response):
 		messages = response.xpath("//div[@id='vsb_content']")
 
-		return {'text': messages, 'number': response.meta['number'], 'organizer': u'西北工业大学计算机学院', 'faculty': self.name}
+		return {'text': messages, 'number': response.meta['number'], 'organizer': u'西北工业大学计算机学院',
+		        'faculty': self.name, 'link': response.meta['link']}

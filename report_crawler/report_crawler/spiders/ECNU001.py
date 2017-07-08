@@ -25,7 +25,7 @@ class ECNU001_Spider(scrapy.Spider):
 		for i, message in enumerate(messages):
 			report_url = self.domain + message.xpath(".//a/@href").extract()[0][1:]
 
-			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'number': i + 1})
+			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})
 
 	def parse_pages(self, response):
 		report_time = get_localtime(re.split(u"[：:]", response.xpath("//td[@height='32']/div/strong")[0].xpath("text()").extract()[0])[-1])
@@ -35,5 +35,6 @@ class ECNU001_Spider(scrapy.Spider):
 
 		messages = response.xpath("//span[contains(@class, 'content')]/p")
 
-		return {'text': messages, 'number': response.meta['number'], 'organizer': u'华东师范大学大学计算机科学技术系', 'faculty': self.name}
+		return {'text': messages, 'number': response.meta['number'], 'organizer': u'华东师范大学大学计算机科学技术系',
+		        'faculty': self.name, 'link': response.meta['link']}
 

@@ -35,4 +35,5 @@ class THU001_Spider(scrapy.Spider):
 	def parse_pages(self, response):
 		messages = response.xpath("//div[@class='box_detail']/p")
 
-		return {'text': messages, 'number': response.meta['number'], 'organizer': u'清华大学计算机科学与技术系', 'faculty': self.name}
+		return {'text': messages, 'number': response.meta['number'], 'organizer': u'清华大学计算机科学与技术系',
+		        'faculty': self.name, 'link': response.meta['link']}

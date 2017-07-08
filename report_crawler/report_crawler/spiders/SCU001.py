@@ -31,7 +31,7 @@ class SCU001_Spider(scrapy.Spider):
 			if report_time < now_time:
 				return
 
-			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'number': i + 1})
+			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})
 
 		numbers = messages[-1].xpath(".//b/text()").extract()[0].replace(' ', '').strip()
 		now_number = int(numbers.split('/')[0].strip())
@@ -46,5 +46,6 @@ class SCU001_Spider(scrapy.Spider):
 	def parse_pages(self, response):
 		messages = response.xpath("//div[@id='BodyLabel']")
 
-		return {'text': messages, 'number': response.meta['number'], 'organizer': u'四川大学计算机学院', 'faculty': self.name}
+		return {'text': messages, 'number': response.meta['number'], 'organizer': u'四川大学计算机学院',
+		        'faculty': self.name, 'link': response.meta['link']}
 

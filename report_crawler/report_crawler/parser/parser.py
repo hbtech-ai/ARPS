@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
-from parser_001 import ECNU001, NWPU001, SCU001, SDU001, SYSU001, THU001, WHU001
+from parser_001 import BUAA001, ECNU001, NWPU001, SCU001, SDU001, SYSU001, THU001, WHU001
 
 
 def get_information(text, faculty):
 	messages = {}
 
+	if faculty[:-3] == 'BUAA':
+		messages = BUAA(text, faculty[-3:])
 	if faculty[:-3] == 'ECNU':
 		messages = ECNU(text, faculty[-3:])
 	elif faculty[:-3] == 'NWPU':
@@ -20,6 +22,13 @@ def get_information(text, faculty):
 	elif faculty[:-3] == 'WHU':
 		messages = WHU(text, faculty[-3:])
 
+	return messages
+
+
+def BUAA(text, faculty_num):
+	messages = {}
+	if faculty_num == '001':
+		messages = BUAA001.Parser(text, sub_linefeed)
 	return messages
 
 

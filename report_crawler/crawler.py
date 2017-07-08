@@ -32,6 +32,7 @@ class Spider_starter(object):
 			traceback.print_exc()
 
 	def X001(self):
+		self.run_spider('BUAA001')
 		self.run_spider('ECNU001')
 		self.run_spider('NWPU001')
 		self.run_spider('SCU001')
