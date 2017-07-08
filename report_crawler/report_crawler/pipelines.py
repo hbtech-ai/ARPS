@@ -31,7 +31,6 @@ class ReportCrawlerPipeline(object):
 
         if messages['title'] is None or messages['time'] is None or messages['address'] is None or messages['speaker'] is None:
             return
-
         dirname = os.path.join(SAVEDIR, now_time, item['faculty'][-3:], item['faculty'][:-3])
         if not os.path.exists(dirname):
             os.makedirs(dirname)

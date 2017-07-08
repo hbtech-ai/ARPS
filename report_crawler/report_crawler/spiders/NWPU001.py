@@ -37,6 +37,6 @@ class NPU001_Spider(scrapy.Spider):
 			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})
 
 	def parse_pages(self, response):
-		messages = response.xpath("//div[@id='vsb_content']").xpath(".//text()").extract()
+		messages = response.xpath("//div[@id='vsb_content']")
 
 		return {'text': messages, 'number': response.meta['number'], 'organizer': u'西北工业大学计算机学院', 'faculty': self.name}

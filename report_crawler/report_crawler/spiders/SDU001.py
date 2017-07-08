@@ -9,7 +9,7 @@ import scrapy
 from Global_function import get_localtime
 
 now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
-# now_time = 20170101
+# now_time = 20170303
 end_time = 20991212
 
 
@@ -36,16 +36,6 @@ class SUD001_Spider(scrapy.Spider):
 				return
 
 			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'number': i + 1})
-
-		numbers = re.sub("[\s]", '', response.xpath("//div[@class='pageBar']/text()").extract()[0])
-		now_number = int(re.findall(u"第(.*?)页", numbers)[0])
-		last_number = int(re.findall(u"共(.*?)页", numbers)[0])
-
-		if now_number == last_number:
-			return
-
-		next_url = 'http://www.cs.sdu.edu.cn/getMoreNews.do?pageNum={}&newsType=jsj2102'.format(now_number + 1)
-		yield scrapy.Request(next_url, callback=self.parse)
 
 	def parse_pages(self, response):
 		messages = response.xpath("//div[@class='newsContent']")[1].xpath(".//p")

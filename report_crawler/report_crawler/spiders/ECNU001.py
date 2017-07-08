@@ -30,6 +30,9 @@ class ECNU001_Spider(scrapy.Spider):
 	def parse_pages(self, response):
 		report_time = get_localtime(re.split(u"[：:]", response.xpath("//td[@height='32']/div/strong")[0].xpath("text()").extract()[0])[-1])
 
+		if report_time < now_time or report_time > end_time:
+			return
+
 		messages = response.xpath("//span[contains(@class, 'content')]/p")
 
 		return {'text': messages, 'number': response.meta['number'], 'organizer': u'华东师范大学大学计算机科学技术系', 'faculty': self.name}

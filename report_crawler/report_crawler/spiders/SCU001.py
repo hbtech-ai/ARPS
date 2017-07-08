@@ -44,7 +44,7 @@ class SCU001_Spider(scrapy.Spider):
 		yield scrapy.Request(next_url, callback=self.parse)
 
 	def parse_pages(self, response):
-		messages = response.xpath("//div[@id='BodyLabel']").xpath(".//text()").extract()
+		messages = response.xpath("//div[@id='BodyLabel']")
 
 		return {'text': messages, 'number': response.meta['number'], 'organizer': u'四川大学计算机学院', 'faculty': self.name}
 
