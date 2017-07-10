@@ -5,7 +5,7 @@ import os
 import time
 import shutil
 import traceback
-from report_crawler.spiders.Global_function import get_localtime
+from report_crawler.spiders._Global_function import get_localtime
 
 now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
 
@@ -26,12 +26,13 @@ class Spider_starter(object):
 		# If one of the spiders has error, the print_exc() function will tell us which is criminal
 		try:
 			if not os.path.exists(DATADIR):
-				os.mkdir(SAVEDIR + '/' + str(now_time))
+				os.mkdir(DATADIR)
 			os.system('scrapy crawl ' + spider_name)
 		except:
 			traceback.print_exc()
 
 	def X001(self):
+		self.run_spider('BNU001')
 		self.run_spider('BUAA001')
 		self.run_spider('ECNU001')
 		self.run_spider('NWPU001')

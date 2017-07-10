@@ -12,7 +12,7 @@ def Parser(text, sub_linefeed):
 	if len(messages['title']) == 1:
 		messages['title'] = messages['title'][0].strip()
 	else:
-		messages['title'] = None
+		messages['title'] = ''
 
 	# time
 	time_pattern = re.compile(u"Time[：:.](.*?)(?:(?:Venue)|(?:Meeting Room)|(?:Location)|(?:Place)|(?:Speaker(?:s){0,1})|(?:Abstract))[：:.]", re.S)
@@ -20,7 +20,7 @@ def Parser(text, sub_linefeed):
 	if len(messages['time']) == 1:
 		messages['time'] = messages['time'][0].strip()
 	else:
-		messages['time'] = None
+		messages['time'] = ''
 
 	# address
 	address_pattern = re.compile(u"(?:(?:Venue)|(?:Meeting Room)|(?:Location)|(?:Place))[：:.](.*?)(?:(?:Speaker(?:s){0,1})|(?:Time)|(?:Abstract))[：:.]", re.S)
@@ -28,7 +28,7 @@ def Parser(text, sub_linefeed):
 	if len(messages['address']) == 1:
 		messages['address'] = messages['address'][0].strip()
 	else:
-		messages['address'] = None
+		messages['address'] = ''
 
 	# speaker
 	speaker_pattern = re.compile(u"Speaker(?:s){0,1}[：:.](.*?)(?:(?:Time)|(?:Venue)|(?:Meeting Room)|(?:Location)|(?:Place)|(?:Abstract))[：:.]", re.S)
@@ -36,7 +36,7 @@ def Parser(text, sub_linefeed):
 	if len(messages['speaker']) == 1:
 		messages['speaker'] = messages['speaker'][0].strip()
 	else:
-		messages['speaker'] = None
+		messages['speaker'] = ''
 
 	# abstract
 	abstract_pattern = re.compile(u"Abstract[：:.](.*?)(?:(?:Bio[：:.])|(?:Biography[：:.])|(?:Short-Biography[：:.]{0,1})|(?:Short bio[：:.]{0,1}))", re.S)
@@ -49,9 +49,9 @@ def Parser(text, sub_linefeed):
 		if len(messages['abstract']) == 1:
 			messages['abstract'] = sub_linefeed(messages['abstract'][0].strip())
 		else:
-			messages['abstract'] = None
+			messages['abstract'] = ''
 	else:
-		messages['abstract'] = None
+		messages['abstract'] = ''
 
 	# biography
 	biography_pattern = re.compile(u"(?:(?:Bio[：:.])|(?:Biography[：:.])|(?:Short-Biography[：:.]{0,1})|(?:Short bio[：:.]{0,1}))([\s\S]*)", re.S)
@@ -59,6 +59,6 @@ def Parser(text, sub_linefeed):
 	if len(messages['biography']) == 1:
 		messages['biography'] = sub_linefeed(messages['biography'][0].strip())
 	else:
-		messages['biography'] = None
+		messages['biography'] = ''
 
 	return messages

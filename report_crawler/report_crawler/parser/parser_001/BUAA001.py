@@ -12,7 +12,7 @@ def Parser(text, sub_linefeed):
 	if len(messages['title']) == 1:
 		messages['title'] = messages['title'][0].strip()
 	else:
-		messages['title'] = None
+		messages['title'] = ''
 
 	# time
 	time_pattern = re.compile(u"时(?:.*?){0,1}间[：:. ](.*?)\n", re.S)
@@ -20,7 +20,7 @@ def Parser(text, sub_linefeed):
 	if len(messages['time']) == 1:
 		messages['time'] = messages['time'][0].strip()
 	else:
-		messages['time'] = None
+		messages['time'] = ''
 
 	# address
 	address_pattern = re.compile(u"地(?:.*?){0,1}点[：:.](.*?)\n", re.S)
@@ -28,7 +28,7 @@ def Parser(text, sub_linefeed):
 	if len(messages['address']) == 1:
 		messages['address'] = messages['address'][0].strip()
 	else:
-		messages['address'] = None
+		messages['address'] = ''
 
 	# speaker
 	speaker_pattern = re.compile(u"(?:(?:主(?:.*?){0,1}讲)|(?:报(?:.*?){0,1}告))(?:.*?){0,1}人[：:.](.*?)\n", re.S)
@@ -36,7 +36,7 @@ def Parser(text, sub_linefeed):
 	if len(messages['speaker']) == 1:
 		messages['speaker'] = messages['speaker'][0].strip()
 	else:
-		messages['speaker'] = None
+		messages['speaker'] = ''
 
 	# abstract
 	abstract_pattern = re.compile(u"(?:(?:摘(?:.*?){0,1}要)|(?:内(?:.*?){0,1}容)|(?:Bio))[：:.]([\s\S]*)(?:(?:(?:报(?:.*?){0,1}告)|(?:主(?:.*?){0,1}讲)人)|(?:讲(?:.*?){0,1}者)|(?:Abstract))(?:.*?){0,1}[：:.]", re.S)
@@ -49,7 +49,7 @@ def Parser(text, sub_linefeed):
 		if len(messages['abstract']) == 1:
 			messages['abstract'] = sub_linefeed(messages['abstract'][0].strip())
 		else:
-			messages['abstract'] = None
+			messages['abstract'] = ''
 
 	# biography
 	biography_pattern = re.compile(u"(?:(?:者|人)(?:简(?:.*?){0,1}介|介(?:.*?){0,1}绍)|Abstract)[：:.]([\s\S]*)(?:(?:(?:报告)|(?:讲座))(?:(?:摘要)|(?:内容)|(?:简介))|Bio)[：:.]", re.S)
@@ -62,7 +62,7 @@ def Parser(text, sub_linefeed):
 		if len(messages['biography']) == 1:
 			messages['biography'] = sub_linefeed(messages['biography'][0].strip())
 		else:
-			messages['biography'] = None
+			messages['biography'] = ''
 
 	return messages
 

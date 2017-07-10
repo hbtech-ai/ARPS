@@ -6,11 +6,12 @@ sys.setdefaultencoding('utf-8')
 import re
 import time
 import scrapy
-from Global_function import get_localtime
+from _Global_function import get_localtime
+from _Global_variable import now_time, end_time
 
-now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
+# now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
 # now_time = 20100101
-end_time = 20991212
+# end_time = 20991212
 
 
 class SCU001_Spider(scrapy.Spider):
@@ -32,16 +33,6 @@ class SCU001_Spider(scrapy.Spider):
 				return
 
 			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})
-
-		numbers = messages[-1].xpath(".//b/text()").extract()[0].replace(' ', '').strip()
-		now_number = int(numbers.split('/')[0].strip())
-		last_number = int(numbers.split('/')[-1].strip())
-
-		if now_number == last_number:
-			return
-
-		next_url = 'http://cs.scu.edu.cn/cs/xsky/xskb/H951901index_{}.htm'.format(now_number + 1)
-		yield scrapy.Request(next_url, callback=self.parse)
 
 	def parse_pages(self, response):
 		messages = response.xpath("//div[@id='BodyLabel']")

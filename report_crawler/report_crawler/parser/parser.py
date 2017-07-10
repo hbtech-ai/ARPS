@@ -1,13 +1,15 @@
 # -*- coding: utf-8 -*-
-from parser_001 import BUAA001, ECNU001, NWPU001, SCU001, SDU001, SYSU001, THU001, WHU001
+from parser_001 import BNU001, BUAA001, ECNU001, NWPU001, SCU001, SDU001, SYSU001, THU001, UESTC001, WHU001
 
 
 def get_information(text, faculty):
 	messages = {}
 
-	if faculty[:-3] == 'BUAA':
+	if faculty[:-3] == 'BNU':
+		messages = BNU(text, faculty[-3:])
+	elif faculty[:-3] == 'BUAA':
 		messages = BUAA(text, faculty[-3:])
-	if faculty[:-3] == 'ECNU':
+	elif faculty[:-3] == 'ECNU':
 		messages = ECNU(text, faculty[-3:])
 	elif faculty[:-3] == 'NWPU':
 		messages = NWPU(text, faculty[-3:])
@@ -19,9 +21,18 @@ def get_information(text, faculty):
 		messages = SYSU(text, faculty[-3:])
 	elif faculty[:-3] == 'THU':
 		messages = THU(text, faculty[-3:])
+	elif faculty[:-3] == 'UESTC':
+		messages = UESTC(text, faculty[-3:])
 	elif faculty[:-3] == 'WHU':
 		messages = WHU(text, faculty[-3:])
 
+	return messages
+
+
+def BNU(text, faculty_num):
+	messages = {}
+	if faculty_num == '001':
+		messages = BNU001.Parser(text, sub_linefeed)
 	return messages
 
 
@@ -71,6 +82,13 @@ def THU(text, faculty_num):
 	messages = {}
 	if faculty_num == '001':
 		messages = THU001.Parser(text, sub_linefeed)
+	return messages
+
+
+def UESTC(text, faculty_num):
+	messages = {}
+	if faculty_num == '001':
+		messages = UESTC001.Parser(text, sub_linefeed)
 	return messages
 
 

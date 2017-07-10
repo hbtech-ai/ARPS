@@ -6,11 +6,12 @@ sys.setdefaultencoding('utf-8')
 import re
 import time
 import scrapy
-from Global_function import get_localtime
+from _Global_function import get_localtime
+from _Global_variable import now_time, end_time
 
-now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
+# now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
 # now_time = 20170303
-end_time = 20991212
+# end_time = 20991212
 
 
 class SUD001_Spider(scrapy.Spider):

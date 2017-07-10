@@ -2,17 +2,6 @@
 import re
 
 
-def connect_messages(messages, mode):
-	text = ''
-	if mode == 'start':
-		for message in messages[1:]:
-			text += message.strip()
-	else:
-		for message in messages[:-1]:
-			text += message.strip()
-	return text
-
-
 def Parser(text, sub_linefeed):
 	text = text.decode('utf-8')
 	messages = {}
@@ -23,44 +12,51 @@ def Parser(text, sub_linefeed):
 	if len(messages['title']) == 1:
 		messages['title'] = messages['title'][0].strip()
 	else:
-		messages['title'] = None
+		messages['title'] = ''
 
 	# time
 	time_pattern = re.compile(u"间[：:.](.*?)\n")
-	messages['time'] = re.search(time_pattern, text)
-	if messages['time'] is not None:
-		messages['time'] = messages['time'].group().strip()[2:].strip()
+	messages['time'] = re.findall(time_pattern, text)
+	if len(messages['time']) == 1:
+		messages['time'] = messages['time'][0].strip()
+	else:
+		messages['time'] = ''
 
 	# address
 	address_pattern = re.compile(u"点[：:.](.*?)\n")
-	messages['address'] = re.search(address_pattern, text)
-	if messages['address'] is not None:
-		messages['address'] = messages['address'].group().strip()[2:].strip()
+	messages['address'] = re.findall(address_pattern, text)
+	if len(messages['address']) == 1:
+		messages['address'] = messages['address'][0].strip()
+	else:
+		messages['address'] = ''
 
 	# speaker
 	speaker_pattern = re.compile(u"讲[：:.](.*?)\n")
-	messages['speaker'] = re.search(speaker_pattern, text)
-	if messages['speaker'] is not None:
-		messages['speaker'] = messages['speaker'].group().strip()[2:].strip()
+	messages['speaker'] = re.findall(speaker_pattern, text)
+	if len(messages['speaker']) == 1:
+		messages['speaker'] = messages['speaker'][0].strip()
+	else:
+		messages['speaker'] = ''
 
 	# abstract
-	abstract_pattern = re.compile(u"(摘要|Abstract)[：:.](.*?)(主讲人|报告人|Bio)", re.S)
-	abstract_split_pattern_start = re.compile(u"[摘要|Abstract][：:.]")
-	abstract_split_pattern_end = re.compile(u"主讲人|报告人|Bio")
-	messages['abstract'] = re.search(abstract_pattern, text)
-	if messages['abstract'] is not None:
-		messages['abstract'] = sub_linefeed(connect_messages(re.split(abstract_split_pattern_end, connect_messages(re.split(abstract_split_pattern_start, messages['abstract'].group()), mode='start')), mode='end').strip())
+	abstract_pattern = re.compile(u"(?:摘要|Abstract)[：:.]([\s\S]*)(?:主讲人|报告人|Bio)", re.S)
+	messages['abstract'] = re.findall(abstract_pattern, text)
+	if len(messages['abstract']) == 1:
+		messages['abstract'] = sub_linefeed(messages['abstract'][0].strip())
 	else:
-		abstract_pattern = re.compile(u"(摘要|Abstract)[：:.]([\s\S]*)", re.S)
-		messages['abstract'] = re.search(abstract_pattern, text)
-		if messages['abstract'] is not None:
-			messages['abstract'] = sub_linefeed(connect_messages(re.split(abstract_split_pattern_start, messages['abstract'].group()), mode='start'))
+		abstract_pattern = re.compile(u"(?:摘要|Abstract)[：:.]([\s\S]*)", re.S)
+		messages['abstract'] = re.findall(abstract_pattern, text)
+		if len(messages['abstract']) == 1:
+			messages['abstract'] = sub_linefeed(messages['abstract'][0].strip())
+		else:
+			messages['abstract'] = ''
 
 	# biography
-	biography_pattern = re.compile(u"(简介|Bio)[：:.]([\s\S]*)", re.S)
-	biography_split_pattern_start = re.compile(u"[简介|Bio][：:.]")
-	messages['biography'] = re.search(biography_pattern, text)
-	if messages['biography'] is not None:
-		messages['biography'] = sub_linefeed(connect_messages(re.split(biography_split_pattern_start, messages['biography'].group()), mode='start'))
+	biography_pattern = re.compile(u"(?:简介|Bio)[：:.]([\s\S]*)", re.S)
+	messages['biography'] = re.findall(biography_pattern, text)
+	if len(messages['biography']) == 1:
+		messages['biography'] = sub_linefeed(messages['biography'][0].strip())
+	else:
+		messages['biography'] = ''
 
 	return messages

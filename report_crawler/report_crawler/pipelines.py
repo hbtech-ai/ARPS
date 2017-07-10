@@ -9,9 +9,10 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
+import re
 import os
 import time
-from spiders.Global_function import get_localtime
+from spiders._Global_function import get_localtime
 from parser.parser import get_information
 
 SAVEDIR = '/var/lib/spider_save'
@@ -29,8 +30,10 @@ class ReportCrawlerPipeline(object):
             text += '\n'
         messages = get_information(text, item['faculty'])
 
-        if messages['title'] is None or messages['time'] is None or messages['address'] is None or messages['speaker'] is None:
+        if re.sub(u"\\s+", '', messages['title']) == '' or re.sub(u"\\s+", '', messages['time']) == '' or \
+                    re.sub(u"\\s+", '', messages['address']) == '' or re.sub(u"\\s+", '', messages['speaker']) == '':
             return
+
         dirname = os.path.join(SAVEDIR, now_time, item['faculty'][-3:], item['faculty'][:-3])
         if not os.path.exists(dirname):
             os.makedirs(dirname)
@@ -48,9 +51,9 @@ class ReportCrawlerPipeline(object):
             f.write('Speaker：\n' + messages['speaker'] + '\n' * 2)
             f.write('Organizer：\n' + messages['organizer'] + '\n' * 2)
 
-            if messages['biography'] is not None:
+            if re.sub(u"\\s+", '', messages['biography']) != '':
                 f.write('Biography：\n' + messages['biography'] + '\n' * 2)
-            if messages['abstract'] is not None:
+            if re.sub(u"\\s+", '', messages['abstract']) != '':
                 f.write('Abstract：\n' + messages['abstract'] + '\n' * 2)
 
         return
