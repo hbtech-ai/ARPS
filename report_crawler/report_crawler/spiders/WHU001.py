@@ -25,10 +25,11 @@ class WHU001_Spider(scrapy.Spider):
 				continue
 			if report_time < now_time:
 				return
-			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})
+			yield scrapy.Request(report_url, callback=self.parse_pages,
+			                     meta={'link': report_url, 'number': i + 1, 'publication': report_time})
 
 	def parse_pages(self, response):
 		messages = response.xpath("//dd[@class='info']")
 
 		return {'text': messages, 'number': response.meta['number'], 'organizer': u'武汉大学计算机学院',
-		        'faculty': self.name, 'link': response.meta['link']}
+		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication']}

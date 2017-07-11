@@ -31,10 +31,11 @@ class THU001_Spider(scrapy.Spider):
 				continue
 			if report_time < now_time:
 				return
-			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})
+			yield scrapy.Request(report_url, callback=self.parse_pages,
+			                     meta={'link': report_url, 'number': i + 1, 'publication': report_time})
 
 	def parse_pages(self, response):
 		messages = response.xpath("//div[@class='box_detail']/p")
 
 		return {'text': messages, 'number': response.meta['number'], 'organizer': u'清华大学计算机科学与技术系',
-		        'faculty': self.name, 'link': response.meta['link']}
+		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication']}

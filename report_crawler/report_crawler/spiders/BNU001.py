@@ -35,12 +35,13 @@ class BNU001_Spider(scrapy.Spider):
 				return
 
 			report_url = self.domain + message.xpath(".//a/@href").extract()[0]
-			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})
+			yield scrapy.Request(report_url, callback=self.parse_pages,
+			                     meta={'link': report_url, 'number': i + 1, 'publication': report_time})
 
 	def parse_pages(self, response):
 		messages = response.xpath("//div[@class='heading']")
 
 		return {'text': messages, 'number': response.meta['number'], 'organizer': u"北京师范大学信息科学与技术学院",
-		        'faculty': self.name, 'link': response.meta['link']}
+		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication']}
 
 

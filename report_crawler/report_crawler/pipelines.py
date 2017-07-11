@@ -12,10 +12,20 @@ sys.setdefaultencoding('utf-8')
 import re
 import os
 import time
-from spiders._Global_function import get_localtime
+import logging
+import pymongo as pm
 from parser.parser import get_information
+from spiders._Global_function import get_localtime
+from spiders._Global_variable import REPORT_SAVEDIR, LOGGING_SAVEDIR
 
-SAVEDIR = '/var/lib/spider_save'
+# Log config
+logger = logging.getLogger('Scrapy')
+logger.setLevel(logging.DEBUG)
+fh = logging.FileHandler('../logging.log')
+formatter = logging.Formatter('[%(asctime)s] - %(name)s - %(message)s')
+fh.setFormatter(formatter)
+logger.addHandler(fh)
+
 now_time = str(get_localtime(time.strftime("%Y-%m-%d", time.localtime())))
 
 
@@ -30,11 +40,15 @@ class ReportCrawlerPipeline(object):
             text += '\n'
         messages = get_information(text, item['faculty'])
 
+        # The title come from the item.
+        if item.has_key('title') and messages['title'] == '':
+            messages['title'] = item['title']
+
         if re.sub(u"\\s+", '', messages['title']) == '' or re.sub(u"\\s+", '', messages['time']) == '' or \
                     re.sub(u"\\s+", '', messages['address']) == '' or re.sub(u"\\s+", '', messages['speaker']) == '':
             return
 
-        dirname = os.path.join(SAVEDIR, now_time, item['faculty'][-3:], item['faculty'][:-3])
+        dirname = os.path.join(REPORT_SAVEDIR, now_time, item['faculty'][-3:], item['faculty'][:-3])
         if not os.path.exists(dirname):
             os.makedirs(dirname)
         filename = os.path.join(dirname, '{}.txt'.format(item['number']))
@@ -43,6 +57,7 @@ class ReportCrawlerPipeline(object):
         messages['faculty'] = item['faculty']
         messages['organizer'] = item['organizer']
         messages['link'] = item['link']
+        messages['publication'] = item['publication']
 
         with open(filename, 'w') as f:
             f.write('Title：\n' + messages['title'] + '\n' * 2)
@@ -55,6 +70,12 @@ class ReportCrawlerPipeline(object):
                 f.write('Biography：\n' + messages['biography'] + '\n' * 2)
             if re.sub(u"\\s+", '', messages['abstract']) != '':
                 f.write('Abstract：\n' + messages['abstract'] + '\n' * 2)
+                
+        # save to db
+        #self.db_save(messages)
+        
+        # write to log
+        logger.info(messages['faculty'] + ' - ' + messages['title'])
 
         return
 
@@ -66,3 +87,9 @@ class ReportCrawlerPipeline(object):
             text += '\n'
         with open('WHU001/{}.txt'.format(item['number']), 'w') as f:
             f.write(str(text))
+            
+    def db_save(self, messages):
+        conn = pm.MongoClient('localhost', 27017)
+        db = conn.get_database('report_db')
+        col = db.get_collection('reports_without_label')
+        col.insert(messages)

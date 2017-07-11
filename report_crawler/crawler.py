@@ -6,11 +6,11 @@ import time
 import shutil
 import traceback
 from report_crawler.spiders._Global_function import get_localtime
+from report_crawler.spiders._Global_variable import REPORT_SAVEDIR
 
 now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
 
-SAVEDIR = "/var/lib/spider_save"
-DATADIR = SAVEDIR + '/' + str(now_time)
+DATADIR = REPORT_SAVEDIR + '/' + str(now_time)
 
 
 class Spider_starter(object):
@@ -19,14 +19,14 @@ class Spider_starter(object):
 		self.X001()
 
 	def run_spider(self, spider_name):
-		dirname = SAVEDIR + '/' + str(now_time) + '/' + spider_name[len(spider_name)-3:] + '/' + spider_name[0:len(spider_name)-3]
+		dirname = REPORT_SAVEDIR + '/' + str(now_time) + '/' + spider_name[len(spider_name)-3:] + '/' + spider_name[0:len(spider_name)-3]
 		# If the dir is exist, clear the dir(today)
 		if os.path.exists(dirname):
 			shutil.rmtree(dirname, True)
 		# If one of the spiders has error, the print_exc() function will tell us which is criminal
 		try:
 			if not os.path.exists(DATADIR):
-				os.mkdir(DATADIR)
+				os.makedirs(DATADIR)
 			os.system('scrapy crawl ' + spider_name)
 		except:
 			traceback.print_exc()
@@ -36,10 +36,12 @@ class Spider_starter(object):
 		self.run_spider('BUAA001')
 		self.run_spider('ECNU001')
 		self.run_spider('NWPU001')
+		self.run_spider('NWSUAF001')
 		self.run_spider('SCU001')
 		self.run_spider('SDU001')
 		self.run_spider('SYSU001')
 		self.run_spider('THU001')
+		self.run_spider('UESTC001')
 		self.run_spider('WHU001')
 
 if __name__ == '__main__':

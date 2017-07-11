@@ -1,0 +1,15 @@
+
+Big-Data Analytics for Cloud Computing in Social and Cognitive Applications
+
+时间：2017年6月8日（星期四）15:00 - 16:30
+地点：北京大学理科二号楼2135室
+主办单位：北京大学信息科学技术学院
+特邀报告人：Kai Hwang (University of Southern California)
+报告摘要：
+In this talk, Dr. Hwang addresses the pervasive use of big-data analytics on smart clouds, social networks, intelligent robots, and IoT platforms. He will assess machine/deep learning models and available software tools to advance the cognitive service industry represented by Google, Microsoft, Apple, Facebook, Baidu, IBM, Huawei, etc. The ultimate goal is to achieve enhanced agility, mobility, security, and scalability of public clouds, IoT platforms, and social-media networks. 
+His talk will assess current AI programs and brain projects pursued by high-tech companies, including Google X-Lab, TensorFlow, DeepMind AlphaGo, Nvidia Digits 5 for using GPU in deep learning, IBM neuromorphic computer, and CAS/ICT Camericon project, etc. Some hidden R/D opportunities are revealed for building smart machines, delivery drones, self-driving cars, blockchains, AR/VR gears, etc. Extended cognitive applications will be explored on 5G health-care, desease detection, emotion control, and social media community services.
+报告人简介：
+Kai Hwang is a Professor of EE/CS at the University of Southern California. He received the Ph.D. from UC Berkeley. He has published extensively in computer architecture, parallel processing, cloud computing, and network security. His latest two books, entitled Cloud  Computing for Machine Learning and Cognitive Applications  (The MIT Press) and Big Data Analytics for Cloud/IoT and Cognitive Computing (Wiley, U.K.) are in press to appear in Spring of 2017.
+        An IEEE Life Fellow, he received the very-first CFC Outstanding Achievement Award in 2004 and the Lifetime Achievement Award from IEEE Cloud2012 for his pioneering work in parallel computing and distributed systems. Four of his graduated Ph.D. students were elected as IEEE Fellows and one an IBM Fellow. He has delivered four dozens of keynote or distinguished lectures in international Conferences or Research Centers. Dr. Hwang has performed consulting work with IBM, MIT Lincoln Lab, Chinese Academy of Sciences, and INRIA in France. He can be reached via his Email at USC: kaihwang@usc.edu. 
+
+

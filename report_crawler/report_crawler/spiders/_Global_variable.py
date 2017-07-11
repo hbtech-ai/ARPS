@@ -3,6 +3,9 @@
 import time
 from _Global_function import get_localtime
 
-now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
-# now_time = 20150101
+REPORT_SAVEDIR = "/var/lib/spider_save/reports"
+LOGGING_SAVEDIR = "/var/lib/spider_save/logging"
+
+# now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
+now_time = 20150101
 end_time = 20991212

@@ -39,12 +39,12 @@ def Parser(text, sub_linefeed):
 		messages['speaker'] = ''
 
 	# abstract
-	abstract_pattern = re.compile(u"(?:摘要|内容|内容简介|Bio)[：:.]([\s\S]*)(?:(?:(?:报告|主讲)人(?:简介|介绍))|Abstract)[：:.]", re.S)
+	abstract_pattern = re.compile(u"(?:摘要|内容|内容简介|Abstract)[：:.]([\s\S]*)(?:(?:(?:报告|主讲)人(?:简介|介绍))|Bio)[：:.]", re.S)
 	messages['abstract'] = re.findall(abstract_pattern, text)
 	if len(messages['abstract']) == 1:
 		messages['abstract'] = sub_linefeed(messages['abstract'][0].strip())
 	else:
-		abstract_pattern = re.compile(u"(?:摘要|内容|内容简介|Bio)[：:.]([\s\S]*)", re.S)
+		abstract_pattern = re.compile(u"(?:摘要|内容|内容简介|Abstract)[：:.]([\s\S]*)", re.S)
 		messages['abstract'] = re.findall(abstract_pattern, text)
 		if len(messages['abstract']) == 1:
 			messages['abstract'] = sub_linefeed(messages['abstract'][0].strip())
@@ -57,12 +57,12 @@ def Parser(text, sub_linefeed):
 
 
 	# biography
-	biography_pattern = re.compile(u"(?:人(?:简介|介绍)|Abstract)[：:.]([\s\S]*)(?:(?:报告|讲座|内容)(?:摘要|内容|简介)|Bio)[：:.]", re.S)
+	biography_pattern = re.compile(u"(?:人(?:简介|介绍)|Bio)[：:.]([\s\S]*)(?:(?:报告|讲座|内容)(?:摘要|内容|简介)|Abstract)[：:.]", re.S)
 	messages['biography'] = re.findall(biography_pattern, text)
 	if len(messages['biography']) == 1:
 		messages['biography'] = sub_linefeed(messages['biography'][0].strip())
 	else:
-		biography_pattern = re.compile(u"(?:人(?:简介|介绍)|Abstract)[：:.]([\s\S]*)", re.S)
+		biography_pattern = re.compile(u"(?:人(?:简介|介绍)|Bio)[：:.]([\s\S]*)", re.S)
 		messages['biography'] = re.findall(biography_pattern, text)
 		if len(messages['biography']) == 1:
 			messages['biography'] = sub_linefeed(messages['biography'][0].strip())

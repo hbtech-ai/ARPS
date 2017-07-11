@@ -1,0 +1,13 @@
+ SILICON FOR THE OPTICS-OF-EVERYTHING (O2E)
+时间：2016年11月10日（星期四）14:30
+地点：北京大学微纳电子学大厦103报告厅
+主办单位：北京大学信息科学技术学院
+特邀报告人：姜培（Patrick Yin Chiang）
+报告摘要：
+Big data, internet-of-things, cloud computing, deep learning, autonomous vehicles… All of these cloud-computing applications require exponentially increasing bandwidth, resulting in the explosive growth in optical networking.  For these optical I/O, the microchips and silicon photonics inside are critical innovations, as they directly affect the cost, size, power, bandwidth, scalability, and manufacturability. In this talk, I will describe the cross-disciplinary IC design in my Integrated Photonics group at Fudan University, exploring the frontiers of datacenter interconnect using optoelectronics and silicon photonics: (1) 100G microring-WDM Si-photonics (ISSCC-2013, ISSCC-2015); (2) 50G-PAM4 (OFC-2016, OFC-2017); (3) CMOS-Based 25G Laser Drivers / Receivers (JSSC-2015, SSC-2016).
+报告人简介：
+Patrick Yin Chiang received the B.S. degree in electrical engineering and computer sciences from the University of California, Berkeley, and the M.S. and Ph.D. degrees in electrical engineering from Stanford University. He is CTO and a co-founder of PhotonIC Technologies, based in Shanghai, China. He is also a 1000-Talents Young Professor at Fudan University, and a tenured professor (on-leave) from Oregon State University, USA. He is the recipient of a 2010 Department of Energy Early CAREER award and a 2012 NSF-CAREER award, for energy-efficient interconnects and robust near-threshold computing. He has published more than 130 conference/journal publications, including 10 ISSCC papers.
+
+
+
+
