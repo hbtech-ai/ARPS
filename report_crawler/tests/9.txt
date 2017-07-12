@@ -1,0 +1,9 @@
+
+                    
+题目：MECAT: an ultra-fast mapping, error correction and de novo assembly tool for single-molecule sequencing reads
+报告人:Feng Luo, School of Computing, Clemson University
+地点: 6月4日,星期天，上午9点，升华后楼215
+摘要:The high computational cost of current assembly methods for the long, noisy single molecular sequencing (SMS) reads has prevented them from assembling large genomes. We introduce an ultra-fast alignment method based on a novel global alignment score. For large human SMS data, our method is 7X faster than MHAP for pairwise alignment and 15X faster than BLASR for reference mapping. We develop a Mapping, Error Correction and de novo Assembly Tool (MECAT) by integrating our new alignment and error correction methods, with Canu. MECAT is capable of producing high quality de novo assembly of large genome from SMS reads with low computational cost. MECAT produces reference-quality assemblies of Saccharomyces cerevisiae, Arabidopsis thaliana, Drosophila melanogaster and reconstructs the human CHM1 genome with 15% longer NG50 in only 7600 CPU core hours using 54X SMS reads and a Chinese Han genome in 19200 CPU core hours using 102X SMS reads.
+简介：
+Dr. Feng Luo currently is an associate professor of School of Computing, Clemson University. He received his PhD degree in computer science from University of Texas at Dallas, 2004. He was a Post-doctorial senior research associate at Department of Pathology of University of Texas Southwestern Medical Center at Dallas. His research interests are big data analytics, bioinformatics, medical informatics, data mining, machine learning and distributed computing. Currently, he is focusing on data intensive bioinformatics, big data analytics algorithm and system, social media data analysis, computational genomics and glycomics, disease diagnosis. He has published 40 journal and 24 conference papers in these areas.
+                

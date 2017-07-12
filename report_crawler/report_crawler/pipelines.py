@@ -15,13 +15,13 @@ import time
 import logging
 import pymongo as pm
 from parser.parser import get_information
-from spiders._Global_function import get_localtime
-from spiders._Global_variable import REPORT_SAVEDIR, LOGGING_SAVEDIR
+from spiders.__Global_function import get_localtime
+from spiders.__Global_variable import REPORT_SAVEDIR, LOGGING_SAVEDIR
 
 # Log config
 logger = logging.getLogger('Scrapy')
 logger.setLevel(logging.DEBUG)
-fh = logging.FileHandler('../logging.log')
+fh = logging.FileHandler(os.path.join(LOGGING_SAVEDIR, 'logging.log'))
 formatter = logging.Formatter('[%(asctime)s] - %(name)s - %(message)s')
 fh.setFormatter(formatter)
 logger.addHandler(fh)
@@ -85,7 +85,7 @@ class ReportCrawlerPipeline(object):
             for each in message.xpath(".//text()").extract():
                 text += each
             text += '\n'
-        with open('WHU001/{}.txt'.format(item['number']), 'w') as f:
+        with open('tests/{}.txt'.format(item['number']), 'w') as f:
             f.write(str(text))
             
     def db_save(self, messages):

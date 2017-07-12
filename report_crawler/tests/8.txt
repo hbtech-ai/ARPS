@@ -1,0 +1,10 @@
+
+                    报告题目: Towards Reading Emotions
+报告时间:16:00 – 17:00, June 6, 2017
+报告地点：民主楼210
+报告人：奥卢大学赵国英副教授
+个人简介：
+Guoying Zhao (SM’12) received the Ph.D. degree in computer science from the Chinese Academy of Sciences, Beijing, China, in 2005. She is currently an Associate Professor with the Center for Machine Vision and Signal Analysis, University of Oulu, Finland, where she has been a senior researcher since 2005. In 2011, she was selected to the highly competitive Academy Research Fellow position. She has authored or co-authored more than 160 papers in journals and conferences. Her papers have currently over 5700 citations in Google Scholar (h-index 33).She has served as area chairs for FG 2017 and WACV 2017 and is associate editor for Pattern Recognition and Image and Vision Computing Journals. She has lectured tutorials at ICPR 2006, ICCV 2009, and SCIA 2013, authored/edited three books and six special issues in journals. Dr. Zhao was a Co-Chair of 12 International Workshops at ECCV, ICCV, CVPR and ACCV, and two special sessions at FG13 and FG15. Her current research interests include image and video descriptors, facial-expression and micro-expression recognition, gait analysis, dynamic-texture recognition, human motion analysis, and person identification. Her research has been reported by Finnish TV programs, newspapers and MIT Technology Review.
+报告摘要:
+Emotions are a central part of human communication, play an important role in everyday social life, and should have a key role in human-computer interactions (HCI). Emotions are complicated. Sometimes, people intentionally express their emotions to help deliver the messages and sometimes people would suppress their emotions for different reasons. This talk introduces the work towards reading emotions, by analyzing expressed facial expression, spotting and recognizing suppressed micro-expressions, and estimating bio-signals from remote cameras, and discusses the open problems in this area.
+                

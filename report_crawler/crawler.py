@@ -5,8 +5,8 @@ import os
 import time
 import shutil
 import traceback
-from report_crawler.spiders._Global_function import get_localtime
-from report_crawler.spiders._Global_variable import REPORT_SAVEDIR
+from report_crawler.spiders.__Global_function import get_localtime
+from report_crawler.spiders.__Global_variable import REPORT_SAVEDIR
 
 now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
 
@@ -34,9 +34,11 @@ class Spider_starter(object):
 	def X001(self):
 		self.run_spider('BNU001')
 		self.run_spider('BUAA001')
+		self.run_spider('CSU001')
 		self.run_spider('ECNU001')
 		self.run_spider('NWPU001')
 		self.run_spider('NWSUAF001')
+		self.run_spider('PKU001')
 		self.run_spider('SCU001')
 		self.run_spider('SDU001')
 		self.run_spider('SYSU001')
