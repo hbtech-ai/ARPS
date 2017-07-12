@@ -1,12 +1,15 @@
 
-                    
+                本讲座属学分课程，请14级本科生全体参加！
+讲座主题：容器技术介绍及云运维管理平台在DevOps方面的实践
+时间：2017年4月26日周三14:00~15:30
+地点：教6-102
+讲座企业：中兴软创
+讲师：葛正义  技术委员会云运维管理平台 高级设计师
+讲师简介：现任中兴软创技术委员会委员，云运维管理平台高级设计师，负责云运维管理平台的技术方案和技术原型的设计工作，主要研究方向是云平台、容器技术及DevOps
  
-报告题目：Big Data Analysis and Mining in Microbiome
-报告时间：5月31日上午10:00
-报告地点：校本部升华后楼215
-报告人：美国Drexel大学胡小华(Xiaohua Tony Hu)教授
-Abstract:
-We know little about the microbial world. Microbiome sequencing (i.e. metagenome, 16s rRNA) extracts DNA directly from a microbial environment without culturing any species. Recently, huge amount of data are generated from many micorbiome projects such as Human Microbiome Project (HMP), Metagenomics of the Human Intestinal Tract (MetaHIT), et al. Analyzing these data will help us to better understand the function and structure of microbial community of human body, earth and other environmental eco-systems. However, the huge data volume, the complexity of microbial community and the intricate data properties have created a lot of opportunities and challenges for data analysis and mining. For example, it is estimate that in the microbial eco-system of human gut, there are about 1000 kinds of bacteria with 10 billion bacteria and more than 4 million genes in more than 6000 orthologous gene family. The challenges are due to the complex properties of microbiome: large-scale, complicated, diversity, correlation, composition, hierarchy, incompleteness etc. Current microbiomes data analysis methods seldom consider these data properties and often make some assumptions such as linear, Euclidean space, metric-space, continue data type, which conflict with the true data properties. For example, some similarities are non-metric because the prevalent existence of some species; and the interactions among species and environment are complex in high order. Thus it is urgent to develop novel computational methods to overcome these assumptions and consider the microbiome data properties in the analysis procedure. In this talk, we will discuss some computational methods to analyze and visualize microbiome big data. Our studies are focusing on 1) novel machine learning and computational technologies for dimension reduction and visualization of microbiome data based on non-Euclidean spaces (manifold learning) to discover nonlinear intrinsic features and patterns in these data to overcome the linear assumptions, 2) novel statistical methods for variable selection in microbiome data by integrating group information among variables.
-Xiaohua Tony Huis a full professor and the founding director of thedata mining and bioinformatics labat the College of Computing and Informatics. He is also serving as the founding Co-Director of the NSF Center (I/U CRC) on Visual and Decision Informatics (NSF CVDI), IEEE Computer Society Bioinformatics and Biomedicine Steering Committee Chair, and IEEE Computer Society Big Data Steering Committee Chair. He joined Drexel University in 2002. He founded theInternational Journal of Data Mining and Bioinformatics(SCI indexed) in 2006. Earlier, he worked as a research scientist in the world-leading R&D centers such as Nortel Research Center, and Verizon Lab (the former GTE labs). In 2001, he founded the DMW Software in Silicon Valley, California. He has a lot of experience and expertise to convert original ideas into research prototypes, and eventually into commercial products, many of his research ideas have been integrated into commercial products and applications in data mining fraud detection, database marketing.
-Tony’s current research interests are in data/text/web mining, big data, bioinformatics, information retrieval and information extraction, social network analysis, healthcare informatics, rough set theory and application. He has published more than 270 peer-reviewed research papers in various journals, conferences and books He has obtained more thanUS$8.5 millionresearch grants in the past 10 years as PI or Co-PI (PIs of 9 NSF grants). He has graduated 19 Ph.D. students from 2006 to 2017 and is currently supervising 9 Ph.D. students.
-                
+讲座简介：1、进行容器引擎DOCKER的介绍，包括如何使用Docker打包自己的应用到一个可移植的容器中，然后发布到任何流行的Linux机器上，以实现虚拟化、微服务化；
+2、进行Docker容器集群管理系统KUBERNETES简介；
+3、介绍中兴软创云运维管理平台ZCM及其在DevOps方面的实践经验。
+ 
+除14级全体本科生参加外，也欢迎其他感兴趣同学旁听！
+            

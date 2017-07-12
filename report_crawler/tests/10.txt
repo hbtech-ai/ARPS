@@ -1,15 +1,12 @@
 
-                     
-报告题目：Structural Information Theory: Principles for Distinguishing Order From Disorder
-报告时间：6月2日上午8:00
-报告地点：校本部升华后楼215
-报告人：中科院软件所李昂生教授
-报告摘要： 
-In 1953, Shannon proposed the question of the existence of a structural theory of information that supports the analysis of communication networks. Brooks in 2003 proposed the quantification of structural information as one of the three great challenges in computer science.
-Li and Pan 2016 proposed for the first time a metric to define the information embedded in a physical system. Given a graph G and a natural number K, the K-dimensional structural information of G is defined to be the minimum overall number of bits required to determine the K-dimensional code of the vertex that is accessible from random walk with stationary distribution in G.  The K-dimensional structural information provides the principle for completely detecting the natural or true structure which consists of the rules, regulations and orders of the graphs, for fully distinguishing the order from disorder in a structured noisy data, and for analyzing communication systems,  solving both the Brooks challenge and the Shannon's problem and opening up new directions. The K-dimensional structural information is also the first metric of dynamical complexity of networks, measuring the complexity of interactions, communications, operations and even evolution of networks. The metric satisfies a number of fundamental properties, including additivity, locality, robustness, local and incremental computability etc.  The metric of the structural information allows us to build a new theory, that is, the structural information theory. The theory has applications or potential applications in a wide range of disciplines. In this talk, I will introduce this new theory and its applications.
- 
-报告人简介： 
-Angsheng Li is a research professor of Institute of Software, Chinese Academy of Sciences. He was born in 1964. He got bachelor in Mathematics in Yunnan Normal University in 1984, and ph D in 1993 in Institute of Software, Chinese Academy of Sciences. He has been working for the Institute of Software, Chinese Academy of Sciences since 1993 after he finished his ph D. From 1998 to 2002, he was a visitor and research fellow in the University of Leeds, UK, working with Professor Barry Cooper (an academic descendant of Alan Turing) in Computability Theory. In 2003, he was awarded the Distinguished Young Investigator award of the National Natural Science Foundation of China. In 2008, he was selected by the Hundred Talent Program of Chinese Academy of Sciences. From 2008 to 2009, he was a visiting scientist in Computer Science Department, Cornell University, US, working with Professor Juris Hartmanis (the founder of Computational Complexity Theory). His research areas include Computability Theory, Computational Theory, Network Theory and Information Science. His current interests focus on network algorithms, and network information theory.
- 
-
-                
+                本讲座属学分课程，请14级本科生全体参加！
+讲座主题：更美好的全联接世界
+时间：2017年5月10日14:00~15:30
+地点：J6-102
+讲座企业：华为南研所
+讲师：燕颢  交换机与企业网关 高级人力资源经理
+讲师简介：2006年入职华为，目前是交换机与企业网关HR。入职华为后从事过软件开发、版本管理、团队管理、对研发领域和产品都有深入了解。
+讲座简介：
+系统介绍华为EC-IOT解决方案，包括电力物联网、工业物联网、车联网和成熟照明物联网解决方案。
+除14级全体本科生参加外，也欢迎其他感兴趣同学旁听！
+            

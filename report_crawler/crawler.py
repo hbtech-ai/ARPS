@@ -32,19 +32,22 @@ class Spider_starter(object):
 			traceback.print_exc()
 
 	def X001(self):
-		self.run_spider('BNU001')
-		self.run_spider('BUAA001')
-		self.run_spider('CSU001')
-		self.run_spider('ECNU001')
-		self.run_spider('NWPU001')
-		self.run_spider('NWSUAF001')
-		self.run_spider('PKU001')
-		self.run_spider('SCU001')
-		self.run_spider('SDU001')
-		self.run_spider('SYSU001')
-		self.run_spider('THU001')
-		self.run_spider('UESTC001')
-		self.run_spider('WHU001')
+
+		spider_list = {
+			'B': ['BNU001', 'BUAA001'],
+			'C': ['CSU001'],
+			'E': ['ECNU001'],
+			'N': ['NWPU001', 'NWSUAF001'],
+			'P': ['PKU001'],
+			'S': ['SCU001', 'SDU001', 'SEU001', 'SYSU001'],
+			'T': ['THU001'],
+			'U': ['UESTC001'],
+			'W': ['WHU001']
+		}
+
+		for key in spider_list.keys():
+			for spider in spider_list[key]:
+				self.run_spider(spider)
 
 if __name__ == '__main__':
 	starter = Spider_starter()

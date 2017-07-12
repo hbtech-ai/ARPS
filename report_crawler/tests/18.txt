@@ -1,7 +1,0 @@
-
-                    报告时间：4月7号（星期五）上午9:00 - 10:30
-报告地点：中南大学校本部民主楼小礼堂
-报告题目：Evolutionary Computation for Dynamic Optimisation Problems
-报告简介：Evolutionary Computation (EC) encapsulates a class of stochastic optimisation algorithms, which are inspired by principles from natural and biological evolution. EC has been widely used for optimisation problems in many fields. Traditionally, EC methods have been applied for solving static problems. However, many real world problems are dynamic optimisation problems (DOPs), which are ‬
-杨圣祥教授简介：1999年获东北大学博士学位。1999-2012年，分别在英国King's College London（伦敦国王学院），University of Leicester（莱斯特大学）和Brunel University（布鲁内尔大学）工作。现任英国De Montfort University（德蒙福特大学）计算机科学与信息学院教授和计算智能研究中心主任，湖南省“芙蓉学者计划”和北京市第十二批“海聚工程”入选专家。杨教授长期从事计算智能理论、方法及应用研究，在计算智能方法、进化计算求解动态优化问题、智能网络优化等方面的研究做出了突出贡献，其研究工作得到英国工程和物理科学基金会、英国皇家工程学会、英国皇家学会、欧盟以及工业界的大力资助，先后承担了20余项科研基金项目，总金额达200万英镑。出版英文编著2部，编辑国际会议论文集7部,发表论文220多篇,其中SCI期刊论文60余篇,包括IEEE汇刊长文近30篇。据Google Scholar统计，杨教授的h-index为39，总引用超过5600次。他应邀担任8种国际刊物的副主编或编委，担任国际大会程序委员会主席和分会主席30余次和国际会议程序委员会委员90多次，做国际会议大会报告或专题报告10次，并担任IEEE计算智能协会进化计算技术委员会和智能系统应用技术委员会委员，IEEE计算智能协会进化计算技术委员会动态和不确定环境下的进化计算专家组主席，和IEEE计算智能协会智能系统应用技术委员会智能网络系统专家组创始主席。
-                

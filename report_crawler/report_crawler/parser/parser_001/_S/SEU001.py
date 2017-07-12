@@ -1,30 +1,7 @@
 # -*- coding:utf-8 -*-
-
 import re
 
-
-def sub_linefeed(text):
-	sub_text = ''
-	for line in text.splitlines():
-		line = line.rstrip()
-		if line != '':
-			line += '\n'
-		sub_text += line
-	return sub_text
-
-
-def connect_messages(messages, mode):
-	text = ''
-	if mode == 'start':
-		for message in messages[1:]:
-			text += message.strip()
-	else:
-		for message in messages[:-1]:
-			text += message.strip()
-	return text
-
-
-def get_information(text):
+def Parser(text, sub_linefeed):
 	text = text.decode('utf-8')
 	messages = {}
 
@@ -81,18 +58,4 @@ def get_information(text):
 	if re.search(u"讲座简介[ ]{0,}[：:.]|除[0-9]*级全体本科生|欢迎参加", messages['biography']) is not None:
 		messages['biography'] = re.sub(u"(讲座简介[ ]{0,}[：:.]|除[0-9]*级全体本科生|欢迎参加)([\s\S]*)", '', messages['biography'])
 
-	print messages['biography']
 	return messages
-
-
-f = open('12.txt', 'r').read()
-dict = get_information(f)
-print f
-
-
-# from html.parser import HTMLParser
-# html_parser = HTMLParser()
-# s = '&lt;abc&gt;&nbsp;'
-# txt = html_parser.unescape(s)
-# print(txt)
-
