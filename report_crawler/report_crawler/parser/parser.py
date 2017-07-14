@@ -2,9 +2,9 @@
 from parser_001._B import BNU001, BUAA001
 from parser_001._C import CSU001
 from parser_001._E import ECNU001
-from parser_001._N import NWPU001, NWSUAF001
+from parser_001._N import NKU001, NWPU001, NWSUAF001
 from parser_001._P import PKU001
-from parser_001._S import SCU001, SDU001, SEU001, SYSU001
+from parser_001._S import SCU001, SDU001, SEU001, SWU001, SYSU001
 from parser_001._T import THU001
 from parser_001._U import UESTC001
 from parser_001._W import WHU001
@@ -30,6 +30,8 @@ def _001(text, school_name):
 		messages = CSU001.Parser(text, sub_linefeed)
 	elif school_name == 'ECNU':
 		messages = ECNU001.Parser(text, sub_linefeed)
+	elif school_name == 'NKU':
+		messages = NKU001.Parser(text, sub_linefeed)
 	elif school_name == 'NWPU':
 		messages = NWPU001.Parser(text, sub_linefeed)
 	elif school_name == 'NWSUAF':
@@ -42,6 +44,8 @@ def _001(text, school_name):
 		messages = SDU001.Parser(text, sub_linefeed)
 	elif school_name == 'SEU':
 		messages = SEU001.Parser(text, sub_linefeed)
+	elif school_name == 'SWU':
+		messages = SWU001.Parser(text, sub_linefeed)
 	elif school_name == 'SYSU':
 		messages = SYSU001.Parser(text, sub_linefeed)
 	elif school_name == 'THU':

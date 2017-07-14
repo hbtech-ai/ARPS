@@ -15,7 +15,7 @@ import time
 import logging
 import pymongo as pm
 from parser.parser import get_information
-from spiders.__Global_function import get_localtime
+from spiders.__Global_function import get_localtime, startTime
 from spiders.__Global_variable import REPORT_SAVEDIR, LOGGING_SAVEDIR
 
 # Log config
@@ -58,6 +58,12 @@ class ReportCrawlerPipeline(object):
         messages['organizer'] = item['organizer']
         messages['link'] = item['link']
         messages['publication'] = item['publication']
+
+        # get report start time
+        reportTime = startTime(messages['publication'])
+        messages['startTime'] = reportTime.get_time(messages['time'])
+        if messages['startTime'] == None:
+            messages['startTime'] = ''
 
         with open(filename, 'w') as f:
             f.write('Title：\n' + messages['title'] + '\n' * 2)
