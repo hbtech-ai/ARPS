@@ -32,5 +32,6 @@ class BUAA001_Spider(scrapy.Spider):
 		messages = response.xpath("//div[@class='article_content_div']")
 
 		return {'text': messages, 'number': response.meta['number'], 'organizer': u"北京航空航天大学计算机学院",
-		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication']}
+		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication'],
+		        'location': u"华北:北京市"}
 

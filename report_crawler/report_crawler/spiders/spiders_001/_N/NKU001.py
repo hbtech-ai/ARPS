@@ -32,4 +32,5 @@ class NKU001_Spider(scrapy.Spider):
 		messages = response.xpath("//span[@id='lblContent']")
 
 		return {'text': messages, 'number': response.meta['number'], 'organizer': u'南开大学计算机与控制工程学院',
-		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication']}
+		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication'],
+		        'location': u"华北:天津市"}

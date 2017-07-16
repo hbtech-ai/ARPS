@@ -1,21 +1,17 @@
 
-                本讲座属学分课程，请14级本科生全体参加！
-讲座主题：发挥所长，成就精彩职业生涯
-时间：2017年5月31日14:00~15:30
-地点：J6-102
-讲座企业：南京九明企业管理咨询有限公司
-讲师：曾鑫 首席顾问
-讲师简介：曾鑫老师是国际注册管理咨询师，南京九明企业管理咨询有限公司首席顾问，南京生命智树企业管理咨询有限公司职业生涯指导专家。1989年毕业于南京大学商学院；1999年起从事管理咨询事业，主持过100多个管理咨询与培训项目；期间曾在企业集团担任过人力资源总监等职。曾鑫老师咨询服务过的著名企业有：苏宁电器、苏源信息、银城地产、玄武园林、江苏盐业、中国银行新港支行、兰诗国际学生服饰、苏中药业、天勤集团、黑牡丹建设、卡弗汽车、海宁水务、泰禾光电等企业。曾鑫老师培训训练的特点是：理论与实践相结合；用实际工作中的体验去引导学员；注重工作技能的训练；热情洋溢，乐于分享和贡献。
-讲座简介：
-本讲座透过几个案例和关键词，引导学员思考职业生涯中的具体问题，并给出方法：
-1、如何理解他人和自己
-2、如何发挥所长，做出有效贡献，帮助他人
-3、如何不断成长，达成理想
-讲座的特点：
-不说教，只启发，教方法，给工具。
-讲座的收获：
-1、提醒自己早做准备
-2、掌握如何进行职业生涯思考的方法
-3、认识自己，理解自己，增强信心
-除14级全体本科生参加外，也欢迎其他感兴趣同学旁听！
-            
+有幸邀请到美国刘小白老师为我院师生作学术报告，
+题目：From  2D Image Recognition to 3D Scene  Reconstruction: A   Restricted Turing Machine
+时间：2017年6月15日（周四）下午3：00
+地点：学院205多媒体教室
+请我院相关专业的老师并通知自己所带研究生积极参加！
+
+Title:  From 2D Image Recognition to 3D Scene Reconstruction: A Restricted Turing Machine
+Presenter:   Dr. Xiaobai Liu, Assistant Professor of Computer Science, San Diego State University
+Abstract:
+Computer Vision aims to answer two types of questions - what and where - that involve 2D Image Recognition and 3D Scene Reconstruction, respectively. This talk will cover several studies for solving these two tasks, either separately or jointly. It includes four major parts. Firstly, I will present an attributed grammar model for simultaneous 2D recognition and 3D reconstruction from single view, which achieved state-of-the-art scene reconstruction results on several public benchmarks.  Next, I will introduce how this unified framework can be applied to solve a number of novel problems, most of them are based on moving camera platforms (e.g. Robots). Thirdly, I will demonstrate a vision-based intelligent system, i.e. Turing Machine, which is capable of understanding large-scale videos, like human beings, and answering written questions. Last, I will discuss a few research directions that are potentially valuable in both academy and industry.
+Biography: 
+
+Dr. Xiaobai Liu  is working as an Assistant Professor of Computer Science in the San Diego State University (SDSU). From June 2011 to August 2015, he worked as a Postdoctoral Researcher in the Department of Statistics, University of California at Los Angeles (UCLA) He received his Ph.D from the Hua-Zhong University of Science and Technology, Wuhan, China. His research interests fall in the intersection of computer vision, machine learning and multimedia computing. He ever published more than 30 peer-reviewed articles in top conferences (CVPR, ICCV, etc.) and leading journals (PAMI, etc.), for most of which he was the leading author. He has been recognized by a number of awards, including the Outstanding PhD Thesis Award by the China Computer Federation (CCF), and the Best Paper Award by ACM Computing Review.  He is actively working as Technical Committee Member or Reviewer for most of the Conferences and Journals in his fields.  He serves as the General Chair of the AAAI’2017 Workshop on Artificial Intelligence for Automated and Connected Vehicles and the Chair of the ACM Multimedia Workshop on Visual Analysis for Smart and Connected Communities. 
+ 
+
+

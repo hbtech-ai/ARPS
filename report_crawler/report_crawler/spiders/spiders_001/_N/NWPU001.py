@@ -33,4 +33,5 @@ class NPU001_Spider(scrapy.Spider):
 		messages = response.xpath("//div[@id='vsb_content']")
 
 		return {'text': messages, 'number': response.meta['number'], 'organizer': u'西北工业大学计算机学院',
-		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication']}
+		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication'],
+		        'location': u"西北:陕西省-西安市"}

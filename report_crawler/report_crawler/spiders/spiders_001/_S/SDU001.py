@@ -37,4 +37,5 @@ class SUD001_Spider(scrapy.Spider):
 			messages = response.xpath("//div[@class='newsContent']")[1].xpath(".//div")
 
 		return {'text': messages, 'number': response.meta['number'], 'organizer': u'山东大学计算机科学与技术学院',
-		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication']}
+		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication'],
+		        'location': u"华东:山东省-济南市"}

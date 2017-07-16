@@ -29,4 +29,5 @@ class THU001_Spider(scrapy.Spider):
 		messages = response.xpath("//div[@class='box_detail']/p")
 
 		return {'text': messages, 'number': response.meta['number'], 'organizer': u'清华大学计算机科学与技术系',
-		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication']}
+		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication'],
+		        'location': u"华北:北京市"}

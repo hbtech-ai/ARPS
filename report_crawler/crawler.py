@@ -37,12 +37,13 @@ class Spider_starter(object):
 			'B': ['BNU001', 'BUAA001'],
 			'C': ['CSU001'],
 			'E': ['ECNU001'],
-			'N': ['NKU001', 'NWPU001', 'NWSUAF001'],
+			'N': ['NKU001', 'NWSUAF001'],
 			'P': ['PKU001'],
-			'S': ['SCU001', 'SDU001', 'SEU001', 'SWU001', 'SYSU001'],
+			'S': ['SCU001', 'SDU001', 'SEU001', 'SUDA001', 'SWJTU001', 'SWU001', 'SYSU001'],
 			'T': ['THU001'],
 			'U': ['UESTC001'],
-			'W': ['WHU001']
+			'W': ['WHU001'],
+			'Z': ['ZZU001']
 		}
 
 		for key in spider_list.keys():

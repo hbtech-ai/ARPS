@@ -31,5 +31,6 @@ class SEU001_Spider(scrapy.Spider):
 	def parse_pages(self, response):
 		messages = response.xpath("//div[@class='notice-content']")
 
-		return {'text': messages, 'number': response.meta['number'], 'organizer': u'中南大学计算机科学与工程学院',
-		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication']}
+		return {'text': messages, 'number': response.meta['number'], 'organizer': u'东南大学计算机科学与工程学院',
+		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication'],
+		        'location': u"华东:江苏省-南京市"}

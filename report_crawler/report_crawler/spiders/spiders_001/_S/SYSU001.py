@@ -28,4 +28,5 @@ class SYSU001_Spider(scrapy.Spider):
 		messages = response.xpath("//div[@class='field-items']")
 
 		return {'text': messages, 'number': response.meta['number'], 'organizer': u'中山大学计算机学院',
-		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication']}
+		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication'],
+		        'location': u"华南:广东省-广州市"}

@@ -29,5 +29,6 @@ class ECNU001_Spider(scrapy.Spider):
 		messages = response.xpath("//span[contains(@class, 'content')]/p")
 
 		return {'text': messages, 'number': response.meta['number'], 'organizer': u'华东师范大学大学计算机科学技术系',
-		        'faculty': self.name, 'link': response.meta['link'], 'publication': report_time}
+		        'faculty': self.name, 'link': response.meta['link'], 'publication': report_time,
+		        'location': u"华东:上海市"}
 

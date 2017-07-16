@@ -26,4 +26,5 @@ class CSU001_Spider(scrapy.Spider):
 		messages = response.xpath("//div[@class='article-right-middle']")
 
 		return {'text': messages, 'number': response.meta['number'], 'organizer': u"中南大学大学信息科学与工程学院",
-		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication']}
+		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication'],
+		        'location': u"华中:湖南省-长沙市"}

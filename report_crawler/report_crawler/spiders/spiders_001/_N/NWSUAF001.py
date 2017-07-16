@@ -27,4 +27,5 @@ class SYSU001_Spider(scrapy.Spider):
         messages = response.xpath("//div[@class='article_content']/p")
 
         return {'text': messages, 'number': response.meta['number'], 'organizer': u'西北农林科技大学信息工程学院',
-                'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication']}
+                'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication'],
+                'location': u"西北:陕西省-杨凌市"}

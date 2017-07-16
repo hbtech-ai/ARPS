@@ -28,4 +28,5 @@ class WHU001_Spider(scrapy.Spider):
 		messages = response.xpath("//dd[@class='info']")
 
 		return {'text': messages, 'number': response.meta['number'], 'organizer': u'武汉大学计算机学院',
-		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication']}
+		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication'],
+		        'location': u"华中:湖北省-武汉市"}

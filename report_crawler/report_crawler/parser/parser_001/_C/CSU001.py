@@ -38,7 +38,7 @@ def Parser(text, sub_linefeed):
 		messages['speaker'] = ''
 
 	# abstract
-	abstract_pattern = re.compile(u"(?:(?:摘要)|(?:内容)|(?:Abstract))[ ]{0,}[：:.]([\s\S]*)", re.S)
+	abstract_pattern = re.compile(u"(?:(?:摘要)|(?:内容)|(?:Abstract))[ ]*[：:.]([\s\S]*)", re.S)
 	messages['abstract'] = re.findall(abstract_pattern, text)
 	if len(messages['abstract']) == 1:
 		messages['abstract'] = sub_linefeed(messages['abstract'][0].strip())

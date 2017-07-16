@@ -12,11 +12,11 @@ def get_localtime(times):
 
 	date = times.split('-')
 	if len(date) == 3:
-		year, month, day = date
+		year, month, day = date[0].strip(), date[1].strip(), date[2].strip()
 		if len(year) != 4:
 			year = time.strftime("%Y", time.localtime())[:2] + year
 	else:
-		month, day = date
+		month, day = date[0].strip(), date[1].strip()
 		year = time.strftime("%Y", time.localtime())
 
 	time_number = int(year) * 10000 + int(month) * 100 + int(day)
@@ -58,7 +58,7 @@ class startTime():
 	# day
 	def get_day(self, text):
 
-		day = re.search(u"[0-9]*(?=(日|号))", text)
+		day = re.search(u"[0-9]*[ ]*(?=(日|号))", text)
 
 		if day is not None:
 			day = day.group()
@@ -71,7 +71,7 @@ class startTime():
 
 	# month
 	def get_month(self, text, day):
-		month = re.search(u"[0-9]*(?=月)", text)
+		month = re.search(u"[0-9]*[ ]*(?=月)", text)
 		if month is not None:
 			month = month.group()
 		else:
@@ -87,7 +87,7 @@ class startTime():
 
 	# year
 	def get_year(self, text, day, month):
-		year = re.search(u"[0-9]*(?=年)", text)
+		year = re.search(u"[0-9]*[ ]*(?=年)", text)
 		if year is not None:
 			year = "20" + year.group() if len(year.group().strip()) < 4 else year.group()
 		elif day is not None and month is not None:
@@ -115,7 +115,7 @@ class startTime():
 				else:
 					start_time = None
 			else:
-				weekday = re.findall(u"(?:星期|周)(一|二|三|四|五|六|七|日|天|末|[\d])", text)
+				weekday = re.findall(u"(?:星期|周)(?:[ ])*(一|二|三|四|五|六|七|日|天|末|[\d])", text)
 				if len(weekday) != 0:
 					weekday = weekday[0]
 					if re.sub(u"\\s+", '', weekday) != '':

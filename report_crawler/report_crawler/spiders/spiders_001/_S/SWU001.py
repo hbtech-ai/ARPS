@@ -28,4 +28,5 @@ class SWU001_Spider(scrapy.Spider):
 		messages = response.xpath("//div[@class='news-detail']")
 
 		return {'text': messages, 'number': response.meta['number'], 'organizer': u'西南大学计算机与信息科学学院',
-		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication']}
+		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication'],
+		        'location': u"西南:重庆市"}
