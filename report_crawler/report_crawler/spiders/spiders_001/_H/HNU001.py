@@ -27,6 +27,6 @@ class HNU001_Spider(scrapy.Spider):
 	def parse_pages(self, response):
 		messages = response.xpath("//div[@class='content-1']")
 
-		return {'text': messages, 'number': response.meta['number'], 'organizer': u"电子科技大学计算机科学与工程学院",
+		return {'text': messages, 'number': response.meta['number'], 'organizer': u"湖南大学大学信息科学与工程学院",
 		        'faculty': self.name, 'link': response.meta['link'], 'publication': response.meta['publication'],
-		        'location': u"西南:四川省-成都市", 'title': response.meta['title']}
+		        'location': u"华中:湖南省-长沙市", 'title': response.meta['title']}
