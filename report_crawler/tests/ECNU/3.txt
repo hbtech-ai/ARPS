@@ -1,0 +1,30 @@
+Report time：
+20170616
+
+Title：
+Network-based Approaches to Large-Scale Biomedical Data Integration and Data Mining
+
+
+Time：
+6月16日（周五）15:00—16:00
+
+
+Address：
+中北校区理科大楼B816室
+
+
+Speaker：
+Jane Zheng (郑慧如) 教授 (UlsterUniversity,UK)
+
+
+Organizer：
+华东师范大学大学计算机科学技术系
+
+Biography：
+郑慧如博士，现任英国阿尔斯特大学计算机与工程学院教授，IEEE高级会员，英国高等教育学院资深会士（Fellow），爱尔兰IEEE的指导委员会成员，计算机科学研究所的核心成员。 主要从事数据挖掘、机器学习和人工智能的研究工作，特别侧重于在生物医学信息学的应用。2000年以来，在国际期刊及会议上发表200多篇研究论文 。近年来主持或承担多项欧盟基金项目、英国工程物理科学基金委项目（EPSRC）、英国技术策略部（TSB）项目、英国健康服务部（NHS）项目、北爱尔兰投资（Invest NI）研发基金 以及教育部和工业界资助项目。目前在研欧盟项目四项，英国全球研究策略启动项目，教育部和卫生部合作及工业界资助项目各一项。 郑慧如教授还担任担任6家国际期刊编辑委员会执行编辑或编委，IEEE Trans及BMC等多个特刊编辑等，在十多个IEEE国际会议和国际研讨会上担任会议主席。
+
+
+Abstract：
+In this talk, Prof. Zheng will highlight her recent work in the development of network-based approaches to large scale biomedical data integration. The application to integrated metagenomics analysis and disease subtypes identification will be presented. The presentation will conclude with the discussion of challenges and opportunities in multiscale computing and multiplex networks.
+
+

@@ -1,0 +1,30 @@
+Report time：
+20170704
+
+Title：
+Performance Assessment of High-dimensional Variable Identification 
+
+
+Time：
+2017年7月4日上午10：20～11：20 
+
+
+Address：
+主楼B1-501 
+
+
+Speaker：
+谢敏革 Rutgers University  ASA Fellow 
+
+
+Organizer：
+电子科技大学计算机科学与工程学院
+
+Biography：
+谢敏革，University of Illinois at Urbana-Champaign统计学博士，现为Rutgers University教授，ASA Fellow。谢敏革教授在统计学领域开展研究，在各类统计、信息论领域顶尖期刊发表学术论文70多篇。据Google Scholar统计，候选人的学术期刊论文，共被他人引用超过1500多次。2011年被评为美国统计学会会士（ASA Fellow）。
+
+
+Abstract：
+Learnings from different data sources can often be fused together to yield more powerful findings than those from individual sources alone.  This talk presents a new fusion learning approach, named “iFusion”, for drawing efficient individual inference by fusing leanings from relevant data sources. This iFusion is robust for handling heterogeneity arising from diverse sources in big data, and is ideally suited for goal-directed applications such as precision medicine. Specifically, iFusion summarizes individual inference information in confidence distributions (CDs), then adaptively forms a clique of individuals that bear relevance to the target individual, and finally combines the CDs from those relevant individuals and draws inference for the target individual from the combined CD. In essence, iFusion “borrows strength” from relevant individuals to improve efficiency while retaining inference validity. Computationally, iFusion is parallel in nature and scales up well to big data in comparison with existing competitors. Examples in simulations and real applications in financial forecasting are presented. (Joint work with Jieli Shen and Regina Liu)
+
+

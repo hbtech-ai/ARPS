@@ -1,0 +1,36 @@
+Report time：
+20170329
+
+Title：
+Energy-efficient Computing for GPU-Accelerated Supercomputers and Data Centres
+
+	
+
+Time：
+3月29日14:30
+
+	
+
+Address：
+B404
+
+	
+
+Speaker：
+褚晓文教授
+
+	
+
+Organizer：
+武汉大学计算机学院
+
+Biography：
+Dr. Chu received his B.Eng. Degree in Computer Science from Tsinghua University in 1999, and the Ph.D. in Computer Science from the Hong Kong University of Science and Technology in 2003. Since then, he has been working at the Department of Computer Science, Hong Kong Baptist University where he is currently a tenured Associate Professor. He is also serving as the director of High Performance Cluster Computing Centre at Hong Kong Baptist University, which hosts one of the largest supercomputers in Hong Kong.
+	Dr. Chu’s research interests include GPU Computing, Parallel and Distributed Systems, and Wireless Networks. His research works in the area of GPU Computing include performance modelling, parallel algorithm design, application optimization, and energy efficiency. He has published more than 140 research papers, and his current Google H-index is 30. He has received more than HK$15 million of research grants from HK RGC, HK ITF, HKBU, Huawei, and Nvidia. Dr. Chu is serving as an Associate Editor of IEEE Access and IEEE Internet of Things Journal.
+	
+
+Abstract：
+Graphic Processing Units (GPUs) have become a pervasive hardware accelerator to speed up a broad range of time-critical applications. Besides those famous GPU-accelerated Top-500 supercomputers, many commercial cloud service providers also start to deploy large-scale hybrid CPU-GPU clusters to offer on-demand GPU computing services. Despite their attractive computing capabilities, GPUs consume significantly more power than contemporary CPUs and generate high electricity cost. Therefore, improving the energy-efficiency of such hybrid clusters has recently become an important research problem.
+	In this talk, I will begin with an overview of energy-efficient computing for GPU-accelerated clusters, including dynamic voltage and frequency scaling (DVFS), task mapping and scheduling. I will then describe three related projects that contribute to the objective of improving energy-efficiency. The first project tries to understand the impact of GPU DVFS on energy saving. The second one tries to understand the impact of GPU DVFS on application performance. The last one aims to design DVFS-aware scheduling algorithms for GPU-accelerated cluster.
+	
+

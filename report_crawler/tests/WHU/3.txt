@@ -1,0 +1,30 @@
+Report time：
+20170425
+
+Title：
+面向5G的多媒体通信关键技术展望
+
+
+Time：
+2017年4月25日10:00
+
+
+Address：
+B403
+
+
+Speaker：
+周亮 教授
+
+
+Organizer：
+武汉大学计算机学院
+
+Biography：
+周亮，男，南京邮电大学教授、博士生导师，主要研究方向是多媒体通信。近年来在IEEE/ACM期刊上发表多篇学术论文，申请中国专利17项，法国专利3项，德国专利1项。现担任IEEE Transactions on Multimedia, IEEE Transactions on Circuits and Systems for Video Technology等期刊的编委（Associate Editor）,以及IEEE Multimedia Magazine, IEEE Systems Journal等期刊多媒体通信专刊的特邀编委(Guest Editor)。成功举办有关通信与网络的国际学术会议、研讨会7次，先后提交多媒体通信标准议案6份。周亮教授先后获得中组部“青年千人计划”、国家“优秀青年基金”、江苏省“特聘教授”、江苏省“十大杰出青年”等荣誉称号。
+
+
+Abstract：
+随着用户需求的驱动，在未来十年的时间里，联网设备的数量将增加100倍，移动数据流量将有1000倍的增长。在这样的背景下，5G除了要满足超高速的传输需求外，提升用户体验首次正式纳入到评价体系中来。本报告将围绕5G中多媒体通信的两大关键技术：Device-to-Device (D2D)通信与面向用户体验(QoE)的多媒体服务，汇报团队最新的研究进展，并对未来研究方向进行展望。
+
+

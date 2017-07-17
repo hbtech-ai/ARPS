@@ -1,0 +1,31 @@
+Report time：
+20160425
+
+Title：
+Human Factors Engineering and Human Reliability  Analysis in Healthcare and Energy
+
+
+Time：
+2016年4月25日，晚18:00-21:00
+
+
+Address：
+为民楼320会议室
+
+
+
+Speaker：
+Kang Li （Rutgers University）
+
+
+Organizer：
+北京航空航天大学计算机学院
+
+Biography：
+Kang Li, is an assistant professor of the Department of Industrial and Systems Engineering at Rutgers University and an adjunct assistant professor of the Department of Orthopaedics at Rutgers New Jersey Medical School.  He is also a graduate faculty member of the Departments of Biomedical Engineering and Computer Science at Rutgers University. He is the director of the Human and Healthcare Engineering Lab and serves as an associate editor of IEEE Transactions on Human-Machine Systems.  One of his research interests is human factors engineering and human reliability analysis.  His research has been funded by NSF, NIH, Qatar National Research Fund, Robert Wood Johnson Foundation, Charles and Johanna Busch Memorial Fund, and Rutgers Faculty Research Grant and Research Council Grant programs
+
+
+Abstract：
+More and more advanced technologies have been introduced to modern societies and the complex and large socio-technical systems are commons now.   Since human errors may lead to adverse consequences or even catastrophes when the human is a crucial part of these systems, human factors engineering and human reliability analysis have become very important in China.  This presentation summarize the recent applications of human factors engineering human reliability analysis in healthcare and energy infrastructure industries and demonstrates how human factors engineering human reliability analysis benefit these safety-critical industries.
+
+

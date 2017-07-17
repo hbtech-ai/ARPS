@@ -1,0 +1,24 @@
+Report time：
+20170112
+
+Title：
+Automated Embolic Signal Detection Using Adaptive Gain Control and Classification Using ANFIS
+
+Time：
+2017年1月12日9:30
+
+Address：
+学院会议室（望江校区基础教学大楼B314） 
+
+Speaker：
+Charturong Tantibundhit（Associate Professor，Department of Electrical and Computer Engineering，Thammasat University，Thailand）
+
+Organizer：
+四川大学计算机学院
+
+Biography：
+Charturong Tantibundhit received the B.E. degree in electrical engineering from Kasetsart University, Bangkok, Thailand, in 1996 and the M.S. degree in information science and the Ph.D. degree in electrical engineering from University of Pittsburgh, Pittsburgh, PA, in 2001 and 2006, respectively. Since 2006, he has been with Thammasat University, Pathum Thani, Thailand, where he is currently an Associate Professor at the Department of Electrical and Computer Engineering. He is head of Speech and Language Technology Cluster, Center of Excellence in Intelligence Informatics, Speech and Language Technology, and Service Innovation (CILS). From 2007 to 2008, he was a Postdoctoral Researcher at the Signal Processing and Speech Communication Laboratory (SPSC), Graz University of Technology, Graz, Austria. His research interests include Pattern Recognition and Machine Learning for Medical Diagnosis, Cochlear Implants and Lexical Tone, Signal Processing and Speech Enhancement. Dr. Tantibundhit received the IEEE ICASSP Student Paper Contest Winners in 2006 and received the ASEA-UNINET Postdoctoral Scholarship Award, Austria, in 2007. 
+
+Abstract：
+This work proposes an automated system for real-time high-accuracy detection of cerebral embolic signals (ES) to couple with transcranial Doppler ultrasound (TCD) devices in diagnosing a risk of stroke. The algorithm employs Adaptive Gain Control (AGC) approach to capture suspected ESs in real-time. Then, Adaptive Wavelet Packet Transform (AWPT) and Fast Fourier Transform (FFT) are used to extract from them features most efficiently representing ES, which determined by Sequential Feature Selection technique. Extracted feature vectors from the suspected ESs are later determined whether they are of an ES or non-ES interval by Adaptive Neuro-Fuzzy Inference System (ANFIS) based classifier. The effectiveness of the developed system was evaluated over 19 subjects going under procedures generating solid and gaseous emboli. The results showed that the proposed algorithm yielded 91.5% sensitivity, 90.0% specificity, and 90.5% accuracy. Cross validations were performed 20 times on both the proposed algorithm and the High Dimensional Model Representation (HDMR) method (the most efficient algorithm to date) and their performances were compared. Paired t-test difference showed that the proposed algorithm outperformed the HDMR method, in both detection accuracy [t(19, 0.01) = 132.2073, p < 0.01] and sensitivity [t(19, 0.01) = 131.4676, p < 0.01] at 90.0% specificity, suggesting promising potential as a medical support system in ES monitoring of various clinical settings. 
+

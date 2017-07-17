@@ -1,0 +1,24 @@
+Report time：
+20170504
+
+Title：
+Data-driven Cybersecurity: Methodology and Applications
+
+Time：
+2017年5月4日（星期四）下午3:10-，5月5日（星期五）上午8:30-
+
+Address：
+西南大学计算机与信息科学学院0114学术报告厅
+
+Speaker：
+张军，博士后，澳大利亚迪肯大学
+
+Organizer：
+西南大学计算机与信息科学学院
+
+Biography：
+张军博士正领导一个博士研究生为主体的20人团队，主要从事空间安全、大数据分析及隐私保护等的研究与开发。张军获全额博士奖学金在澳大利亚卧龙岗大学（澳洲计算机专业排名第一）学习3年并获得博士学位。由于优异的学术成果，张军于2009年获得中国优秀海外留学生奖（全球一共300名）。他如今是迪肯空间安全研究中心的教务长。在顶级国际期刊和会议上已经发表学术论文70余篇，比如IEEE Transactions on Parallel and Distributed Systems (TPDS)、IEEE Transactions on Information Forensics and Security (TIFS)、IEEE Transactions on Dependable and Secure Computing（TDSC）。
+
+Abstract：
+Cybersecurity has been becoming an important and attractive area for research and industry. This talk will firstly introduce a new research methodology, data-driven cybersecurity. Then, two data-driven cybersecurity applications, Internet traffic identification and Twitter spam detection, will be presented. In the application of Internet traffic identification, we will talk about a recent research progress, correlation based statistical traffic classification. In the application of twitter spam detection, we will introduce a recent work, real-time detection of drifted twitter spam. 
+

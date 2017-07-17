@@ -1,0 +1,31 @@
+Report time：
+20170602
+
+Title：
+When CSI Meets Public WiFi: Inferring Your Mobile Phone Password via WiFi Signals
+
+
+Time：
+2017年6月2日（周五）上午10:00-11:00
+
+
+Address：
+西南交通大学犀浦校区X9454
+
+
+Speaker：
+朱浩瑾教授（青年长江）
+
+
+Organizer：
+西南交通大学大学计算机科学与技术学院
+
+Biography：
+朱浩瑾，加拿大滑铁卢大学博士，上海交通大学计算机科学与工程系教授。主要研究领域为移动网络安全与隐私保护。已发表SCI期刊38篇，其中包括：IEEE JSAC, IEEE TDSC, IEEE TPDS, IEEE TMC, IEEE TWC等IEEE 期刊27篇；已发表（或录用）国际会议65篇，其中包括：顶级会议ACM CCS, ACM MOBICOM, ACM MOBIHOC, IEEE INFOCOM, IEEE ICDCS, ACM ASIACCS等。Google Scholar总引用次数3842余次，H-index 32，SCI他引420次。3篇论文入选ESI高引用论文(Highly Cited Papers)及热点论文，2篇论文被推荐为IEEE最佳阅读论文。相关研究成果受到Communications of ACM, The Register, The TechNews, Techworm, SPIEGEL ONLINE, Silicon, Fossbytes, Bitport等多个国际媒体的广泛报道。
+2014年被授予“IEEE通信学会亚太区杰出青年学者奖”（每年亚洲地区评6人，IEEE通信学会亚太地区35岁以下青年研究人员的最高荣誉）;2015年，研究工作入选“2014年中国百篇最具影响国际学术论文”；指导的硕士研究生入选“2014年上海市优秀硕士研究生论文”； 荣获多项国际会议（IEEE ICC, Chinacom, GLOBECOM）最佳论文奖或提名奖。获上海交通大学青年岗位能手（2014）及教学新秀（2016）等校级奖励；入选2016年教育部“长江学者奖励计划”青年学者项目。
+
+
+Abstract：
+In this study, we present WindTalker, a novel and practical keystroke inference framework that allows an attacker to infer the sensitive keystrokes on a mobile device through WiFi-based side-channel information. WindTalker is motivated from the observation that keystrokes on mobile devices will lead to different hand coverage and the finger motions, which will introduce a unique interference to the multi-path signals and can be reflected by the channel state information (CSI). The adversary can exploit the strong correlation between the CSI fluctuation and the keystrokes to infer the user’s number input. WindTalker presents a novel approach to collect the target’s CSI data by deploying a public WiFi hotspot. Compared with the previous keystroke inference approach, WindTalker neither deploys external devices close to the target device nor compromises the target device. Instead, it utilizes the public WiFi to collect user’s CSI data, which is easy-to-deploy and difficult-to-detect. In addition, it jointly analyzes the traffic and the CSI to launch the keystroke inference only for the sensitive period where password entering occurs. WindTalker can be launched without the requirement of visually seeing the smart phone user’s input process, backside motion, or installing any malware on the tablet. We implemented Windtalker on several mobile phones and performed a detailed case study to evaluate the practicality of the password inference towards Alipay, the largest mobile payment platform in the world. The evaluation results show that the attacker can recover the key with a high successful rate.
+
+

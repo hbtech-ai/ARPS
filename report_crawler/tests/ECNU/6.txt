@@ -1,0 +1,31 @@
+Report time：
+20170420
+
+Title：
+Population-based Search Methods for Multimodal Optimization
+
+
+Time：
+2017年4月20日10:00-11:00点  
+
+
+Address：
+中山北路3663号华东师范大学理科大楼B816室
+
+
+
+Speaker：
+唐珂博士，中国科学技术大学教授
+
+
+Organizer：
+华东师范大学大学计算机科学技术系
+
+Biography：
+唐珂，中国科学技术大学教授，博士生导师。在IEEE TEVC、IEEE TNNLS、IEEE JSAC、IEEE TKDE、IJCAI、AAAI发表论文100余篇，曾获教育部新世纪优秀人才、英国皇家学会牛顿高级学者、教育部自然科学二等奖、中国电子学会自然科学一等奖。担任IEEE Transactions on Evolutionary Computation等期刊编委。主要研究方向为演化计算与机器学习，包括大规模演化计算、演化多峰优化、演化学习等。
+
+
+Abstract：
+The past two decades have witnessed the emerging needs of solving, particularly using computational approaches, hard optimization problems that affect our daily life. Most of these hard problems are multimodal ones and sometimes with non-differentiable objective functions. Population-based heuristic search methods are one of the leading approaches that can address such problems. This talk will first illustrate some multimodal optimization problems. Then, recent progresses on population-based search methods will be presented with successful applications.
+
+

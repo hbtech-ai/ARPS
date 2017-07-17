@@ -1,0 +1,24 @@
+Report time：
+20170612
+
+Title：
+Understanding the Shape of Data with Topological Data Analysis and Visualization
+
+Time：
+2017年6月12日14:30
+
+Address：
+学院报告厅（望江校区基础教学大楼B302） 
+
+Speaker：
+Bei Wang（Assistant Professor, School of Computing, Scientific Computing and Imaging Institute, University of Utah, US）
+
+Organizer：
+四川大学计算机学院
+
+Biography：
+Dr. Bei Wang is an assistant professor at the School of Computing, and a faculty member at the Scientific Computing and Imaging (SCI) Institute, University of Utah.She received her Ph.D. in Computer Science from Duke University. Her research expertise lies in the theoretical, algorithmic, and application aspects of data analysis and data visualization, with a focus on topological techniques. Her research interests include theoretical and algorithmic aspects in computational topology and computational geometry; foundations, techniques and applications for scientific data analysis and visualization; computational biology and bioinformatics; machine learning; and data mining. 
+
+Abstract：
+Large and complex data arise in many application domains, such as nuclear engineering, combustion simulation, weather prediction and brain imaging. However, their explosive growth in size and complexity is more than enough to exhaust our ability to apprehend them directly. Topological techniques which capture the "shape of data" have the potential to extract salient features and to provide robust descriptions of large and complex data. My research develops pertinent theoretical and algorithmic advancements in topological data analysis, and establishes their applications in simplifying and accelerating the visualization and analysis of large, complex data sets. In particular, in this talk I will describe a novel visualization framework for the simplification and visualization of vector fields, based on the topological notion of robustness that quantifies their structural stability. I will also discuss several other representative areas in my research that focus on developing novel, scalable and mathematically rigorous ways to rethink about complex forms of data, from high-dimensional point clouds, to large-scale networks and multivariate ensembles. 
+

@@ -1,0 +1,24 @@
+Report time：
+20170322
+
+Title：
+Lazy evaluation for efficient dimensional OLAP-like analysis on Big Data
+
+Time：
+2017年3月22日10:00
+
+Address：
+学院会议室（望江校区基础教学大楼B314） 
+
+Speaker：
+Jyrki Nummenmaa（Professor，University of Tampere, Finland） 
+
+Organizer：
+四川大学计算机学院
+
+Biography：
+Mr. Jyrki Nummenmaa is a full professor at the School of Information Sciences of University of Tampere, Finland and the head of Research Center for Information and Systems (CIS) at the University of Tampere. Prof. Nummenmaa has done research on algorithms, databases, software development, business intelligence, data mining, open data, and Big Data, with traffic data analysis as a particular application area. He has extensive administrational experience and practical experience from the past working 3,5 years in software companies in Tampere area. He has visited the University of Edinburgh for one year while doing his PhD research and lately several times universities in China and in 2004 University of Chile for 2 months. He has over 70 peer-reviewed scientific publications in scientific journals and conferences. 
+
+Abstract：
+Traditional OLAP cubes are rigid, and different analysis demands different cubes. Also, the cubes contain values which may never be needed. As the data sets go bigger, it is completely unreasonable to pre-compute such dimensional structures in advance. We propose an approach where just estimates for the values may initially be computed, and once the user has chosen the cells of interest, only they are computed. To enable this, give formulas that enable the identification of the necessary data tuples, given the user selection of the cells of the dimensional model of interest. We have implemented the method and performed further analysis of it. 
+

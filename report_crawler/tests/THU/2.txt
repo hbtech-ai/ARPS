@@ -1,0 +1,32 @@
+Report time：
+20161014
+
+Title：
+A Framework for Enabling User Preference Profiling through Wi-Fi Logs
+
+
+Time：
+10:00am, Oct 14, 2016
+
+
+Address：
+FIT 1-315
+
+
+Speaker：
+Liangbi Chen, Chair Professor of Computer Science and Vice President at Asia University, Taiwan
+
+
+Organizer：
+清华大学计算机科学与技术系
+
+Biography：
+L.P. Chen received a Ph.D. degree in computer engineering from the University of Southern California, and is currently Chair Professor of Computer Science and Vice President at Asia University, Taiwan. He also holds joint faculty positions at National Tsing Hua University and Academia Sinica, Taiwan. Dr. Chen was a Professor of the Department of Computer Science, National Tsing Hua University; a Member of Technical Staff at Bell Communications Research, New Jersey; and a Research Scientist at Unisys, California.
+Dr. Chen organized IEEE Data Engineering Conference in Taiwan, and continuously serves in various capacities for international conferences and journals. He was invited to deliver a speech in the NSF-sponsored Inaugural International Symposium on Music Information Retrieval, and the IEEE Shannon Lecture Series, USA.
+Dr. Chen’s current research interests include big data analytics, top-k queries, and multimedia information retrieval. He has published more than 250 papers in renowned international journals and conference proceedings, and was a visiting scholar at Beijing Tsinghua University, Kyoto University, Stanford University, King’s College London, Boston University, Harvard University, and Hong Kong University of Science and Technology.
+
+
+Abstract：
+Wi-Fi logs from a mobile device can be used to discover user preferences. The core ideas are two folds. First, every Wi-Fi access point is with a network name, normally a human-readable string, called SSID (Service Set Identifier). Since SSIDs are often with semantics, from which we can infer the place where the user stayed. Second, a Wi-Fi log is produced when the user is near a Wi-Fi access point. A high frequency of a consecutively observed SSID implies a long stay duration at a place. Wi-Fi logs are essentially of various information types and with noises. How to assess the information types, eliminate irrelevant information, and clean up the noises within partial-informative SSIDs are therefore keys for profiling user preferences through Wi-Fi logs. In this talk, a data cleaning and information enrichment framework for enabling user preference understanding through collected Wi-Fi logs will be presented.
+
+

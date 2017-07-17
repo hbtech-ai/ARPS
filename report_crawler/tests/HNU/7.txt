@@ -1,0 +1,25 @@
+Report time：
+20170608
+
+Title：
+Functional Credentials for Internet of Things? ABSTRACT 
+
+Time：
+2017年6 月 8 日（周四） 上午 10:00 --11:30 
+
+Address：
+软件大楼 542 报告厅
+
+Speaker：
+Sherman S. M. Chow 助理教授        Department of Information Engineering       The Chinese University of Hong Kong   
+
+Organizer：
+电子科技大学计算机科学与工程学院
+
+Biography：
+Sherman S.M. Chow joined the Department of Information Engineering at the Chinese University of Hong Kong as anassistant professor in November 2012. He was a research fellow at Department of Combinatorics and Optimization, University of Waterloo, a position he commenced after receiving his Ph.D. degree from the Courant Institute of Mathematical Sciences, New York University. He interned at NTT Research and Development (Tokyo), Microsoft Research (Redmond), and Fuji Xerox Palo Alto Laboratory.    His research interests are in Applied Cryptography, and Security and Privacy of Networks and Distributed Systems. In particular, he has published in CCS, Eurocrypt, ITCS, and NDSS. He served on the program committees of conferences on these topics including AsiaCrypt, CCS, ESORICS, Financial Crypt, ICDCS, Infocom, PKC, and SACMAT. He is a program co-chair of Security in Cloud Computing 15, ISC 14, and ProvSec 14. He also serves as an editor for IEEE Transactions of Information Forensics and Security, Intl. J. Information Security and J. of Information Security andApplications. He has received the Early Career Award 2013/14 from the Hong Kong Research Grants Council.
+
+
+Abstract：
+To ensure the authenticity and integrity, data are traditionally signed by digital signatures, which will be invalidated by any processing of the data. With the vast amount of data generated every day, it is however desirable to allow flexible processing of the signed data via applying computations or functions on them, without losing the authenticity.     Signatures can also serve as credentials for access control, which appears in many aspects of life, ranging from unlocking security gates of buildings, to virtual access of data by computer programs. With the prolific use of Internet-of-Things (IoT), everything is getting connected together. There is an emerging need for more versatile credentials to secure new application scenarios, for instance, assigning different credentials to different devices, such that they can authenticate and cooperate with each other to jointly perform some computation tasks.  To realize the above goals, we envision a general framework called functional credentials. Functional credentials allow multiple entities to (jointly) issue, combine, delegate, present, verify, escrow, and decrypt different forms of credentials, by operating on the associated “cryptographic objects” including secret keys, attributes, ciphertexts, and auxiliary data (e.g., pseudonym, expiry date, or policies for combination / delegation / revocation). Instantiating this framework with different functions can provide a spectrum of solutions for securing IoT.    This talk covers both the practical applications and theoretic foundations. I will first motivate the versatility of functional credentials by case studies on IoT, which identify the need of new credential systems. I will then formulate the definition of functional credentials. Finally, I will share some initial ideas in realizing functional credentials, and discuss the obstacles ahead. 
+

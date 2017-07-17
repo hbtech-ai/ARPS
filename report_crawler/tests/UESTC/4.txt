@@ -1,0 +1,31 @@
+Report time：
+20170706
+
+Title：
+Performance Assessment of High-dimensional Variable Identification 
+
+
+Time：
+2017年7月6日上午10：20～11：20 
+
+
+Address：
+主楼B1-501 
+
+
+Speaker：
+杨宇红 University of Minnesota,Twin Cities  IMS Fellow 
+
+
+Organizer：
+电子科技大学计算机科学与工程学院
+
+Biography：
+杨宇红，耶鲁大学统计学博士，现为明尼苏达大学双城分校教授，IMS Fellow。
+在统计学领域开展研究，在中科院JCR分区的一区期刊和CCF A类期刊上共发表论文20篇以上，各类统计、信息论、计量经济、预测领域顶尖期刊发表学术论文50多篇。据Google Scholar统计，候选人的学术期刊论文，共被他人引用超过3000多次。2010年被评为国际统计学会会士（IMS Fellow）。
+
+
+Abstract：
+One important task in statistical/machine learning is to identify the most important variables that influence the response of interest. Examples include the identification of biomarkers of a disease in medical research and choice of behavioral characteristic variables of customers for effective advertisement. Since such variable selection process is ubiquitous in data analysis, reproducibility of the statistical results demands a serious evaluation of reliability of the employed model selection method, no matter what label it may have in terms of good properties. In this work, we propose an estimation method for $F-$ and $G$-measures and prove their desirable properties of uniform consistency. This gives the data analyst a valuable tool to compare different variable selection methods based on the data at hand. Extensive simulations are conducted to show the very good finite sample performance of our approach. We further demonstrate the application of our methods using several micro-array gene expression data sets.The work is joint with Yanjia Yu and Yi Yang.
+
+

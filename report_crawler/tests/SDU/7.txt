@@ -1,0 +1,32 @@
+Report time：
+20170621
+
+Title：
+Computational challenges in top-down massspectrometry
+
+
+
+Time：
+6月21日 上午10点
+
+
+
+Address：
+教研楼3楼会议室
+
+
+
+Speaker：
+Dr. Xiaowen Liu 
+
+Organizer：
+山东大学计算机科学与技术学院
+
+Biography：
+Dr. Xiaowen Liu received his PhD degree in ComputerScience from City University of Hong Kong and did post docs at the Universityof Waterloo and the University of California, San Diego. He is currently anassistant professor at Indiana University-Purdue University Indianapolis. Hisresearch area is mass spectrometry-based computational proteomics. He developedthe first open-source software pipeline for proteoform identification usingtop-down mass spectrometry.
+
+
+Abstract：
+While the genome provides the blueprint of gene products,proteins are the bricks and mortar of biology. Mass spectrometry (MS) is thecore technology for the study of proteins, their post-translationalmodifications, and their interactions. Over the past decade, proteomics hasbeen dominated by bottom-up MS that digests proteins into fragments andanalyzes the resulting short peptides. Since information about intact proteinsis lost during digestion, recent studies advocated top-down MS that analyzesintact proteins and gives rise to many computational challenges. While top-downMS researchers have made great progress, the algorithms for interpretingtop-down MS data are still in their infancy. We describe computationalchallenges and combinatorial algorithms for the analysis of top-down MS dataand show how they enable new biological applications.
+
+

@@ -1,0 +1,34 @@
+Report time：
+20170406
+
+Title：
+Resilience Analysis of Service Oriented Collaboration Process Management Systems
+
+	
+
+Time：
+4月6日11:00
+
+	
+
+Address：
+E202
+
+	
+
+Speaker：
+Paul de Vrieze高级讲师
+
+	
+
+Organizer：
+武汉大学计算机学院
+
+Biography：
+Dr. Paul de Vrieze is a senior lecturer in the Faculty of Science and Technology (SciTech) of Bournemouth University and co-coordinator of the EU H2020 FIRST project, a 1.2 mln project Euros with 7 international partners.. Previously he was a Senior Researcher at SAP research, Switzerland, and worked as a Postdoctoral Research Fellow at CSIRO ICT Centre, Australia. He received his Ph.D. in Information Systems from Radboud University Nijmegen, The Netherlands in 2006.Dr. de Vrieze has published over 60 papers in the international journals and conferences such as Future Generation Computer Systems, International Journal of Computer Integrated Manufacturing, CoopIS, PRO-VE, etc. He is the guest editor of Service Oriented Computing and Applications (Springer). He has been general chair and program committee chair of several international conferences such as PRO-VE. He is also a regular reviewer for journals such as Future Generation Computer Systems, IEEE Transactions on Service Computing, etc. His main research interests are in enterprise information system integration, user modeling, systems modeling, semantics integration, virtual factory, and smart factory.
+	
+
+Abstract：
+Collaborative business process management allows for the automated coordination of processes involving human and computer actors. In modern economies it is increasingly needed for this coordination to be not only within organizations but also to cross organizational boundaries. The dependence on the performance of other organizations should however be limited, and the control over the own processes is required from a competitiveness perspective. The main objective of this work is to propose an evaluation model for measuring a resilience of a Service Oriented Architecture (SOA) collaborative process management system. In this talk, we explain general resilience analysis perspectives of SOA collaborative process systems, i.e. overall system perspective, individual process model perspective, individual process instance perspective, service perspective, and resource perspective. A collaborative incident and maintenance notification process system is used for illustrating our resilience analysis. Further, we discuss how to extend SOA collaborative business process management systems with resilience support.
+	
+

@@ -1,0 +1,80 @@
+Report time：
+20170605
+
+Title：
+Extreme Learning Machine for Efficient Hyperspectral Image Classification 
+
+
+	
+
+Time：
+2017年06月05日（星期一） 上午10:00 
+
+
+	
+
+Address：
+犀浦校区九教9428# 
+
+
+	主  讲  人：Prof. Jenny Q. Du 
+
+
+	                 Department of Electrical
+and Computer Engineering 
+
+
+	                 Mississippi State
+University 
+
+
+	主  持  人：信息科学与技术学院  李恒超教授 
+
+
+	
+
+Speaker：
+Dr.
+
+Organizer：
+西南交通大学大学计算机科学与技术学院
+
+Biography：
+Dr.
+Du is Bobby Shackouls Professor with the Department of Electrical and Computer
+Engineering, Mississippi State University, USA. Her research interests include hyperspectral
+remote sensing image analysis and applications, pattern recognition, and
+machine learning. Dr. Du is a Fellow of SPIE-International Society for Optics
+and Photonics. She served as Co-Chair for the Data Fusion Technical Committee
+of IEEE Geoscience and Remote Sensing Society (GRSS) in 2009–2013, and Chair
+for Remote Sensing and Mapping Technical Committee of International Association
+for Pattern Recognition (IAPR) in 2010–2014. She served as Associate Editor for IEEE Journal of Selected Topics in
+Applied Earth Observations and Remote Sensing (2011–2015), IEEE Signal Processing Letters (2012–2015), and Journal of Applied
+Remote Sensing (2014–2015). Currently, Dr. Du is the Editor-in-Chief of IEEE Journal of Selected Topics in Applied
+Earth Observations and Remote Sensing (JSTARS).
+She was the Guest Editor of several special issues published in IEEE Transactions on Geoscience and Remote
+Sensing, IEEE JSTARS, Journal of Applied Remote Sensing, Pattern Recognition Letters, and Remote Sensing.
+
+
+Abstract：
+Extreme
+learning machine (ELM) is a feedforward neural network with one hidden layer,
+which is similar to a multilayer perceptron (MLP). To reduce the complexity in
+the training process of MLP using the traditional backpropagation algorithm,
+the weights in an ELM between input and hidden layers are random variables. The
+output layer is linear, as in a radial basis function neural network (RBFNN),
+so the output weights can be easily estimated with a least squares solution.
+The computational cost of the ELM is much lower than the standard support
+vector machine (SVM), and a kernel version of the ELM (i.e., KELM) can offer
+comparable performance as the SVM. In our previous work, we investigate the
+impact of the number of hidden neurons to the performance of both ELM and KELM.
+Basically, more hidden neurons are needed if the number of training samples and
+data dimensionality are large, which results in a very large matrix inversion
+problem. To avoid handling such a large matrix, we propose to conduct band selection
+to reduce data dimensionality (i.e., the number of input neurons), thereby
+reducing network complexity. Experimental results on hyperspectral remote
+sensing images show that ELM and KELM using selected bands can yield similar or
+even better classification accuracy than the counterparts using all the
+original bands.
+	
+

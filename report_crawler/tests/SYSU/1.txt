@@ -1,0 +1,30 @@
+Report time：
+20170713
+
+Title：
+Chernoff Bound for Quantum Operations is Faithful
+
+
+Time：
+2017年7月13日(周四)
+
+
+Address：
+大学城中山大学东校区超算中心520
+
+
+Speaker：
+俞能昆 博士，悉尼科技大学
+
+
+Organizer：
+中山大学计算机学院
+
+Biography：
+俞能昆博士，2004-2008，清华大学计算机系，本科；2008-2013，清华大学计算机系，博士生；2014.1-2016.7，加拿大滑铁卢大学，博士后；2016.7至今，悉尼科技大学，博士后。研究方向为量子信息，目前已发表高水平论文多篇，包括物理学顶级期刊Physical Review Letters 四篇，信息论顶级期刊IEEE Transactions on Information Theory 三篇，计算机科学理论顶级会议STOC两篇。
+
+
+Abstract：
+We consider the problem of testing two quantum hypotheses of quantum operations in the setting of many uses where an arbitrary prior distribution is given. The concept of the Chernoff bound for quantum operations is investigated to track the minimal average probability of error of discriminating two quantum operations asymptotically. We show that the Chernoff bound is faithful in the sense that it is finite if and only if the two quantum operations can not be distinguished perfectly. More precisely, upper bounds of the Chernoff bound for quantum operations are provided. We then generalize these results to multiple Chernoff bound for quantum operations.
+
+

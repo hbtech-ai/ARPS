@@ -33,4 +33,5 @@ class PKU001_Spider(scrapy.Spider):
 		messages = response.xpath("//div[@id='Infor_Content']")
 
 		return {'text': messages, 'number': response.meta['number'], 'organizer': u"北京大学信息科学技术学院",
-		        'faculty': self.name, 'link': response.meta['link'], 'title': response.meta['name'], 'publication': response.meta['publication']}
+		        'faculty': self.name, 'link': response.meta['link'], 'title': response.meta['name'], 'publication': response.meta['publication'],
+		        'location': u"华北:北京市"}

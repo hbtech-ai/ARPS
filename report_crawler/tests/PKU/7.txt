@@ -1,0 +1,33 @@
+Report time：
+20160614
+
+Title：
+Optimizing under Abstraction with the LEAP Memory System
+
+Time：
+2016年6月14日星期二10:00am
+
+
+Address：
+理科二号楼2736室
+ 
+
+
+Speaker：
+Dr. Joel Emer
+Senior Distinguished Research Scientist, NVidiaProfessor of the Practice, MIT
+
+
+Organizer：
+北京大学信息科学技术学院
+
+Biography：
+Dr. Joel S. Emer is a Senior Distinguished Research Scientist in Nvidia's Architecture Research group. He is responsible for exploration of future architectures as well as modeling and analysis methodologies. In his spare time, he is a Professor of the Practice at MIT, where he teaches computer architecture and supervises graduate students. Prior to joining Nvidia he worked at Intel where he was an Intel Fellow and Director of Microarchitecture Research.  Even earlier, he worked at Compaq and Digital Equipment Corporation.
+Dr. Emer has held various research and advanced development positions investigating processor microarchitecture and developing performance modeling and evaluation techniques. He has made architectural contributions to a number of VAX, Alpha and X86 processors and is recognized as one of the developers of the widely employed quantitative approach to processor performance evaluation. More recently, he has been recognized for his  contributions in the advancement of simultaneous multithreading technology, processor reliability analysis, cache organization and spatial architectures.
+
+
+Abstract：
+FPGAs offer attractive power and performance for accelerating applications that originally ran on general-purpose processors. In spite of these advantages, FPGAs have been deployed in only a few, niche domains. We argue that the difficulty of programming FPGAs all but precludes their use in more general systems:  FPGA programmers are exposed to all the gory system details that software operating systems long ago abstracted away.
+In this talk, I will present the Latency-insensitive Environment for Application Programming (LEAP), an FPGA operating system built around latency-insensitive communication channels. LEAP mitigates the FPGA programming problem by providing a rich set of composable components and abstract, portable services with interfaces consistent across a variety of platforms. While high-level  FPGA abstractions improve programmability and portability, designing customized hardware that is optimized for the target application and platform remains challenging. Therefore, in this talk I will also discuss how the LEAP-generated memory subsystems address this challenge.  In specific, I will describe how we leverage the freedom of abstraction and design a resource-aware memory compiler that automatically constructs program-optimized memory hierarchies on behalf of the user.
+
+

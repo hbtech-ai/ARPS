@@ -1,0 +1,36 @@
+Report time：
+20170406
+
+Title：
+Factories of the Future: a View of EU H2020 FIRST Project
+
+	
+
+Time：
+4月6日10:00
+
+	
+
+Address：
+E202
+
+	
+
+Speaker：
+徐来高级讲师
+
+	
+
+Organizer：
+武汉大学计算机学院
+
+Biography：
+Dr. Lai Xu is a senior lecturer at the Faculty of Science and Technology (SciTech) of Bournemouth University, UK. Previously she was a Senior Researcher at SAP research, Switzerland (2008-2010), a Senior Research Scientist and a Research Leader at CSIRO ICT Centre, Australia(2006-2007), a post-doctoral researcher at the Institute of Information and Computing Sciences of the Utrecht University (2004-2006) and the Department of Computer Science of the Free University Amsterdam (2003-2004). She received her Ph.D. in Computerized Information Systems from Tilburg University in 2004. Dr. Xu has published over 100 papers in the international journals and conferences such as Information Systems, Future Generation Computer Systems, CAiSE, CoopIS, PRO-VE, etc. She is the member of steering committee of the IFIP Working Conference on Virtual Enterprises (PRO-VE). She has been general chair and program committee chair of several international conferences such as PRO-VE. She has served as program committee member in various international conferences such as: CAiSE, ICSOC, CoopIS, ICWS, SCC, WISE, etc. She is also a regular reviewer for journals such as IEEE Transactions on Service Computing, International Journal of Computer Integrated Manufacturing, International Journal of Production Research, etc.Dr. Xu is coordinator of the EU H2020 FIRST project, a 1.2 mln project Euros with 7 international partners. She has also been PIs or participated in 2 EU Integration FP7, 3 UK projects, 2 Australia National projects, 3 Dutch projects, and 7 Chinese national projects. She is an assessor for Australia Research Council (ARC). Her main research interests include BPaaS, process mashups, business process collaboration, and business process modelling, interoperability, trust and security issues in internet.
+	
+
+Abstract：
+The manufacturing industry is entering a new era in which new ICT technologies and collaboration applications are integrated with traditional manufacturing practices and processes to increase flexibility in manufacturing, mass customization, increase speed, better quality and to improve productivity. Virtual factory models needs to be created before the real factory is implemented to better explore different design options, evaluate their performance and virtual commission the automation systems thus saving time-to-production. This foundational concept to future manufacturing allows the flexible amalgamation of manufacturing resources in multiple organisations to model, simulate, test factory layouts and processes in a virtual reality environment, virtual factory design and virtual factories, finally  create the real factory in shorter time, with demand driven product lines.
+	There is a well-established body of research on virtual organisations in the services industry as well as on open product design, general service description, discovery, composition, adaption, interoperation and execution. Manufacturing assets, however, are not general (digital) services. Moreover, there are different practices and protocols in different countries. EU member states are also sponsoring national initiatives such as Industry 4.0 in Germany, the Factory of the Future in Italy, High Value Manufacturing Catapult in the UK, etc.  It is essential to ensure the exchange of data between smart machines, systems and software within a networked value chain, as product design shares with all involved parties through ‘‘virtual factory’’, a product moves into and through the ‘smart factory’, as well as to allow flexible manufacturing processes through simple ‘plug-and-play’ techniques.
+	EU H2020 FIRST project - vF Interoperation suppoRting buSiness innovaTion, provides new technology and methodologies to describe manufacturing assets; to compose and integrate existing services into collaborative virtual manufacturing processes; and to deal with evolution of changes. In this talk, we will explain the general view of virtual factory to enhance manufacturing integration through the application of advanced IT solutions, how to bring together researchers with expertise in the designing interoperability frameworks for facilitating interoperability on data/information, services and process levels respectively to lead significant outcomes of business innovations for virtual factories.
+	
+

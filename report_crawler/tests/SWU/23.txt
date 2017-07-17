@@ -1,0 +1,25 @@
+Report time：
+20170112
+
+Title：
+Model-Checking Iterated Games 
+
+Time：
+2017年1月12日（星期四）下午15:00
+
+Address：
+西南大学计信院，25教13楼1320会议室
+
+Speaker：
+王凡 教授（台湾大学） 
+
+Organizer：
+西南大学计算机与信息科学学院
+
+Biography：
+Professor Farn Wang obtained his Bachelor Degree in Electrical Engineering from National Taiwan University in 1982, his Master Degree in Computer Engineering from National Chiao-Tung University in 1984, and Ph.D. degree in Computer Sciences from The University of Texas at Austin in 1993. He worked in Academia Since from 1993 to 2002 and joined the Department of Electrical Engineering, National Taiwan University. He is interested at model-checking, software testing, strategy logics, and computing theory. He has delivered keynote/invited speeches in CTSE 2016, 1st SYNT 2012, 1st IWTS 1999, IEEE HASE 1998, 2nd AVIS 2003, and SVV 2005. He is an associate editor of FMSD (International Journal on Formal Methods for System Designs), Springer-Verlag (SCI extended) and was guest editors of IJFCS (International Journal on Foundations of Computer Science), a special issue on infinite system verification and analysis, 2003 and a special issue on ATVA 2003/2004. He was the general chairs IEEE TASE 2010 and ICTAC 2016. He was the program chairs/co-chairs of 2nd ATVA 2003, 3rd ATVA 2004, IFIP 25’th FORTE 2005, ICTAC 2016, RTCSA 1997, and RTC 1999. 
+
+Abstract：
+We propose a logic for the definition of the collaborative power of groups of agents to enforce different temporal objectives. The resulting temporal cooperation logic (TCL) extends ATL by allowing for successive definition of strategies for agents and agencies. Different to previous logics with similar aims, our extension cuts a fine line between extending the power and maintaining a low complexity: model checking TCL sentences is EXPTIME complete in the logic, and NL complete in the model. This advancement over nonelementary logics is bought by disallowing a too close entanglement between the cooperation and competition. We show how allowing such an entanglement immediately leads to a nonelementary complexity. We have implemented a model checker for the logic and shown the feasibility of model checking on a few benchmarks.
+
+

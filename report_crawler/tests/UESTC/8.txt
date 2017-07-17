@@ -1,0 +1,33 @@
+Report time：
+20170628
+
+Title：
+Personalized Trajectory Matching in Spatial Networks 
+（空间网络中的轨迹相似性匹配） 
+
+
+Time：
+2017年6月28日上午10：20～11：20 
+
+
+Address：
+主楼B1-501 
+
+
+Speaker：
+商烁    沙特阿卜杜拉国王科技大学（KAUST） 
+极限计算中心研究科学家，博士生导师 
+
+
+Organizer：
+电子科技大学计算机科学与工程学院
+
+Biography：
+商烁，沙特阿卜杜拉国王科技大学（KAUST）极限计算中心研究科学家，博士生导师，中国人民大学信息学院客座教授，大数据管理与分析方法研究北京市重点实验室主任助理。中国GIS协会理论与方法委员会委员，中国计算机学会数据库专委会委员，2016年教育部-中移动联合实验室评审专家组成员。入选北京市科技新星计划、北京市优秀人才计划及中国石油大学（北京）青年拔尖人才计划。2008年本科毕业于北京大学，2012年博士毕业于澳大利亚昆士兰大学，2012-2013在丹麦奥尔堡大学任博士后/研究助理教授，2013-2016任教于中国石油大学（北京）。研究方向包括城市计算、时空数据库、社交媒体分析等。在相关领域发表论文40余篇，含CCF A类论文15篇，所发表SCI论文影响因子之和大于40，SCI引用超过130次，Google Scholar引用超过500次。担任APWeb/WAIM 2017大会演示主席、ICDE 2013移动对象分会场主席，SIGMOD 2018、CIKM 2017程序委员会委员，并担任VLDB Journal、IEEE TKDE、ACM TIST、ACM TSAS、IEEE TITS、Geoinformatica等数据管理和数据挖掘领域顶级期刊的评审专家。
+
+
+Abstract：
+With the increasing availability of moving-object tracking data, trajectory search and matching is increasingly important. We propose and investigate a novel problem called Personalized Trajectory Matching (PTM). In contrast to conventional trajectory similarity search by spatial distance only, PTM takes into account the significance of each sample point in a query trajectory. A PTM query takes a trajectory with user specified weights for each sample point in the trajectory as its argument. It returns the trajectory in an argument data set with the highest similarity to the query trajectory. We believe that this type of query may bring significant benefits to users in many popular applications such as route planning, carpooling, friend recommendation, traffic analysis, urban computing, and location based services in general.
+PTM query processing faces two challenges: how to prune the search space during the query processing and how to schedule multiple so-called expansion centers effectively. To address these challenges, a novel two-phase search algorithm is proposed that carefully selects a set of expansion centers from the query trajectory and exploits upper and lower bounds to prune the search space in the spatial and temporal domains. An efficiency study reveals that the algorithm explores the minimum search space in both domains. Second, a heuristic search strategy based on priority ranking is developed to schedule the multiple expansion centers, which can further prune the search space and enhance the query efficiency. The performance of the PTM query is studied in extensive experiments based on real and synthetic trajectory data sets.
+
+

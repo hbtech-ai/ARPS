@@ -1,0 +1,26 @@
+Report time：
+20160927
+
+Title：
+Large Scale Image Analysis for Computational Biology
+
+
+Time：
+2016年9月27日上午10:00-11:00
+
+
+Address：
+中北校区理科大楼B714报告厅
+
+
+Speaker：
+Auguste Genovesio, PhD，法国巴黎高师
+
+
+Organizer：
+华东师范大学大学计算机科学技术系
+
+Biography：
+Auguste Genovesio leads the Scientific Center for Computational Biology at the Institute of Biology of Ecole Normale Superieure (IBENS). After a PhD conducted at the Pasteur Institute, he has led research effort in South Korea (Institute Pasteur Korea), in the USA (Broad Institute of MIT and Harvard) and now in France (IBENS). Auguste Genovesio has a background in mathematics and computer science and he is specialized in image analysis and large-scale data analysis. He has spent the last 15 years developing this type of method to quantify or demonstrate biological phenomena and actively participated in the development of high-content screening technologies. He is author of 6 patents (therapeutic targets for HIV, Anti tubercular compound and computational methods) and 55 scientific papers (in journals such as Nature, Nature methods and IEEE transaction on image processing).
+
+

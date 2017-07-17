@@ -1,0 +1,33 @@
+Report time：
+20170712
+
+Title：
+Computation and Storage in the Cloud - Understanding the Trade-offs
+
+
+Time：
+2017 年7 月12日 (周三)
+
+
+Address：
+中山大学东校区数据科学与计算机学院A201
+
+
+Speaker：
+Yun Yang（杨耘）教授，Swinburne University of Technology
+
+
+Organizer：
+中山大学计算机学院
+
+Biography：
+杨耘：澳大利亚斯威本科技大学(Swinburne University of Technology)终身教授，博导，下一代软件平台研究学术带头人
+杨耘于1992年在澳大利亚昆士兰大学获得计算机博士学位。1993年至1996在澳大利亚联邦分布式系统技术联合研究中心进行研究工作。1996年至1999年在澳大利亚迪肯大学担任讲师和高级讲师职务1999年末加入斯威本科技大学担任副教授和终身正教授职务。2001年至2004年担任信息技术系副系主任。2000年至2005年创建并发展了因特网计算和电子商务研究中心。2005年至2007年担任信息技术研究中心副主任。2008年至2010年担任信息与通信技术学院副院长。
+杨耘教授是国际知名的软件工程和云计算方面的专家。他的主要研究领域包括软件系统，大数据，云计算，工作流管理系统，服务计算。现已有5部专著，在国际会议和杂志上共发表论文超过200篇。杨耘教授作为主导师，已经指导毕业了15名博士生。同时作为项目主要负责人，领导团队完成和在近20项纵向研究课题以及和企业合作的横向课题，其中包括澳大利亚政府资助的研究课题如基于点对点计算，智能体，网格计算，以及云计算的分布式工作流管理系统，云计算环境下的大规模商业流程的执行和管理，云计算环境下的大数据数据管理，支持信息共享和信息安全的政府机构管理控制系统，云环境下的服务计算质量等。
+杨耘教授多次担任国际软件工程大会（ICSE）程序委员会委员。现为IEEE Transactions on Cloud Computing期刊编委。2015年被聘为澳大利亚大学研究质量评审委员会（ARC ERA2015）委员。
+
+
+Abstract：
+In this seminar, I shall start with a brief summary of my research center and related projects. The focus of this talk is on how to find out the minimum possible cost as benchmark for storing big data generated in (scientific) applications and how to reduce the cost of data storage with innovative strategies in the cloud. This talk will be delivered in an unconventional manner with my personal involvement and experience in conducting PhD supervision.
+
+

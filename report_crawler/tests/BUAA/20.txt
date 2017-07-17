@@ -1,0 +1,30 @@
+Report time：
+20151215
+
+Title：
+Smooth Projective Hash Functions:Definition, Applications and Extension
+
+
+Time：
+2015年12月15日   15:00 PM
+
+
+Address：
+新主楼F706
+
+
+Speaker：
+穆怡 Professor Yi Mu
+
+
+Organizer：
+北京航空航天大学计算机学院
+
+Biography：
+Professor Yi Mu received his PhD from the Australian National University in 1994. He currently is a full professor, Head of School of Computer Science and Software Engineering and the director of Centre for Computer and Information Security Research at University of Wollongong, Australia. Prior to joining University of Wollongong, he was a senior lecturer in the Department of Computing, Macquarie University. He also worked in Department of Computing and IT, University of Western Sydney as a lecturer. He has been with the University of Wollongong since 2003. His current research interest includes cryptography, network security and computer security. He has published over 350 research papers. He has served as program chair and member of program committee over 200 conferences including ACM CCS, ESORICS, ACISP, AisaCCS, etc. and is currently a member of the steering committees of AsiaCCS, CANS and ProvSec. Professor Yi Mu is the editor-in-chief of International Journal of Applied Cryptography and serves as associate editor for nine other international journals. He is a senior member of the IEEE and a member of the IACR.
+
+
+Abstract：
+Smooth Projective Hash Functions (SPHF) were introduced by Cramer and Shoup in 2002. Since then, it has been found very useful for many cryptographic applications. Interests on SPHF have been grown because of its new development and applications in many interesting areas. In this talk, SPHF will be introduced along with examples and some well-motivated applications including oblivious transfer and password-based authentication. An extension of SPHF family is also given to provide linearity and homomorphism to SPHF, which open out new applicability of SPHF. As an application of these new features, a privacy-enhanced encrypted keyword search scheme will also be discussed.
+
+

@@ -20,43 +20,44 @@ def sub_linefeed(text):
 	return sub_text
 
 
+# 匹配各种符号(包括&nbsp;): "((?![\u4e00-\u9fa5])[\W])*"
 def Filter(text, ab_sign=0):
 	# title
-	if re.search(u"(((报[ ]*告|讲[ ]*座|演[ ]*讲)*(主[ ]*题|题[ ]*目))([ (（](Title|Topic))*|Title|Topic)[）) ]*[：:.]+", text) is not None:
-		text = re.sub(u"(((报[ ]*告|讲[ ]*座|演[ ]*讲)*(主[ ]*题|题[ ]*目))([ (（](Title|Topic))*|Title|Topic)[）) ]*[：:.]+[\s\S]*", '', text)
+	if re.search(u"(((报((?![\u4e00-\u9fa5])[\W])*告|讲((?![\u4e00-\u9fa5])[\W])*座|演((?![\u4e00-\u9fa5])[\W])*讲)*(主((?![\u4e00-\u9fa5])[\W])*题|题((?![\u4e00-\u9fa5])[\W])*目|标((?![\u4e00-\u9fa5])[\W])*题))([ (（](Title|Topic))*|Title|Topic)[）) ]*[：:.]+", text) is not None:
+		text = re.sub(u"(((报((?![\u4e00-\u9fa5])[\W])*告|讲((?![\u4e00-\u9fa5])[\W])*座|演((?![\u4e00-\u9fa5])[\W])*讲)*(主((?![\u4e00-\u9fa5])[\W])*题|题((?![\u4e00-\u9fa5])[\W])*目|标((?![\u4e00-\u9fa5])[\W])*题))([ (（](Title|Topic))*|Title|Topic)[）) ]*[：:.]+[\s\S]*", '', text)
 
 	# time
-	if re.search(u"(((报[ ]*告|讲[ ]*座)*(日期及)*(时[ ]*间|日[ ]*期))([ (（]Time)*|Time)[）) ]*[：:.]+", text) is not None:
-		text = re.sub(u"(((报[ ]*告|讲[ ]*座)*(日期及)*(时[ ]*间|日[ ]*期))([ (（]Time)*|Time)[）) ]*[：:.]+[\s\S]*", '', text)
+	if re.search(u"(((报((?![\u4e00-\u9fa5])[\W])*告|讲((?![\u4e00-\u9fa5])[\W])*座)*(日期及)*(时((?![\u4e00-\u9fa5])[\W])*间|日((?![\u4e00-\u9fa5])[\W])*期))([ (（]Time)*|Time)[）) ]*[：:.]+", text) is not None:
+		text = re.sub(u"(((报((?![\u4e00-\u9fa5])[\W])*告|讲((?![\u4e00-\u9fa5])[\W])*座)*(日期及)*(时((?![\u4e00-\u9fa5])[\W])*间|日((?![\u4e00-\u9fa5])[\W])*期))([ (（]Time)*|Time)[）) ]*[：:.]+[\s\S]*", '', text)
 
 	# address
-	if re.search(u"(((报[ ]*告|讲[ ]*座)*地[ ]*点)([ (（](Address|Venue|Location|Meeting Room|Place))*|Address|Venue|Location|Meeting Room|Place)[）) ]*[：:.]+", text) is not None:
-		text = re.sub(u"(((报[ ]*告|讲[ ]*座)*地[ ]*点)([ (（](Address|Venue|Location|Meeting Room|Place))*|Address|Venue|Location|Meeting Room|Place)[）) ]*[：:.]+[\s\S]*", '', text)
+	if re.search(u"(((报((?![\u4e00-\u9fa5])[\W])*告|讲((?![\u4e00-\u9fa5])[\W])*座)*地((?![\u4e00-\u9fa5])[\W])*点)([ (（](Address|Venue|Location|Meeting Room|Place))*|Address|Venue|Location|Meeting Room|Place)[）) ]*[：:.]+", text) is not None:
+		text = re.sub(u"(((报((?![\u4e00-\u9fa5])[\W])*告|讲((?![\u4e00-\u9fa5])[\W])*座)*地((?![\u4e00-\u9fa5])[\W])*点)([ (（](Address|Venue|Location|Meeting Room|Place))*|Address|Venue|Location|Meeting Room|Place)[）) ]*[：:.]+[\s\S]*", '', text)
 
 	# speaker
-	if re.search(u"(((讲[ ]*授|演[ ]*讲|报[ ]*告|主[ ]*讲)[ ]*(人|专[ ]*家|嘉[ ]*宾)|讲[ ]*(师|者)|主[ ]*讲)([ (（]Speaker)*|Speaker)[）) ]*[：:.]+", text) is not None:
-		text = re.sub(u"(((讲[ ]*授|演[ ]*讲|报[ ]*告|主[ ]*讲)[ ]*(人|专[ ]*家|嘉[ ]*宾)|讲[ ]*(师|者)|主[ ]*讲)([ (（]Speaker)*|Speaker)[）) ]*[：:.]+[\s\S]*", '', text)
+	if re.search(u"(((讲((?![\u4e00-\u9fa5])[\W])*授|演((?![\u4e00-\u9fa5])[\W])*讲|报((?![\u4e00-\u9fa5])[\W])*告|主((?![\u4e00-\u9fa5])[\W])*讲)((?![\u4e00-\u9fa5])[\W])*(人|专((?![\u4e00-\u9fa5])[\W])*家|嘉((?![\u4e00-\u9fa5])[\W])*宾)|讲((?![\u4e00-\u9fa5])[\W])*(师|者)|主((?![\u4e00-\u9fa5])[\W])*讲)([ (（]Speaker)*|Speaker)[）) ]*[：:.]+", text) is not None:
+		text = re.sub(u"(((讲((?![\u4e00-\u9fa5])[\W])*授|演((?![\u4e00-\u9fa5])[\W])*讲|报((?![\u4e00-\u9fa5])[\W])*告|主((?![\u4e00-\u9fa5])[\W])*讲)((?![\u4e00-\u9fa5])[\W])*(人|专((?![\u4e00-\u9fa5])[\W])*家|嘉((?![\u4e00-\u9fa5])[\W])*宾)|讲((?![\u4e00-\u9fa5])[\W])*(师|者)|主((?![\u4e00-\u9fa5])[\W])*讲)([ (（]Speaker)*|Speaker)[）) ]*[：:.]+[\s\S]*", '', text)
 
 	# abstract
-	if re.search(u"((((报告|讲座|内容)*(摘要|内容|提要))|(报告|讲座|内容)简介)([ (（]Abstract)*|Abstract)[）) ]*[：:.]+", text) is not None:
-		text = re.sub(u"((((报告|讲座|内容)*(摘要|内容|提要))|(报告|讲座|内容)简介)([ (（]Abstract)*|Abstract)[）) ]*[：:.]+[\s\S]*", '', text)
+	if re.search(u"(((报告|讲座|内容)*(主要)*(摘要|内容|提要)|(报告|讲座|内容)简介)([ (（]Abstract)*|Abstract)[）) ]*[：:.]+", text) is not None:
+		text = re.sub(u"(((报告|讲座|内容)*(主要)*(摘要|内容|提要)|(报告|讲座|内容)简介)([ (（]Abstract)*|Abstract)[）) ]*[：:.]+[\s\S]*", '', text)
 
 	# biography
 	if re.search(u"((((讲座|主讲|报告|演讲|讲)(者|人|师|专家|嘉宾)|个人)|.*?(教授|院士|博士))(及其)*(简介|介绍|简历)([ (（](Biography|Bio|Short-Biography|Short bio))*|Biography|Bio|Short-Biography|Short bio)[）) ]*[：:.]+", text) is not None:
 		text = re.sub(u"((((讲座|主讲|报告|演讲|讲)(者|人|师|专家|嘉宾)|个人)|.*?(教授|院士|博士))(及其)*(简介|介绍|简历)([ (（](Biography|Bio|Short-Biography|Short bio))*|Biography|Bio|Short-Biography|Short bio)[）) ]*[：:.]+[\s\S]*", '', text)
 
 	# chairman
-	if re.search(u"主[ ]*持[ ]*(人)*([ (（]Chair)*[）) ]*[：:.]+", text) is not None:
-		text = re.sub(u"主[ ]*持[ ]*(人)*([ (（]Chair)*[）) ]*[：:.]+[\s\S]*", '', text)
+	if re.search(u"主((?![\u4e00-\u9fa5])[\W])*持((?![\u4e00-\u9fa5])[\W])*(人)*([ (（]Chair)*[）) ]*[：:.]+", text) is not None:
+		text = re.sub(u"主((?![\u4e00-\u9fa5])[\W])*持((?![\u4e00-\u9fa5])[\W])*(人)*([ (（]Chair)*[）) ]*[：:.]+[\s\S]*", '', text)
 
 	# invitee
-	if re.search(u"邀[ ]*请[ ]*人([ (（]Invitee)*[）) ]*[：:.]+", text) is not None:
-		text = re.sub(u"邀[ ]*请[ ]*人([ (（]Invitee)*[）) ]*[：:.]+[\s\S]*", '', text)
+	if re.search(u"邀((?![\u4e00-\u9fa5])[\W])*请((?![\u4e00-\u9fa5])[\W])*人([ (（]Invitee)*[）) ]*[：:.]+", text) is not None:
+		text = re.sub(u"邀((?![\u4e00-\u9fa5])[\W])*请((?![\u4e00-\u9fa5])[\W])*人([ (（]Invitee)*[）) ]*[：:.]+[\s\S]*", '', text)
 
 	# others
 	if re.search(u"欢迎(各位|广大)", text) is not None:
 		text = re.sub(u"欢迎(各位|广大)[\s\S]*", '', text)
-	if re.search(u"报[ ]*告[ ]*([一二三四五]|[\d])[ ]*[：:.]*", text) is not None:
+	if re.search(u"报((?![\u4e00-\u9fa5])[\W])*告((?![\u4e00-\u9fa5])[\W])*([一二三四五]|[\d])[ ]*[：:.]*", text) is not None:
 		text = re.sub(u"报[ ]*告[ ]*([一二三四五]|[\d])[ ]*[：:.]*[\s\S]*", '', text)
 	if re.search(u"查看次数[：:.]", text) is not None:
 		text = re.sub(u"查看次数[：:.][\s\S]*", '', text)
@@ -77,7 +78,7 @@ def Parser(text):
 	messages = {}
 
 	# title
-	title_pattern = re.compile(u"(?:(?:(?:报[ ]*告|讲[ ]*座|演[ ]*讲)*(?:主[ ]*题|题[ ]*目))|Title|Topic)[）) ]*[：:.]+([\s\S]*)", re.S)
+	title_pattern = re.compile(u"(?:(?:(?:报(?:(?![\u4e00-\u9fa5])[\W])*告|讲(?:(?![\u4e00-\u9fa5])[\W])*座|演(?:(?![\u4e00-\u9fa5])[\W])*讲)*(?:主(?:(?![\u4e00-\u9fa5])[\W])*题|题(?:(?![\u4e00-\u9fa5])[\W])*目|标(?:(?![\u4e00-\u9fa5])[\W])*题))|Title|Topic)[）) ]*[：:.]+([\s\S]*)", re.S)
 	messages['title'] = re.findall(title_pattern, text)
 	if len(messages['title']) == 1:
 		messages['title'] = messages['title'][0].strip()
@@ -86,34 +87,34 @@ def Parser(text):
 	messages['title'] = Filter(messages['title'], 0)
 
 	# time
-	time_pattern = re.compile(u"(?:(?:(?:报[ ]*告|讲[ ]*座)*(?:时[ ]*间|日[ ]*期))|Time)[）) ]*[：:.]+([\s\S]*)", re.S)
+	time_pattern = re.compile(u"(?:(?:(?:报(?:(?![\u4e00-\u9fa5])[\W])*告|讲(?:(?![\u4e00-\u9fa5])[\W])*座)*(?:时(?:(?![\u4e00-\u9fa5])[\W])*间|日(?:(?![\u4e00-\u9fa5])[\W])*期))|Time)[）) ]*[：:.]+([\s\S]*)", re.S)
 	messages['time'] = re.findall(time_pattern, text)
 	if len(messages['time']) == 1:
 		messages['time'] = messages['time'][0].strip()
 	else:
 		messages['time'] = ''
-	messages['time'] = Filter(messages['time'], 0)
+	messages['time'] = re.sub(u"[?!@#$&]", ' ', Filter(messages['time'], 0))
 
 	# address
-	address_pattern = re.compile(u"(?:(?:(?:报[ ]*告|讲[ ]*座){0,1}地[ ]*点)|Address|Venue|Location|Meeting Room|Place)[）) ]*[：:.]+([\s\S]*)", re.S)
+	address_pattern = re.compile(u"(?:(?:(?:报(?:(?![\u4e00-\u9fa5])[\W])*告|讲(?:(?![\u4e00-\u9fa5])[\W])*座){0,1}地(?:(?![\u4e00-\u9fa5])[\W])*点)|Address|Venue|Location|Meeting Room|Place)[）) ]*[：:.]+([\s\S]*)", re.S)
 	messages['address'] = re.findall(address_pattern, text)
 	if len(messages['address']) == 1:
 		messages['address'] = messages['address'][0].strip()
 	else:
 		messages['address'] = ''
-	messages['address'] = Filter(messages['address'], 0)
+	messages['address'] = re.sub(u"[?!@#$&]", ' ', Filter(messages['address'], 0))
 
 	# speaker
-	speaker_pattern = re.compile(u"(?:(?:讲[ ]*授|演[ ]*讲|报[ ]*告|主[ ]*讲)[ ]*(?:人|专[ ]*家|嘉[ ]*宾)|讲[ ]*(?:师|者)|主[ ]*讲|Speaker)[）) ]*[：:.]+([\s\S]*)", re.S)
+	speaker_pattern = re.compile(u"(?:(?:讲(?:(?![\u4e00-\u9fa5])[\W])*授|演(?:(?![\u4e00-\u9fa5])[\W])*讲|报(?:(?![\u4e00-\u9fa5])[\W])*告|主(?:(?![\u4e00-\u9fa5])[\W])*讲)[ ]*(?:人|专(?:(?![\u4e00-\u9fa5])[\W])*家|嘉(?:(?![\u4e00-\u9fa5])[\W])*宾)|讲(?:(?![\u4e00-\u9fa5])[\W])*(?:师|者)|主(?:(?![\u4e00-\u9fa5])[\W])*讲|Speaker)[）) ]*[：:.]+([\s\S]*)", re.S)
 	messages['speaker'] = re.findall(speaker_pattern, text)
 	if len(messages['speaker']) == 1:
 		messages['speaker'] = messages['speaker'][0].strip()
 	else:
 		messages['speaker'] = ''
-	messages['speaker'] = Filter(messages['speaker'], 0)
+	messages['speaker'] = re.sub(u"[?!@#$&]", ' ', Filter(messages['speaker'], 0))
 
 	# abstract
-	abstract_pattern = re.compile(u"(?:(?:(?:报告|讲座|内容)*(?:摘要|内容|提要))|(?:报告|讲座|内容)简介|Abstract)[）) ]*[：:.]+([\s\S]*)", re.S)
+	abstract_pattern = re.compile(u"(?:(?:报告|讲座|内容)*(?:主要)*(?:摘要|内容|提要)|(?:报告|讲座|内容)简介|Abstract)[）) ]*[：:.]+([\s\S]*)", re.S)
 	messages['abstract'] = re.findall(abstract_pattern, text)
 	if len(messages['abstract']) == 1:
 		messages['abstract'] = sub_linefeed(messages['abstract'][0].strip())

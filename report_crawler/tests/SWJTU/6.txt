@@ -1,0 +1,70 @@
+Report time：
+20170723
+
+Title：
+Graphene
+nanophotonics: from fundamental to optoelectronic applications 
+
+
+	
+
+Time：
+2017年7月23日（星期日） 上午10:00
+
+
+
+	
+
+Address：
+犀浦校区九教9511# 
+
+
+	主  讲  人：肖三水
+教授 丹麦技术大学 
+
+
+	 纳米光子学专家 
+
+
+	主  持  人：信息科学与技术学院
+ 邵理阳教授 
+
+ 
+
+
+Speaker：
+Sanshui Xiao 
+
+Organizer：
+西南交通大学大学计算机科学与技术学院
+
+Biography：
+Sanshui Xiao obtained
+his PhD degree at Zhejiang University in 2004. In August 2004, he joined the
+Royal Institute of Technology as a post-doc researcher. In 2006, he started to
+work at the Technical University of Denmark, and he is now holding Associate
+Professor there. His current research interests include exploration of
+fundamental physics of light-matter interactions at the nanoscale and
+development of graphene-based optoelectronic devices. He has co-organized
+several sessions at PIERS, AME, and EMN conferences, and obtained the European
+Optics Prize from the European Optical Society in 2008. He also serves the
+topical editor for Applied Optics
+
+
+Abstract：
+With unique possibilities for controlling
+light in nanoscale devices, graphene has opened new perspectives to the
+nanophotonics community with potential applications in metamaterials,
+modulators, photodetectors, and sensors. After having a short introduction of
+the Technical University of Denmark and Department of Photonic Engineering, I
+will firstly give a brief overview of recent activities/highlights in our
+group, e.g., advanced theory for investigating light-matter interactions at the
+nanoscale, electron spectroscopy to probe quantum plasmonics, plasmonics laser
+color printing, and graphene for optoelectronic applications.  Then, I will mainly discuss how to push
+graphene plasmons to the near-infrared region and how to explore graphene for
+optoelectronic applications. I will present our recent results on graphene
+based silicon ring-resonator modulators, graphene plasmonic waveguide
+modulators, and high-energy-efficiency graphene microheats with the aid of
+slow-light effect arisen from the photonic crystal waveguide.
+	
+

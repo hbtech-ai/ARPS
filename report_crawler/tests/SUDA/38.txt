@@ -1,0 +1,34 @@
+Report time：
+20170220
+
+Title：
+Multi-instance dictionary learning via multivariate performance measure optimization
+
+ 
+
+Time：
+2017-02-20 
+                                
+ 
+
+Address：
+天赐庄校区理工楼633室
+
+ 
+
+Speaker：
+王靖琰
+
+ 
+
+Organizer：
+苏州大学计算机科学与技术学院
+
+Biography：
+王靖琰，2012年于中科院获得博士学位，2013-2014年在美国纽约州立大学布法罗分校从事博士后研究工作，2014-2016年在沙特阿拉伯阿卜杜拉国王科技大学从事博士后工作研究，2016年至今在阿联酋纽约大学阿布扎比分校担任研究科学家职位。王靖琰博士的研究方向是机器学习，模式识别，自然语言处理，生物信息学。
+ 
+
+Abstract：
+The multi-instance dictionary plays a critical role in multi-instance data representation. Meanwhile, different multi-instance learning applications are evaluated by specific multivariate performance measures. For example, multi-instance ranking reports the precision and recall. It is not difficult to see that to obtain different optimal performance measures, different dictionaries are needed. This observation motives us to learn performance-optimal dictionaries for this problem. In this paper, we propose a novel joint framework for learning the multi-instance dictionary and the classifier to optimize a given multivariate performance measure, such as the F1 score and precision at rank k. We propose to represent the bags as bag-level features via the bag-instance similarity, and learn a classifier in the bag-level feature space to optimize the given performance measure. We propose to minimize the upper bound of a multivariate loss corresponding to the performance measure, the complexity of the classifier, and the complexity of the dictionary, simultaneously, with regard to both the dictionary and the classifier parameters. In this way, the dictionary learning is regularized by the performance optimization, and a performance-optimal dictionary is obtained. We develop an iterative algorithm to solve this minimization problem efficiently using a cutting-plane algorithm and a coordinate descent method. Experiments on multi-instance benchmark data sets show its advantage over both traditional multi-instance learning and performance optimization methods.
+
+

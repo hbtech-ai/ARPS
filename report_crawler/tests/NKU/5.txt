@@ -1,0 +1,30 @@
+Report time：
+20170518
+
+Title：
+计算机触觉——从虚拟现实到增强现实
+
+
+Time：
+2017年5月18日星期四，上午11：00.
+
+
+Address：
+计控学院105
+
+
+Speaker：
+王党校教授，北京航空航天大学
+
+
+Organizer：
+南开大学计算机与控制工程学院
+
+Biography：
+王党校，北京航空航天大学虚拟现实技术与系统国家重点实验室教授，博士生导师，IEEE 触觉技术委员会(IEEE Technical Committee on Haptics, TCH) 执行委员会主席，IEEE Transaction on Haptics编委（Associate Editor）。中国计算机学会人机交互专业委员会常委。IEEE高级会员，中国计算机学会高级会员，中国机械工程学会高级会员。主要研究领域为力触觉人机交互、虚拟现实、机器人学。在IEEE Transactions on Haptics、IEEE Transactions on Visualization and Computer Graphics、IEEE Transactions on Instrumentation and Measurement等刊物发表论文十余篇，在触觉领域顶级会议IEEE World Haptics Conference、机器人领域知名会议IEEE ICRA和IEEE IROS等发表会议论文二十余篇。2008年入选北京市科技新星，2013年获教育部技术发明一等奖（第三完成人），2011年在机器人和自动化领域顶级国际会议IEEE ICRA获最佳论文提名奖。2014年在Springer出版触力觉合成方法专著1本。
+
+
+Abstract：
+在人的五种基本感觉通道中，触觉被称为“感觉之母”，但在人与计算机的交互中，人的触觉感知能力基本被闲置。本报告将介绍触觉人机交互的研究背景和基本框架。以北京航空航天大学虚拟现实技术与系统国家重点实验室在力触觉人机交互方面的代表性成果视听触反馈口腔手术模拟器为切入点，以触觉交互范式的演化过程为脉络，介绍桌面式力反馈、大空间力反馈、穿戴式力反馈、裸指触觉反馈、触力觉融合反馈的发展历程，重点介绍其中涉及的力触觉反馈装置、力触觉合成方法、力触觉测量感知等关键技术，最后简要介绍增强现实环境下的触觉反馈最新进展和面临的技术挑战。
+
+

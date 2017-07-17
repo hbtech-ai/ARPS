@@ -1,0 +1,24 @@
+Report time：
+20170707
+
+Title：
+A Cyber-Physical Approach to Internet of Things: Experience with Mobile Health, Green Home, and Environmental Monitoring
+
+Time：
+2017年7月7日15:30
+
+Address：
+学院会议室（望江校区基础教学大楼B314）  
+
+Speaker：
+Guoliang Xing（Assistant Professor, Department of Computer Science and Engineering, Michigan State University，U.S.A.）
+
+Organizer：
+四川大学计算机学院
+
+Biography：
+Guoliang Xing is currently an Associate Professor of Computer Science and Engineering at Michigan State University. His research interests include Cyber-Physical Systems, Internet of Things (IoT), security, and wireless networking. He received the B.S. and M.S degrees from Xi’an Jiao Tong University, China, in 1998 and 2001, the D.Sc. degree from Washington University in St. Louis, in 2006. He is an NSF CAREER Award recipient in 2010. He received two Best Paper Awards and five Best Paper Nominations at several first-tier conferences including ICNP and IPSN. Several mobile health technologies developed in his lab won Best App Awards at the MobiCom conference and were successfully transferred to the industry. He received the Withrow Distinguished Faculty Award from Michigan State University in 2014. He serves as the General Chair for IPSN 2016 and TPC Co-Chair for IPSN 2017.  
+
+Abstract：
+Internet of Things (IoTs) represent a broad class of systems which interact with the physical world by tightly integrating sensing, communication, and computation with physical objects. Advances in IoT will transform the methodologies for building today’s real-time/embedded/control systems. In this talk, I will discuss our IoT projects that address the challenges at the interaction between systems, data/information processing, and several important domains including mobile health, green home, and volcano/aquatic monitoring.  The prominence of mobile technologies holds the promise of transforming today’s focus from hospital-centered healthcare to proactive, individualized care and wellbeing. I will discuss our work on integrated sensing and feedback systems for tracking the biological rhythms in several bodily functions that play a central role in maintaining our daily productivity and wellbeing, including running, respiration and sleep. These systems integrate novel sensing algorithms, psychological/physiological models, and human computer interaction (HCI) techniques into holistic solutions that empower individuals to improve their health. Recent years have witnessed increasing adoption of smart electricity metering infrastructure. To date, more than 70 million U.S households have installed smart meters. However, it remains challenging to motivate users’ behavior changes toward conservation. I will discuss our work on Supero – a system that promotes conservation by providing users real-time, fine-grained, appliance-level power usage. By exploiting multi-sensor fusion and unsupervised machine learning algorithms, Supero can classify the events of interest and autonomously associate measured power usage with the respective appliances.  Lastly, I will briefly describe the cyber-physical systems that we developed for volcano and aquatic monitoring. These systems integrate domain-specific physical models with advanced in-networking processing algorithms, and have been field deployed at several sites, including two live volcanoes in Ecuador and Chile.  
+

@@ -1,0 +1,25 @@
+Report time：
+20170718
+
+Title：
+Identifying Security Vulnerabilities in Remote Services via Automated Analysis of Mobile Apps
+
+Time：
+7月18号  19：30-20：30
+
+Address：
+教研楼3楼会议室 
+
+Speaker：
+Dr. Zhiqiang Lin 
+
+Organizer：
+山东大学计算机科学与技术学院
+
+Biography：
+Dr. Zhiqiang Lin is an Associate Professor of Computer Science at The University of Texas at Dallas. He earned his PhD from Computer Science Department at Purdue University in 2011. His primary research interests are systems and software security, with an emphasis on developing program analysis techniques and applying them to secure both application programs including mobile apps and the underlying system software such as Operating Systems and hypervisors. Dr. Lin is a recipient of the NSF CAREER Award and the AFOSR Young Investigator Award.
+
+
+Abstract：
+Over the past several years, we have witnessed a huge increase of the number of mobile devices and mobile apps.  As of today, there are billions of mobile users, millions of mobile apps, and millions of app service providers. However, when pushed too quickly to the market, the apps and services can be engineered poorly and may contain various vulnerabilities that can severely undermine users’ security and privacy. While a significant amount of effort has focused on vetting various vulnerabilities in mobile apps, little attention has targeted remote services. In this talk, Dr. Lin is going to talk about how to automatically analyze mobile apps in searching for security vulnerabilities of remote services. In the first half of his talk, he will present a generic and scalable system dubbed AutoForge to identify password brute-force vulnerabilities in mobile services by using automatic protocol reverse engineering, dynamic slicing, and API replay. In the second half of the talk, he will describe SmartGen, a system to automatically reveal the server APIs of mobile apps and enable the standard vulnerability fuzzing with remote services via selective symbolic execution. Both AutoForge and SmartGen have been evaluated with a large set of mobile apps, and found hundreds of security vulnerabilities.  Responsible disclosures have been made to all the vulnerable service providers, and Dr. Lin will also share this experience during his talk.
+

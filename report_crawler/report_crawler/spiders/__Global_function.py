@@ -58,7 +58,7 @@ class startTime():
 	# day
 	def get_day(self, text):
 
-		day = re.search(u"[0-9]*[ ]*(?=(日|号))", text)
+		day = re.search(u"[0-9]*[\W]*(?=(日|号))", text)
 
 		if day is not None:
 			day = day.group()
@@ -71,7 +71,7 @@ class startTime():
 
 	# month
 	def get_month(self, text, day):
-		month = re.search(u"[0-9]*[ ]*(?=月)", text)
+		month = re.search(u"[0-9]*[\W]*(?=月)", text)
 		if month is not None:
 			month = month.group()
 		else:
@@ -87,7 +87,7 @@ class startTime():
 
 	# year
 	def get_year(self, text, day, month):
-		year = re.search(u"[0-9]*[ ]*(?=年)", text)
+		year = re.search(u"[0-9]*[\W]*(?=年)", text)
 		if year is not None:
 			year = "20" + year.group() if len(year.group().strip()) < 4 else year.group()
 		elif day is not None and month is not None:

@@ -1,0 +1,26 @@
+Report time：
+20170617
+
+Title：
+Introducing DPU - Data-storage Processing Unit –Placing Intelligence in Storage
+
+
+Time：
+2017 年6 月17日 (周六)
+
+
+Address：
+中山大学东校区超算中心1楼会议室
+
+
+Speaker：
+Prof. Qing Yang
+
+
+Organizer：
+中山大学计算机学院
+
+Biography：
+杨庆，美国罗德岛大学讲席教授，IEEE Fellow，从事计算机体系结构和数据存储方面的研究20多年，发表论文120多篇，拥有20多项授权专利，基于其研究成果，他创立了四家高科技企业，最近的一家：VeloBit，以最新的闪存固态硬盘体系结构而闻名，被西部数据高价收购。他作为主席主持过多次计算机结构方面的国际会议包括ISCA2011，曾任IEEE计算机体系结构分会会员主席，IEEE杰出演讲者，IEEE Transaction编委。八次获得杰出教授奖。杨庆培养的很多博士生在美国著名大学任教、或在高科技公司工作包括Intel Fellow等等。
+
+

@@ -1,0 +1,30 @@
+Report time：
+20170515
+
+Title：
+智能优化的一些进展及其在DIMA架构设计的应用
+
+
+Time：
+2017年5月15日10:00-11:00点  
+
+
+Address：
+中山北路3663号华东师范大学理科大楼B816室
+
+
+Speaker：
+蔡昕烨博士，南京航空航天大学副教授
+
+
+Organizer：
+华东师范大学大学计算机科学技术系
+
+Biography：
+蔡昕烨， 2004年毕业于华中科技大学，获工学学士学位；2006年获英国约克大学研究型硕士学位；2010年获美国堪萨斯州立大学工学博士学位；现为南京航空航天大学副教授。研究兴趣为复杂问题的智能优化及其应用方向。在IEEE Transaction on Evolutionary Computation, IEEE Transaction on Cybernetics, Soft Computing，软件学报等国内外重要刊物，以及IEEE Congress on Evolutionary Computation (CEC2012，CEC2014, CEC2016)、ACM Proceedings in the Genetic and Evolutionary Computing Conference（GECCO2007，GECCO2008, GECCO2014）等计算智能领域主流会议上发表论文30余篇（SCI收录10余篇）。
+
+
+Abstract：
+综合模块化航电系统是当前主流的航电系统架构，被广泛应用于如空客A380，波音777等主流机型。本报告主要讲述我们在约束以及多目标优化的一些进展工作，最终应用于分布式综合模块化航电系统（DIMA）的架构设计问题。
+
+

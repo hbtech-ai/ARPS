@@ -1,0 +1,26 @@
+Report time：
+20170612
+
+Title：
+Identifying SDN State Inconsistency in OpenStack
+
+
+Time：
+2017 年6 月12日 (周一)
+
+
+Address：
+中山大学东校区数据科学与计算机学院A101
+
+
+Speaker：
+Prof. Yong Liu
+
+
+Organizer：
+中山大学计算机学院
+
+Biography：
+Yong Liu graduated with Ph.D degree from the ECE Dept. at the University of Massachusetts, Amherst in 2002. He worked as a Postdoc in computer networks research group at UMass from February 2002 to February 2005. He joined the ECE department of the Tandon School of Engineering of New York University as an assistant professor in March 2005, and is now an associate professor. His general research interests lie in modeling, design and analysis of networked systems. His current research directions include Multimedia networking, network measurement and analytics, software-defined networks, online social networks, and recommender systems. He is the winner of the Best Paper Award at ACM Internet Measurement Conference (IMC) 2012, the National Science Foundation Career Award in 2010, the Best Paper Award of IEEE Conference on Computer Communications (INFOCOM) in 2009, and the IEEE Communication Society Multimedia Communications Best Paper Award in 2008. He is a fellow of IEEE for his contributions in multimedia networking.
+
+

@@ -1,0 +1,33 @@
+Report time：
+20170616
+
+Title：
+3D Mask Face Anti-Spoofing with Remote Photoplethysmography
+
+
+Time：
+2017年6月16日（周五）下午15:00
+
+
+Address：
+中山大学东校区数据科学与计算机学院A201
+
+
+Speaker：
+阮邦志教授，香港浸会大学理学院计算机科学系主任
+
+
+Organizer：
+中山大学计算机学院
+
+Biography：
+Pong C Yuen received his B.Sc. degree in Electronic Engineering with First Class Honours in 1989 from City University of Hong Kong, and his Ph.D. degree in Electrical and Electronic Engineering in 1993 from The University of Hong Kong. He joined the Hong Kong Baptist University in 1993 and, currently is a Professor and Head of the Department of Computer Science.
+Dr. Yuen was a recipient of the University Fellowship to visit The University of Sydney in 1996. In 1998, Dr. Yuen spent a 6-month sabbatical leave in The University of Maryland Institute for Advanced Computer Studies (UMIACS), University of Maryland at College Park. From June 2005 to January 2006, he was a visiting professor in GRAVIR laboratory (GRAphics, VIsion and Robotics) of INRIA Rhone Alpes, France. Dr. Yuen was the director of Croucher Advanced Study Institute (ASI) on biometric authentication in 2004 and the director of Croucher ASI on Biometric Security and Privacy in 2007.  He was also the Director of IAPR/IEEE Winter School on Biometrics 2017.
+Dr. Yuen has been actively involved in many international conferences and professional community. He was the track co-chair of the International Conference on Pattern Recognition (ICPR) 2006, the program co-chair of the IEEE Fifth International Conference on Biometrics: Theory, Applications and Systems (BTAS) 2012 as well as the IEEE International Conference on Identity, Security and Behavior Analysis (ISBA) 2016. He serves as the Program co-chair of International Conference on Pattern Recognition and Artificial Intelligence in 2018. Currently, Dr. Yuen is the Vice President (Technical Activities) of the IEEE Biometrics Council, Editorial Board Member of Pattern Recognition, Associate Editor of IEEE Transactions on Information Forensics and Security, and Senior Editor of SPIE Journal of Electronic Imaging. He also serves as a Hong Kong Research Grant Council Engineering Panel Member.
+Dr. Yuen's current research interests include video surveillance, human face recognition, biometric security and privacy.
+
+
+Abstract：
+Face recognition has been successfully deployed in many practical applications ranging from mobile phone logon to banking and law enforcement domains in the last decade. While face recognition technology offers a very convenient and reliable service to our daily life, what happens if face recognition systems are secure? In this talk, I will discuss off-the-shelf commercial available masks and the risk of 3D facial mask attack on face recognition systems, as well as review existing techniques in 3D mask face anti-spoofing. I will then report our work on face anti-spoofing again 3D mask attack using remote photoplethysmography.
+Speaker 
+

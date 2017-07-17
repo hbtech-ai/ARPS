@@ -1,0 +1,33 @@
+Report time：
+20160919
+
+Title：
+Multimodal based Clouds Systems for Healthcare and Risk Forecasting based on Subjective Projection
+
+
+Time：
+9月19号10:30—11：30
+
+
+Address：
+中北校区理科大楼A510
+ 
+
+
+Speaker：
+Hamido Fujita 教授
+
+
+Organizer：
+华东师范大学大学计算机科学技术系
+
+Biography：
+Hamido Fujita is professor at Iwate Prefectural University (IPU), Iwate, Japan, as a director of Intelligent Software Systems. He is the Editor-in-Chief of Knowledge-Based Systems, Elsevier. He received Doctor Honoris Causa from O’buda University in 2013, and a title of Honorary Professor from O’buda University, Budapest, Hungary in 2011. He received Honorary scholarfrom University of Technology Sydney, Australia on 2012. He is Adjunct professor to Stockholm University, Sweden, University of Technology Sydney, National Taiwan Ocean University and others. He has supervised PhD students jointly with University of Laval, Quebec, Canada; University of Technology, Sydney, Australia; Oregon State University (Corvallis), University of Paris 1 Pantheon-Sorbonne, France and University of Genoa, Italy. He has four international Patents in Software System and Several research projects with Japanese industry and partners. He is vice president of International Society of Applied Intelligence, and Distinguished Program Committee member of SMC society, IEEE.  He has given many keynotes in many prestigious international conferences on intelligent system and subjective intelligence.  He headed a number of projects including Intelligent HCI, a project related to Mental Cloning as an intelligent user interface between human user and computers and SCOPE project on Virtual Doctor Systems for medical applications.
+
+
+Abstract：
+In decision making most approaches are taking into account objective criteria, however the subjective correlation among decision makers provided as preference utility is necessary to be presented to provide confidence preference additive among decision makers reducing ambiguity and produce better utility preferences measurement for subjective criteria among decision makers. Most models in Decision support systems are assuming criteria as independent.  Therefore, these models are ranking alternatives based on objective data analysis.  Also, different type of data (time series, linguistic values, interval data, etc.) imposes some difficulties to do decision making using classical multi criteria decision making models.
+Sophisticated machine learning methods to estimate or extract emotions from the content created by users has been developed including support vector machines, Bayesian networks, maximum entropy approaches and concept level analysis of natural language text, supported by combinations of common-sense reasoning.  These approaches are mainly based on language text processing with sufficient documents, which is usually in-large is not available. We think Subjectivness is related to the contextual form of criteria.Uncertainty of some criteria in decision making is also considered as other importantaspect These draw backs in decision making are major research challenges that are attracting wide attention, like on big data analysis for risk prediction, medical diagnosis and other applications that are in practice more subjective to user situation and its knowledge related context. Subjectivity would be examined based on correlations between different contextualstructures that isreflecting the framework of personal context, for example in nearest neighbor based correlation analysis fashion.  Some of the attributes incompleteness also may lead to affect the approximation accuracy. Attributes with preference-ordered domain relations properties become one aspect in ordering properties in rough approximations.
+The Virtual Doctor System (VDS) developed by my group is a system assisting human doctor who is practicing medical diagnosis in real situation and environment. The interoperability is represented by utilizing the medical diagnosis cases of medical doctor, represented in machine executable fashion based on human patient interaction with virtual avatar resembling a real doctor. VDS is practiced as a virtual avatar interacting with the human patient based on physical views and mental view analysis.  In this talk I outline our VDS system and then discuss related issues in subjective decision making in medical domain.  Using fuzzy reasoning techniques in VDS, it has been shown that it is possible to provide better precision in circumstances that is related to partial known data and uncertainty on the acquisition of medical symptoms.
+
+

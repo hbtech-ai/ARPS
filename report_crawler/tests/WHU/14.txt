@@ -1,0 +1,42 @@
+Report time：
+20170323
+
+Title：
+Computational prediction of miRNA and miRNA-disease relationship
+
+	 
+
+	
+
+Time：
+2017年3月23号下午3:00
+
+	 
+
+	
+
+Address：
+武汉大学计算机学院B403
+
+	 
+
+	
+
+Speaker：
+邹权
+
+	 
+
+	
+
+Organizer：
+武汉大学计算机学院
+
+Biography：
+2009年于哈尔滨工业大学计算机学院获得博士学位。随后到厦门大学计算机系工作，任助理教授、副教授，2015年调入天津大学计算机学院，任研究员。主要研究方向为生物信息学。目前，以第一作者或通讯作者发表且被SCI检索的论文40余篇。google scholar显示引用超过2400次，其中代表作发表在Science、Briefings in Bioinformatics、Bioinformatics、IEEE/ACM Transactions on Computational Biology and Bioinformatics等知名学术期刊上。近几年，担任SCI期刊Current Bioinformatics的副主编。2014年获CCDM数据挖掘竞赛第一名；提出的集成分类算法不但是学术期刊Neurocomputing官网下载次数最多的热点论文之一，而且得到产业化应用，用于百度贴吧的反作弊系统，受到百度主题研究项目资助和百度公司官方报导
+	
+
+Abstract：
+microRNA is a kind of “star” molecular, and serves as a “director” since it can regulate the expression of protein. In 2006, related works on gene silence won Nobel price, which made miRNA be the hot topic in molecular genetics and bioinformatics. Mining miRNA and targets prediction are two classic topics in computational miRNAnomics. In this talk, we focus on the miRNA mining problems from machine learning views. We point out that the negative data is the key problem for decreasing the False Positive rather than exploring better features. miRNA-disease relationship prediction is another hot topic in recent years. We introduce some novel network methods on calculating miRNA-miRNA similarity, which is the key issue for miRNA-disease relationship prediction. Some results revealed that several novel miRNA could serve as the targets or markers for some tumors
+	
+

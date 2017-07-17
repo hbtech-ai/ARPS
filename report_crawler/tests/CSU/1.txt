@@ -1,0 +1,29 @@
+Report time：
+20170717
+
+Title：
+Analog On-Tag Hashing: Towards Selective Reading as Hash Primitives in Gen2 RFID Systems
+
+
+Time：
+2017年7月17日（星期一）下午16：00- 17：00
+
+
+Address：
+中南大学校本部升华楼后楼215会议室
+
+
+Speaker：
+Dr. Lei Yang 
+
+Organizer：
+中南大学大学信息科学与工程学院
+
+Biography：
+Dr. Lei Yang is currently a Research Assistant Professor in department of computing, The Hong Kong Polytechnic University. Previously, he was a postdoc fellow in the School of Software, Tsinghua University. He received his B.S. and Ph.D. degrees from Xi’an Jiaotong University. He has published dozens of papers at top conferences and journals, such as MobiCom, MobiHoc, SenSys, INFOCOM, TPDS, TMC, TON, and so on. He received Best Paper Awards at MobiCom’14 and MobiHoc’14 respectively, Best Video Award at MobiCom’16, Best-In-Session Presentation Award at INFOCOM’17, Doctoral Dissertation Award from ACM China, and Outstanding Provincial Doctoral Dissertation.
+
+
+Abstract：
+Deployment of billions of Commercial off-the-shelf (COTS) RFID tags has drawn much of the attention of the research community because of the performance gaps of current systems. In particular, hash-enabled protocol (HEP) is one of the most thoroughly studied topics in the past decade. HEPs are designed for a wide spectrum of notable applications (e.g., missing detection) without need to collect all tags. HEPs assume that each tag contains a hash function, such that a tag can select a random but predicable time slot to reply with a one-bit presence signal that shows its existence. However, the hash function has never been implemented in COTS tags in reality, which makes HEPs a 10-year untouchable mirage. This work designs and implements a group of analog on-tag hash primitives (called Tash) for COTS Gen2-compatible RFID systems, which moves prior HEPs forward from theory to practice. In particular, we design three types of hash primitives, namely, tash function, tash table function and tash operator. All of these hash primitives are implemented through selective reading, which is a fundamental and mandatory functionality specified in Gen2 protocol, without any hardware modification and fabrication. We further apply our hash primitives in two typical HEP applications (i.e., cardinality estimation and missing detection) to show the feasibility and effectiveness of Tash. Results from our prototype, which is composed of one ImpinJ reader and 3, 000 Alien tags, demonstrate that the new design lowers 60% of the communication overhead in the air. The tash operator canadditionally introduce an overhead drop of 29.7%.
+
+

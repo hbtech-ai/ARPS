@@ -1,0 +1,30 @@
+Report time：
+20170328
+
+Title：
+Fast and Personal — Scaling Deep Learning with MxNet
+
+
+Time：
+15:00-17:00, March 28, 2017
+
+
+Address：
+Lecture Hall, FIT Building
+
+
+Speaker：
+Alex Smola (Amazon)
+
+
+Organizer：
+清华大学计算机科学与技术系
+
+Biography：
+Alex Smola studied physics in Munich at the University of Technology, Munich, at the Universita degli Studi di Pavia and at AT&T Research in Holmdel. In 1996 he received the Master degree at the University of Technology, Munich and in 1998 the Doctoral Degree in computer science at the University of Technology Berlin. After that, he worked as a Researcher and Group Leader at the Australian National University. From 2004-08 he worked as program leader at the Statistical Machine Learning Program at NICTA. From 2008 to 2012 he worked at Yahoo Research and from 2012–2014 at Google Research. He joined the Carnegie Mello University faculty in 2013 as a professor. After cofounding Marianas Labs in 2015 he now works at Amazon Web Services as Director of Machine Learning. He has written over 200 papers and several books.
+
+
+Abstract：
+In this talk I will address the challenges of building deep learning systems that are able to adjust to users for content recommendation and user engagement estimation. They rely on nonparametric latent variable models, such as LSTMs to deal with nonstationary time-series data. Going beyond models, I will discuss how scalable deep learning models can be implemented efficiently in MxNet, a parallel distributed high performance deep learning framework. In particular, I will discuss programming models, its execution engine and how to distribute computation efficiently over hundreds of GPUs with linear scaling.
+ 
+

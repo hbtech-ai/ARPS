@@ -1,0 +1,63 @@
+Report time：
+20170516
+
+Title：
+Leveraging methods for big data regression
+
+                                                                      
+
+
+
+
+Time：
+2017年05月16日 （周二）上午 9:00-10:30
+
+
+
+Address：
+南开大学津南校区计算机与控制工程学院（信息东楼）523会议室
+
+
+
+Speaker：
+Ping Ma （美国佐治亚大学统计系教授，ASA
+Fellow,
+
+                   计算机系兼职教授）
+
+
+
+Organizer：
+南开大学计算机与控制工程学院
+
+Biography：
+马平
+教授，现任美国佐治亚大学统计系教授(Department of
+Statistics, University of Georgia)，计算机系兼职教授，大数据分析研究室主任，致力于发展非参数方法以及这些方法在机器学习、生物信息等学科问题中的应用，近年来主要研究发展大数据统计理论、创新及改善统计回归中杠杆方法的算法及其理论基础。马平教授本科毕业于南开大学数学系，获美国普渡大学统计学博士，哈佛大学博士后。2005年8月起，任职于美国伊利诺伊大学香槟分校(University of
+Illinois at Urbana-Champaign)助理教授、副教授；获伊利诺伊大学香槟分校高级研究中心“贝克曼研究员”（Beckman Fellow），2013-2014年度全美国家超级计算应用中心教授讲席；2014年被美国佐治亚大学引进。马平教授在《Journal of Machine Learning Research》，《Annals of Statistics》等国际顶尖期刊上发表多篇论文，形成了极高的影响力，获得加拿大统计期刊(The Canadian Journal of Statistics)2011年度最佳论文奖，美国NSF CAREER奖；并担任国际著名学术期刊Journal of the American
+Statistical Association等的副主编；入选International Statistical Institute
+Elected Member，American Statistical Association Fellow（美国统计学会ASA Fellow）。
+
+
+Abstract：
+The rapid advance in science
+and technology in the past decade brings an extraordinary amount of data,
+offering researchers an unprecedented opportunity to tackle complex research
+challenges. The opportunity, however, has not yet been fully utilized, because
+effective and efficient statistical tools for analyzing super-large dataset are
+still lacking. One major challenge is that the advance of computing resources
+still lags far behind the exponential growth of the database.
+In this talk, I will present an emerging
+family of statistical methods, called leveraging methods
+to facilitate scientific discoveries using limited computing
+resources. Leveraging methods are designed under a subsampling framework,
+in which one samples a small proportion of the data (subsample) from the full
+sample, and then performs intended computations for the full sample using the
+small subsample as a surrogate. The key to the success of the leveraging
+methods is to construct nonuniform sampling probabilities so that influential
+data points are sampled with high probabilities. These methods stand as a
+unique development of their type in big data analytics and allow pervasive
+access to massive amounts of information without resorting to high-performance
+computing and cloud computing.
+
+

@@ -1,0 +1,30 @@
+Report time：
+20170705
+
+Title：
+Image guided robotic eye surgery
+
+
+Time：
+2017 年7 月5日 (周三)
+
+
+Address：
+中山大学东校区数据科学与计算机学院A203
+
+
+Speaker：
+Mohammad Ali Nasseri, Head of research at eye clinic, University hospital, Germany
+
+
+Organizer：
+中山大学计算机学院
+
+Biography：
+Dr. M. Ali Nasseri did his Bachelor's degree in Electrical engineering and after five years of industrial experience in R&D management, he obtained his Master's degree in Mechatronics. His scientific interest and experiences focus on Medical Technology applications such as Medical/Surgical robotics. In parallel to pursuing PhD degree, he was a research fellow at the department of robotics and embedded systems at TU München (TUM). Since 2011 he is working as a team leader of a robotic project which deals with assistance in eye surgery. This is a joint project between Robotics and Embedded Systems group and ophthalmology department of Klinikum Rechts der Isar. In addition to aforementioned scientific experiences, he has several Entrepreneurial Qualification certificates from TUM department of Entrepreneurship. His main entrepreneurial interest is bench to bedside translation of health-care related products consisting technical, marketing and certification aspects. Currently Ali is the head of research at ophthalmology department of Klinikum Rechts der Isar.
+
+
+Abstract：
+Robotic eye surgery is an emerging technology that in recent years attracted many research groups among clinicians and engineers. The fragility of the anatomy and the required precision for performing new classes of eye interventions are the main drivers to push this technology forward. In the last 5 years, advancements in several domains including ophthalmic imaging, micro and nano fabrication as well as sensor and actuator miniaturization significantly influence the development of medical technology for eye surgery. In this talk we are going to discuss this technology with its future possibilities.
+
+

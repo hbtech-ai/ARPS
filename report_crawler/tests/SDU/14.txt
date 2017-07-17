@@ -1,0 +1,33 @@
+Report time：
+20170605
+
+Title：
+Assignment and Pricing in Roommate Market
+
+
+
+Time：
+2017年6月5日10:00-11:00
+
+
+Address：
+学院办公楼310会议室
+讲座人：香港中文大学  张胜誉博士
+
+
+Speaker：
+张胜誉博士
+
+Organizer：
+山东大学计算机科学与技术学院
+
+Biography：
+张胜誉博士，香港中文大学计算科学与工程系副教授，主要研究方向为算法设计、计算复杂性、量子计算、机器学习和人工智能的基础理论。是该领域内享有国际声誉的青年学者。
+1999年在复旦大学数学系取得学士学位，2002年在清华大学计算机系取得硕士学位（导师：应明生教授），2006年在普林斯顿大学计算机取得博士学位（导师：姚期智教授）。在NEC美国实验室短期工作，在加州理工学院做两年博士后研究，然后加入香港中文大学。
+在国际顶级会议STOC、FOCS、SODA、ICALP、ICML、AAAI以及国际顶级期刊SICOMP、IEEE TIT、Computational Complexity等上发表论文多篇。
+
+
+Abstract：
+We introduce a roommate market model, in which 2n people need to be assigned to n rooms, with two people in each room. Each person has a valuation to each room, as well as a valuation to each of other people as a roommate. Each room has a rent shared by the two people living in the room, and we need to decide who live together in which room and how much each should pay. Various solution concepts on stability and envy-freeness are proposed, with their existence studied and the computational complexity of the corresponding search problems analyzed. In particular, we show that maximizing the social welfare is NP-hard, and we give a polynomial time algorithm that achieves at least 2/3 of the maximum social welfare. Finally, we demonstrate a pricing scheme that can achieve envy-freeness for each room.
+
+

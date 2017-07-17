@@ -1,0 +1,24 @@
+Report time：
+20170705
+
+Title：
+Power Sensor Networks by Wireless Energy - Current Status and Future Trend
+
+Time：
+2017年7月5日15:00
+
+Address：
+学院报告厅（望江校区基础教学大楼B302） 
+
+Speaker：
+Yuanyuan Yang（Professor, Department of Computer Science, Stony Brook University,） 
+
+Organizer：
+四川大学计算机学院
+
+Biography：
+Dr. Yang is internationally recognized for her contributions in networking and parallel and distributed computing systems areas. She was named an IEEE Fellow in 2009 " for contributions to parallel and distributed computing systems." She has been a National Distinguished Professor in China National Thousand-Talent Program since 2009. Her current research interests include wireless/mobile networks, data center networking, cloud computing, and edge computing. Her research group currently develops routing protocols, deployment algorithms, energy-charging algorithms and data gathering mechanisms in wireless rechargeable sensor networks, data discovery and caching mechanisms in edge computing systems, and switching networks, packet scheduling algorithms and virtual machine placement algorithms in cloud computing networks.Dr. Yang is currently the Associate Editor-in-Chief for IEEE Transactions on Cloud Computing, and has served as the Associated Editor-in-Chief for IEEE Transactions on Computers as well as an Associated Editor for IEEE Transactions on Computers and IEEE Transactions on Parallel and Distributed Systems. She has published over 360 scientific papers in leading refereed journals and conferences. She is an inventor/co-inventor of seven U.S. patents in the area of interconnection networks. She has served as a distinguished visitor of IEEE Computer Society. She received an IEEE Region 1 Award for "significant contributions in multicast switching networks" in 2002, the Best Paper Awards at the 18th IEEE International Parallel and Distributed Processing Symposium in 2004, and the 7th International Conference on Parallel and Distributed Systems in 2000, a Distinguished Leadership Award from the 15th IEEE International Conference on Computer Communications and Networks in 2006, as well as four Best Paper Awards Runner-ups. She has served as a general chair, program chair or vice chair for several major conferences and a program committee member for numerous conferences. She has received many research grants as a Principal Investigator from the U.S. National Science Foundation and the Army Research Office. 
+
+Abstract：
+Traditional battery-powered wireless sensor networks face many challenges to meet the requirements of a wide range of demanding applications nowadays due to their limited energy. Although energy harvesting techniques can scavenge energy from the environment to sustain network operations, dynamics from the energy sources may lead to service interruption or performance degradation when the sources are unavailable. Recent advances in wireless energy transfer have opened up a new dimension to resolve the network lifetime problem. In this talk, we present an overview of the wireless energy transfer techniques and recent developments to apply these techniques in various sensing applications. We also show how this novel technology can be integrated with classic data collection applications and envision future directions in this area. 
+

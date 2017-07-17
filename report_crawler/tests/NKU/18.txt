@@ -1,0 +1,24 @@
+Report time：
+20161123
+
+Title：
+More Sensitive Differential Expression Analysis on RNA-Seq Data
+
+Time：
+2016年11月23日 （周三） 下午 2:00-3:30
+
+Address：
+南开大学津南校区计算机与控制工程学院（信息东楼）523会议室
+
+Speaker：
+Tao Jiang（美国加州大学河边分校计算机科学与工程系教授，ACM Fellow, AAAS Fellow，清华大学长江学者讲座教授、千人计划）
+
+Organizer：
+南开大学计算机与控制工程学院
+
+Biography：
+Tao Jiang received B.S. in Computer Science and Technology from the University of Science and Technology of China, Hefei, in July 1984 and Ph.D. in Computer Science from University of Minnesota in Nov. 1988. He was a faculty member at McMaster University, Hamilton, Ontario, Canada during Jan. 1989 - July 2001 and is now Professor of Computer Science and Engineering at University of California - Riverside (UCR).He is also a member of the UCR Institute for Integrative Genome Biology, a member of the Center for Plant Cell Biology, a principal scientist at Shanghai Center for Bioinformation Technology, and Qianren Chair Visiting Professor at Tsinghua University. Tao Jiang's recent research interest includes combinatorial algorithms, computational molecular biology, bioinformatics, and computational aspects of information retrieval. He is a fellow of the Association for Computing Machinery (ACM) and of the American Association for the Advancement of Science (AAAS), and held a Presidential Chair Professor position at UCR during 2007-2010. He has published over 260 papers in computer science and bioinformatics journals and conferences, and won several best paper awards. He is presently serving on the editorial boards of Journal of Combinatorial Optimization (JCO) , BMC Bioinformatics and Algorithmica, and program committees of ISMB'2016 and RECOMB'2017.  More information about his work can be found at http://www.cs.ucr.edu/~jiang
+
+Abstract：
+As a fundamental tool for discovering genes involved in a disease or biological process, differential gene expression analysis plays an important role in genomics research. High throughput sequencing technologies such as RNA-Seq are increasingly being used for differential gene expression analysis which was dominated by the microarray technology in the past decade. However, inferring differentially expressed genes based on the observed difference of RNA-Seq read counts has unique challenges that were not present in microarray-based analysis. An RNA-Seq based differential expression analysis may be biased against genes with low read counts since the difference between genes with high read counts is more easily detected. Moreover, analyses that do not take into account alternative splicing often miss genes that have differentially expressed transcripts. In this talk, we introduce two novel methods for enhancing differential expression analysis. One uses a markov random field (MRF) model to integrate RNA-Seq data with coexpression data and the other represents independent alternative splicing events by decomposing the splice graph of a gene into special modules (called alternative splicing modules or ASMs). Our extensive experiments on simulated data and real data with qPCR validation demonstrate that these enhancements lead to more sensitive differential expression analyses and better classification of cancer subtypes, cell types and cell-cycle phases. This is joint work with Ei-Wen Yang and Thomas Girke.
+

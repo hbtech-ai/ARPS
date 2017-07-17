@@ -1,0 +1,39 @@
+Report time：
+20170602
+
+Title：
+Collaborative Mobile Charging and Coverage 
+
+  
+
+ 
+
+Time：
+2017-06-02 
+                                
+ 
+
+Address：
+天赐庄校区本部理工楼504室
+
+  
+
+ 摘要
+
+Speaker：
+Jie Wu, Department of Computer and Information Sciences, Temple University
+
+  
+
+ 
+
+Organizer：
+苏州大学计算机科学与技术学院
+
+Abstract：
+The limited battery capacity of sensor nodes has become the biggest impediment to wireless sensor network (WSN) applications over the years. Recent breakthroughs in wireless energy transfer, based on rechargeable lithium batteries, provide a promising application of mobile vehicles. These mobile vehicles act as mobile chargers to transfer energy wirelessly to static sensors in an efficient way. In this talk, we discuss some of our recent results on several charging and coverage problems involving multiple mobile chargers. In collaborative mobile charging, a fixed charging location, called a base station (BS), provides a source of energy to mobile chargers, which in turn are allowed to recharge each other while collaboratively charging static sensors. The objective is to ensure sensor coverage while maximizing the ratio of the amount of payload energy (used to charge sensors) to overhead energy (used to move mobile chargers from one location to another). This is done such that none of the sensors will run out of batteries. Here, sensor coverage spans both dimensions of time and space. We first consider the uniform case, where all sensors consume energy at the same rate, and propose an optimal scheduling scheme that can cover a one-dimensional (1-D) WSN with infinite length. Then, we present several greedy scheduling solutions to 1-D WSNs with non-uniform sensors and 2-D WSNs, both of which are NP-hard. Finally, we study another variation, in which all mobile chargers have batteries of unlimited capacity without resorting to a BS for recharging. The objective is then to deploy and schedule a minimum number of mobile chargers that can cover all sensors. Again, we provide an optimal solution to this problem in a 1-D WSN with uniform sensors and several greedy solutions with competitive approximation ratios to the problem setting of 1-D WSNs with non-uniform sensors and 2-D WSNs, respectively.
+ 报告人简介Bio
+ Jie Wu is the Associate Vice Provost for International Affairs at Temple University. He also serves as Director of Center for Networked Computing and Laura H. Carnell professor. He served as Chair of Computer and Information Sciences from 2009 to 2016. Prior to joining Temple University, he was a program director at the National Science Foundation and was a distinguished professor at Florida Atlantic University. His current research interests include mobile computing and wireless networks, routing protocols, cloud and green computing, network trust and security, and social network applications. Dr. Wu regularly publishes in scholarly journals, conference proceedings, and books. He serves on several editorial boards, including IEEE Transactions on Service Computing and the Journal of Parallel and Distributed Computing. Dr. Wu was general co-chair for IEEE MASS 2006, IEEE IPDPS 2008, IEEE ICDCS 2013, ACM MobiHoc 2014, ICPP 2016, and IEEE CNS 2016, as well as program co-chair for IEEE INFOCOM 2011 and CCF CNCC 2013. He was an IEEE Computer Society Distinguished Visitor, ACM Distinguished Speaker, and chair for the IEEE Technical Committee on Distributed Processing (TCDP). Dr. Wu is a CCF Distinguished Speaker and a Fellow of the IEEE. He is the recipient of the 2011 China Computer Federation (CCF) Overseas Outstanding Achievement Award. Dr. Wu's current H-index is 83.
+ 吴杰教授是IEEE Fellow、国际计算机领域著名专家，现任美国Temple大学副校长，他同时担任Temple大学Networked Computing 中心主任以及Laura H. Carnell 教授。在2009~2016年期间，吴教授一直担任Temple大学计算机信息科学系主任。在加入Temple大学之前,他担任了美国国家科学基金委的计划负责人,佛罗里达大西洋大学杰出教授。他目前的研究领域涉及移动计算、无线网络、路由协议、云计算和网络安全等方面。吴杰教授担任了多个国际顶级的Steering Committee Chair, TPC Chair。他是ACM、IEEE的杰出报告者，IEEE分布式处理技术委员会(TCDP)主席。吴杰教授于2011年获得中国计算机协会(CCF)的海外杰出成就奖，截止目前吴教授的H-index影响力高达83。
+
+

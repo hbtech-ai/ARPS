@@ -1,0 +1,33 @@
+Report time：
+20150414
+
+Title：
+Short Text Understanding
+ 
+        
+
+Time：
+4月14日上午9:30am；
+
+
+Address：
+G510
+报告主要基于2015 ICDE最佳论文
+ 
+
+
+Speaker：
+Haixun Wang博士；
+
+
+Organizer：
+北京航空航天大学计算机学院
+
+Biography：
+Haixun Wang is a research scientist at Google Research. Before joining Google in 2013, he led research in semantic search, graph data processing systems, and distributed query processing at Microsoft Research Asia. He had been a research staff member at IBM T. J. Watson Research Center from 2000 - 2009. He was Technical Assistant to Stuart Feldman (Vice President of Computer Science of IBM Research) from 2006 to 2007, and Technical Assistant to Mark Wegman (Head of Computer Science of IBM Research) from 2007 to 2009. He received the Ph.D. degree in computer science from the University of California, Los Angeles in 2000. He has published more than 150 research papers in referred international journals and conference proceedings. He served PC  Chair of conferences such as CIKM’12 and he is on the editorial board of IEEE Transactions of Knowledge and Data Engineering (TKDE), and Journal of Computer Science and Technology (JCST). He won the best paper award in ICDE 2015, 10 year best paper award in ICDM 2013, and best paper award of ER 2009.
+
+
+Abstract：
+Understanding short texts is crucial to many applications, but challenges abound. First, short texts do not always observe the syntax of a written language. As a result, traditional natural language processing methods cannot be easily applied. Second, short texts usually do not contain sufficient statistical signals to support many state-of-the-art approaches for text processing such as topic modeling.Third, short texts are usually more ambiguous. We argue that knowledge is needed in order to better understand short texts. In this talk, I describe how to use lexical semantic knowledge provided by a well-known semantic network for short text understanding. Our knowledge-intensive approach disrupts traditional methods for tasks such as text segmentation, part-of-speech tagging, and concept labeling, in the sense that we focus on semantics in all these tasks. We conduct a comprehensive performance evaluation on real-life data. The results show that knowledge is indispensable for short text understanding, and our knowledge-intensive approaches are effective in harvesting semantics of short texts.
+
+

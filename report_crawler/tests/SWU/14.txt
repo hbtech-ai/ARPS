@@ -1,0 +1,25 @@
+Report time：
+20170406
+
+Title：
+残障福利审批中的数据分析 
+
+Time：
+2017年4月6日（星期四）下午3:00 
+
+Address：
+西南大学计信院学术报告厅（第25教学楼一楼0114） 
+
+Speaker：
+周春晓博士  美国国立卫生研究院（NIH） 
+
+Organizer：
+西南大学计算机与信息科学学院
+
+Biography：
+Dr. Chunxiao Zhou is a computer scientist at the National Institutes of Health (NIH), United States. He received the PhD degree in Electrical and Computer Engineering from the University of Illinois Urbana-Champaign in 2009. His research interests are in the area of statistical computing, machine learning, natural language processing, and with applications to the United States Social Security Disability Determination. 
+
+Abstract：
+本次讲座将会介绍美国残障福利审批的基本情况和如何结合数据分析帮助美国社保局改进其残障福利审批系统. 数据分析包括对管理网络数据，图像文件，文本文档的统计分析，数据挖掘， 和自然语言处理。欢迎大家光临一起讨论！
+
+

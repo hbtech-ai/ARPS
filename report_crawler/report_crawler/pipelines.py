@@ -39,7 +39,7 @@ class ReportCrawlerPipeline(object):
         text = ''
         for message in item['text']:
             for each in message.xpath(".//text()").extract():
-                text += each
+                text += unicode(each, type(each).__name__) if type(each).__name__ != 'unicode' else each
             text += '\n'
         messages = get_information(text, item['faculty'])
 
@@ -70,7 +70,7 @@ class ReportCrawlerPipeline(object):
             messages['startTime'] = ''
 
         with open(filename, 'w') as f:
-            # f.write('Report time：\n' + str(messages['startTime']) + '\n' * 2)
+            f.write('Report time：\n' + str(messages['startTime']) + '\n' * 2)
             f.write('Title：\n' + messages['title'] + '\n' * 2)
             f.write('Time：\n' + messages['time'] + '\n' * 2)
             f.write('Address：\n' + messages['address'] + '\n' * 2)

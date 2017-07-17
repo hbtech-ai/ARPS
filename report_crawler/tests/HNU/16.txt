@@ -1,0 +1,25 @@
+Report time：
+20170502
+
+Title：
+ 数字集成电路版权保护的若干关键问题研究
+
+Time：
+2017年5月2日  周二 15:30
+
+Address：
+信息科学与工程学院 542 报告厅
+
+Speaker：
+龙静，2013年起在湖南大学信息科学与工程学院攻读博士
+
+Organizer：
+电子科技大学计算机科学与工程学院
+
+Biography：
+龙静，2013年起在湖南大学信息科学与工程学院攻读博士学位，导师为张大方教授。主要研究兴趣为嵌入式系统与集成电路保护。主要成果发表在计算机研究与发展、International Journal of InformationSecurity and Privacy, Computer Science and Information Systems, TrustCom 2015等期刊与会议上。   
+
+Abstract：
+结合密码学中相关理论，利用数字水印技术解决集成电路中存在的版权纠纷问题，对现有相关工作中存在的鲁棒性及开销等问题进行研究。
+
+

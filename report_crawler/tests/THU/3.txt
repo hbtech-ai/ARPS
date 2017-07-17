@@ -1,0 +1,35 @@
+Report time：
+20160422
+
+Title：
+"Data Science in Ecole Polytechnique"
+
+
+Time：
+10:00am -11:00am,Apr Friday (22nd), 2016.
+
+
+Address：
+room 1-315, FIT
+
+
+Speaker：
+Prof. Michalis Vazirgiannis, Ecole Polytechnique
+
+
+Organizer：
+清华大学计算机科学与技术系
+
+Biography：
+Dr. Vazirgiannis is a Professor at LIX, Ecole Polytechnique in France. He has conducted research in GMD-IPSI, Max Planck MPI (Germany), in INRIA/FUTURS (Paris). He has been a teaching in AUEB (Greece), Ecole Polytechnique, Telecom-Paristech, ENS (France), Tsinghua (China) and in Deusto University (Spain).
+His current research interests are on machine learning and combinatorial methods for Graph analysis (including community detection, graph clustering and embeddings, influence maximization), Text mining including Graph of Words, word embeddings with applications to web advertising and marketing, event detection and summarization. Also distributed machine learning algorithms, distributed dimensionality reduction, distributed resource management. He has active cooperation with industrial partners in the area of data analytics and machine learning for large scale data repositories in different application domains such as Web advertising and recommendations, social networks, medical data, aircraft logs, insurance data. He has supervised fourteen completed PhD theses – several of the supported by industrial funding including Google and Airbus.
+On the publication frontier, he has contributed chapters in books and encyclopedias, published three books and more than a hundred forty papers in international refereed journals and conferences. He is also co-author of three patents.  He has received the ERCIM  and the Marie Curie EU fellowships and lead a DIGITEO chair grant. Since 2015 M. Vazirgiannis leads the AXA Data Science chair.
+http://www.lix.polytechnique.fr/~mvazirg/
+http://www.lix.polytechnique.fr/dascim/
+
+
+Abstract：
+Ecole Polytechnique is the most prestigious engineering  University in France and one of the top in Europe. Source of famous scientists and alumni continues to thrive in today's competitive world.
+The talk will focus on presenting the features of Ecole Polytechnique, the Data Science research and training opportunities at Master and PhD level. Finally there will be a short presentation of the research results and plan of the group of M. Vazirgiannis in the area of Machine Learning for graph and text data.
+
+

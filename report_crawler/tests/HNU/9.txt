@@ -1,0 +1,22 @@
+Report time：
+20170607
+
+Title：
+Verifiable Electronic Voting in Practice
+
+Time：
+6月7日（星期三）上午 10:30
+
+Address：
+院楼542
+
+Speaker：
+Feng Hao is Reader in Security Engineering at the School of Computing Science, Newcastle University, and a co-lead of the Secure   Resilient Systems (SRS) group. He graduated with a PhD in 2007 from the Computer Laboratory, University of Cambridge, under the joint supervision of Prof Ross Anderson and Prof John Daugman. He had six years working experience in the security industry before joining Newcastle University as a lecturer in 2010. He co-designed J-PAKE, which has been used by several million users in commercial products, has been adopted by the Thread Group as an industry standard for key agreement in IoT applications, and has been included into the  ISO/IEC 11770-4 standard. He co-designed DRE-i, which lays the foundation for an ERC Starting Grant on “self-enforcing e-voting” (SEEV) and an ERC Proof-of-Concept that supports commercialization of SEEV. In 2017, he co-edited, with Peter Ryan, a new book “Real-World Electronic Voting: Design, Analysis and Deployment” (CRC Press), which consolidates the state of the art in the e-voting field in real-world settings. Currently he serves on the editorial boards of the IEEE Security   Privacy magazine and the Journal of Information Security and Applications (Elsevier) as an Associate Editor.
+
+Organizer：
+电子科技大学计算机科学与工程学院
+
+Abstract：
+In this talk, I’ll share the progress that we have made in the field of e-voting, including the proposal of a new paradigm of e-voting system called self-enforcing e-voting (SEEV). A SEEV system is End-to-End (E2E) verifiable, but it differs from all previous E2E systems in that it does not require tallying authorities. The removal of tallying authorities significantly simplifies the election management and makes the system much more practical than before. A prototype of a SEEV system based on the DRE-i protocol (Hao et al. USENIX JETS 2014) has been built and used regularly in Newcastle University for classroom voting and student prize competitions with very positive student feedback. Lessons from our experience of designing, analysing and deploying an e-voting system for real-world applications are also presented.主讲人: Feng Hao is Reader in Security Engineering at the School of Computing Science, Newcastle University, and a co-lead of the Secure & Resilient Systems (SRS) group. He graduated with a PhD in 2007 from the Computer Laboratory, University of Cambridge, under the joint supervision of Prof Ross Anderson and Prof John Daugman. He had six years working experience in the security industry before joining Newcastle University as a lecturer in 2010. He co-designed J-PAKE, which has been used by several million users in commercial products, has been adopted by the Thread Group as an industry standard for key agreement in IoT applications, and has been included into the  ISO/IEC 11770-4 standard. He co-designed DRE-i, which lays the foundation for an ERC Starting Grant on “self-enforcing e-voting” (SEEV) and an ERC Proof-of-Concept that supports commercialization of SEEV. In 2017, he co-edited, with Peter Ryan, a new book “Real-World Electronic Voting: Design, Analysis and Deployment” (CRC Press), which consolidates the state of the art in the e-voting field in real-world settings. Currently he serves on the editorial boards of the IEEE Security & Privacy magazine and the Journal of Information Security and Applications (Elsevier) as an Associate Editor.
+
+

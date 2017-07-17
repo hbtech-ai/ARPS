@@ -1,0 +1,24 @@
+Report time：
+20170418
+
+Title：
+Intelligent Control of Servo Motor Drives
+
+Time：
+2017年4月18日9:00
+
+Address：
+学院报告厅（望江校区基础教学大楼B302） 
+
+Speaker：
+Faa-Jeng Lin（IEEE Fellow，Chair Professor, Department of Electrical Engineering, Central University, Taiwan）
+
+Organizer：
+四川大学计算机学院
+
+Biography：
+Faa-Jeng Lin is a Chair Professor at the Department of Electrical Engineering, Central University, Taiwan. His research interests include fuzzy and neural network control theories, nonlinear control theories, AC and ultrasonic motor drives, DSP-based computer control systems, power electronics, microgrid and smart grid. He has published nearly 200 SCI journal papers including 87 IEEE Trans. Papers. His work has been widely cited; his H-index are 36 in Web of Science and 51 in Google Scholar. He was the Chair of the Power Engineering Division at the Science Council in Taiwan; the Chair of the IEEE IE/PELS Taipei Chapter from 2007 to 2009; the Chair of the IEEE CIS Taipei Chapter from 2012 to 2015. He received the Crompton Premium Best Paper Award from the IEE, UK, in 2002; the Outstanding Research Award from the Science Council, Taiwan, in 2004, 2010 and 2013; the Outstanding Professor of Engineering Award, the Chinese Institute of Engineers, Taiwan, 2016. Moreover, he is Fellow of IET and IEEE and Associate Editor of IEEE FS/IEEE PE/IET EPA. He is also the chair and principle investigator for Smart Grid Focus Center, Energy Project II in Taiwan. This center aims to integrate Taiwan's R&D resources in smart grid and renewable energy resources to formulate overall development strategies of smart grid and supporting smart grid industries development. 
+
+Abstract：
+Intelligent control systems based on fuzzy systems and neural networks have been well proved that can improve the robustness and control accuracy of servo motor drives under uncertainty conditions including parameter variations and external disturbance. In this talk, various intelligent control systems including Recurrent Fuzzy Neural Network, Sugeno Type Fuzzy Neural Network, Function Link Radial Basis Function Network, PID Neural Network and TSK Fuzzy Neural Network will be introduced to improve the control performance of various motor drive systems and applications. 
+

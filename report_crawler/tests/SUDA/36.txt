@@ -1,0 +1,34 @@
+Report time：
+20170316
+
+Title：
+SDN based Traffic Aware Placement of NFV Middleboxes
+
+ 
+
+Time：
+2017-03-16 
+                                
+ 
+
+Address：
+天赐庄校区本部理工楼504室
+
+ 
+
+Speaker：
+Deng Pan Associate Professor School of Computing and Information Sciences Florida International University
+
+  
+
+Organizer：
+苏州大学计算机科学与技术学院
+
+Biography：
+Deng Pan received the BS and MS degrees in Computer Science from Xi'an Jiaotong University, China, in 1999 and 2002, respectively, and the PhD degree in Computer Science from State University of New York at Stony Brook in 2007. He is currently an Associate Professor and the Graduate Program Director in the School of Computing and Information Sciences, Florida International University (state university of Florida at Miami). His recent research interests focus on network function virtualization, software-defined networking, and data center networking. He has published over fifty scientific papers in top computer networking journals and conferences, including the IEEE Transactions on Communications, IEEE Transactions on Computers, INFOCOM, and IPDPS. He has served in the Technical Program Committee and Local Arrangement Committee of a number of international conferences, including INFOCOM, GLOBE COM, and ICPP.
+
+
+Abstract：
+Network function virtualization enables flexible implementation of network functions, or middleboxes, as virtual machines running on standard servers. However, the flexibility also creates a challenge for efficiently placing such middleboxes, due to the availability of multiple hosting servers, capability of middleboxes to change traffic volumes, and dependency between middleboxes. In this talk, we discuss the optimal placement challenge of NFV middleboxes, and present solutions for middleboxes of different traffic changing effects and with different dependency relations. We start by showing the hardness of the studied problem, and propose optimal algorithms for special cases and efficient heuristics for general scenarios. Further, we describe our implementation of the proposed solutions, and present extensive experimental and simulation results to demonstrate the effectiveness of our design. At the end of this talk, we will also introduce the graduate study opportunities at Florida International Universities, and welcome applications from Soochow University.
+ 
+

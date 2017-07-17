@@ -1,0 +1,24 @@
+Report time：
+20170705
+
+Title：
+Mobile Cloud Computing and Edge Computing
+
+Time：
+2017年7月5日16:00
+
+Address：
+学院报告厅（望江校区基础教学大楼B302） 
+
+Speaker：
+郭松涛（博士、教授、博士生导师，教育部新世纪优秀人才,西南大学电子信息工程学院）
+
+Organizer：
+四川大学计算机学院
+
+Biography：
+郭松涛、男，博士、教授、博士生导师，教育部新世纪优秀人才，ACM重庆分会秘书长，CCF物联网专委会委员，中国密码学会混沌密码专委会委员，ACM SIGCOM中国专委会委员。分别于1999年、2003年、2008年在重庆大学计算机科学与技术专业获得学士、硕士、博士学位。2008年7月至2010年8月在香港城市大学做博士后，2011年5月至2012年5月在纽约州立大学做访问学者。2003年留校任教，并分别于2009年9月、2011年9月在重庆大学评为副教授、教授，2012年5月被评为博士生导师。2013年，在西南大学电子信息工程学院任教授、副院长。主要在无线传感器网络、无线自组织网络、移动云计算等方面开展研究，已取得显著的研究成果，在包括IEEE Transactions on Computers、IEEE Transactions on Mobile Computing、IEEE Transactions on Communications、IEEE Systems Journal、Journal of Grid Computing、Concurrency and Computation: Practice and Experience、Wireless Networks、Computer Communications等 SCI收录的著名国际期刊以及IEEE INFOCOM、IEEE SECON、IEEE IWQOS、IEEE WCNC、IEEE GLOBECOM, IEEE ICC、IEEE MASS等国际会议上发表学术论文80多篇，其中第一作者40余篇，CCF A类论文12篇。主持国家自然科学基金3项、中国博士后科学基金2项（其中特别资助1项）、重庆市自然科学基金重点项目1项、一般项目2项等；参与重庆自然科学基金重点项目、国家重点实验室面上项目、教育部博士点基金优先资助领域项目等省部级项目6项；申请国家发明专利7项，获授权1项，重庆市自然科学二等奖1项，2009年获得重庆市优秀博士学位论文奖，2010年入选教育部“新世纪优秀人才支持计划”。在多个SCI杂志，如Sensors、Concurrency and Computation: Practice and Experience、Journal of Network and Computer Applications等任编委委员，多个国际会议如IC3、ICPP、ICNC等任程序委员会委员。 
+
+Abstract：
+Mobile cloud computing (MCC) as an emerging computing paradigm integrates cloud computing and mobile computing to enhance the computation performance of mobile devices. The objective of MCC is to extend powerful computing capability of the resource-rich clouds to the resource-constrained mobile devices (e.g., laptop, tablet and smartphone) so as to reduce computation time, conserve local resources, especially battery, and extend storage capacity. To achieve this objective, MCC needs to migrate resource-intensive computations from mobile devices to clouds, referred to as computation offloading. The core of computation offloading is to decide on which computation tasks should be executed on the mobile device (i.e., local computing) or on the cloud (i.e., cloud computing), and how to schedule local and cloud resource to implement task offloading. In this talk, we provide an energy-efficient dynamic offloading and resource scheduling policy to reduce energy consumption and shorten application completion time. Furthermore, we introduce mobile edge computing (MEC) concept and its key issues to be addressed. 
+

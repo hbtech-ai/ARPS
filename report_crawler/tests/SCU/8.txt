@@ -1,0 +1,24 @@
+Report time：
+20170612
+
+Title：
+Algorithms for Big Data Analytics via Coresets and Sketches
+
+Time：
+2017年6月12日14:30
+
+Address：
+学院报告厅（望江校区基础教学大楼B302） 
+
+Speaker：
+Jeff Phillips（Assistant Professor, School of Computing, University of Utah, US）
+
+Organizer：
+四川大学计算机学院
+
+Biography：
+Jeff Phillips is an Assistant Professor in the School of Computing at the University of Utah.  He works on large-scale algorithms and geometric data analysis. He is the Director of the Data Management and Analysis Track within the School, which oversees all data science related educational programs related to computing at the university.   Dr. Phillips is supported by several NSF grants, including an NSF CAREER Award. Before being on the faculty, he was on a 2-year NSF Computing Innovations Postdoctoral Fellowship also at the University of Utah. He received his Ph.D. in Computer Science (focusing on Algorithms, Data Mining, and Computational Geometry) at Duke University in 2009, while on an NSF Graduate Research Fellowship. And he completed his undergraduate degree in Computer Science and in Math at Rice University in 2003. 
+
+Abstract：
+For the last decade, many companies and scientists are generating enormous quantities of data, yet often do not have the facilities to properly collect, annotate, or analyze this data. An emerging approach towards this problem is to create coresets and sketches of that data.  These are powerful summaries which can be efficiently maintained, and for important aspects of the data can be queried similar to the original data, but much more efficiently and with bounded error. Impressively, the sizes of the summaries depend only on the error in the approximation guarantees.In this talk I will discuss my work in developing algorithms for coresets and sketches central to data analysis, as well as some of the broader computational and analytical consequences of working with them. I will briefly mention 3 topics in which I have helped demonstrate the impact of these techniques.The first is a sketch for large data matrices called FrequentDirections, which is a common preprocessing technique for machine learning and data mining.  This sketch is deterministic, and has provable the best size-error tradeoffs.Second, I will discuss coresets techniques for kernel density estimates, and how they find applications in noisy data analysis for spatial data and kernel techniques in machine learning.Finally, I will talk about a specific application in spatial anomaly detection, how coresets can be used for the important GIS application of computing Spatial Scan Statistics. 
+

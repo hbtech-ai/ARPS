@@ -37,6 +37,7 @@ class Spider_starter(object):
 			'B': ['BNU001', 'BUAA001'],
 			'C': ['CSU001'],
 			'E': ['ECNU001'],
+			'H': ['HNU001'],
 			'N': ['NKU001', 'NWSUAF001'],
 			'P': ['PKU001'],
 			'S': ['SCU001', 'SDU001', 'SEU001', 'SUDA001', 'SWJTU001', 'SWU001', 'SYSU001'],

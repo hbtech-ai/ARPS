@@ -1,0 +1,30 @@
+Report time：
+20170516
+
+Title：
+国外著名大学如何从事高水平研究、如何培养高水平研究生
+
+ 
+
+Time：
+2017-05-16 
+                                
+ 
+
+Address：
+理工楼321会议室
+
+ 
+
+Speaker：
+颜松远
+
+ 
+
+Organizer：
+苏州大学计算机科学与技术学院
+
+Biography：
+颜松远，男，1954年1月出生，英籍华人，英国York大学数学系数论专业博士毕业，英国剑桥大学计算机实验室信息安全博士后，曾在英美等多所大学任教授，现为武汉大学计算机学院教授，湖北省特聘专家。长期从事计算数论和密码学方面的研究，擅长于应用深刻的数论与计算复杂性理论的工具解决密码学中的重大难题，在基于计算难解性数论问题的密码设计与密码分析中进行了大量，深刻而系统的研究，其成果居世界前列。在国际著名出版社Springer出版了4本英文专著均被广泛引用，并被列为国际上该领域的标准参考文献，被美国麻省理工学院图灵奖获得者 Rivest 列为他的研究生课程《Computer and network Security》的参考书。其中《 Number Theory for Computing 》还被译成波兰文和中文分别在波兰（2006年）和中国（2008年）出版，《 Cryptanalytic Attacks on RSA 》被译成俄文在俄国出版（世界华人学者中此前只有华罗庚的《Additive Number Theory》和钱学森的《Engineering Cybernetics》等专著被译成俄文在俄国出版）。著名出版社Springer-Verlag 出版过《Number Theory for Computing》、《Primality Testing and Integer Factorization in Public-Key Cryptography》、《Cryptanalytic Attacks on RSA》等三本英文专著，在国际上影响极大。
+
+

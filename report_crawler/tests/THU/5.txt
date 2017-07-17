@@ -1,0 +1,30 @@
+Report time：
+20150701
+
+Title：
+Database Research at University of Queensland, Australia
+Speakers: Professor Xiaofang Zhou, Computer Science at the University of Queensland
+
+
+Time：
+11:00, July 1,2015
+
+
+Address：
+FIT 1-515
+
+
+Speaker：
+Professor Xiaofang Zhou 
+
+Organizer：
+清华大学计算机科学与技术系
+
+Biography：
+Professor Xiaofang Zhou is a Professor of Computer Science at the University of Queensland, Australia, and a specially appointed Adjunct Professor under the Chinese National Thousand Talents Program at Soochow University, China. Xiaofang is Head of the Data and Knowledge Engineering (DKE) Group at UQ, and Director of the Advanced Data Analytics Laboratory at Soochow University. His research focus is to find effective and efficient solutions for managing, integrating and analyzing very large amount of complex data for business, scientific and personal applications. He has been working in the area of spatial and multimedia databases, data quality, high performance database systems and data mining. He was a Program Committee Chair for IEEE ICDE 2013, and a General Chair of ACM Multimedia 2015. He has been an Associate Editor of The VLDB Journal, IEEE Transactions on Knowledge and Data Engineering, IEEE Transactions on Cloud Computing, World Wide Web Journal, Distributed and Parallel Databases, and IEEE Data Engineering Bulletin. He is the current Chair of IEEE Technical Committee on Data Engineering (TCDE).
+
+
+Abstract：
+The Data and Knowledge Engineering (DKE) Group at UQ is a top database research group in the world, working in four main areas including spatial and multimedia databases, social media analytics, data quality management and big data infrastructures and applications. With 7 faculty members including 4 full professors, 8 research fellows, over 30 PhD students and a large number of international visiting students and scholars, DKE is the largest and best database research group in Australia. This short presentation will give an overview on DKE’s vision, research activities and achievements.
+ 
+

@@ -1,0 +1,29 @@
+Report time：
+20170618
+
+Title：
+基于图像处理的三维蛋白动态结构重构研究
+
+
+Time：
+2017-06-18 
+
+Address：
+电子楼500
+
+
+Speaker：
+任罡博士（美国劳伦斯伯克利国家实验室终身科学家）
+
+
+Organizer：
+北京师范大学信息科学与技术学院
+
+Biography：
+任罡博士，美国劳伦斯伯克利国家实验室终身科学家。1993年起，任罡博士师从郭可信院士，获得博士学位，并于1997年赴美深造。在博士后期间，任罡博士测定了水通道膜蛋白的原子结构，该研究对2003年诺贝尔化学奖的研究工作给予了有力支持，并被《科学时报》等新闻媒体广泛报道。2006年，任罡博士在加州大学旧金山分校成立了自己独立的研究小组，相关论文被发表在PANS等顶级期刊上。2008年起，任罡博士通过利用图像修复、三维重建等技术对单个蛋白质个体分子进行重构，并首次获得了单个分子高分辨率的三维重构图，多个相关成果被发表在Nature子刊中。
+
+
+Abstract：
+We reported an approach to determine the 3D structure of a single-instance macromolecule at near a nanometer resolution, termed individual-particle electron tomography (IPET). IPET does not require a pre-given initial model, class averaging of multiple molecules or an extended ordered lattice, but can tolerate small tilt-errors and sample heterogeneity. Through the structure determination of each individual macromolecule, the structural comparison of these macromolecules provides a new opportunity to reveal the soft-/bio-macromolecular dynamic character, equilibrium fluctuation, mechanism and even the intermediate-state 3D structure of chemical reaction.
+
+

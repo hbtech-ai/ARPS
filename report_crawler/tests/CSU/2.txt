@@ -1,0 +1,30 @@
+Report time：
+20170713
+
+Title：
+Protein Structure and Function Prediction
+
+
+Time：
+7月13日下午16:00
+
+
+Address：
+校本部升华后楼215
+
+
+Speaker：
+南开大学青年千人杨建益教授
+
+
+Organizer：
+中南大学大学信息科学与工程学院
+
+Biography：
+杨建益2011年博士毕业于新加坡南洋理工大学，2011-2014先后任美国密歇根大学先后博士后与研究员。2015年初就职于南开大学数学科学学院，2015年入选天津市青年千人计划、南开大学百青计划，2016年入选国家千人计划青年人才项目。主持国家自然科学基金一项，已在Nature Methods、Nucleic Acids Research（3篇）、Bioinformatics（5篇）等期刊上发表SCI论文30篇。论文被SCI他引上千次，其中单篇最高他引400余次，3篇论文入选ESI高被引论文。2016年起担任SCI期刊BMC Bioinformatics的副编辑。
+
+
+Abstract：
+The success of DNA sequencing techniques makes the number of known protein sequences far exceeds that of structurally and/or functionally known proteins. Traditional experimental protein structure and function determination techniques are often too expensive and slow to meet with the increasing requirements of genome-wide research, and furthermore, do not work for all proteins. Development of accurate structure and function modeling algorithms represents an efficient, and probably the only solution to the problem. Following the “sequence-to-structure-to-function” paradigm, we have developed the I-TASSER pipeline for automated protein structure prediction and structure-based function annotation. Over the last decade, I-TASSER has been consistently ranked as No. 1 method for protein structure prediction in the 7-12th community-wide CASP (Critical Assessment of protein Structure Prediction) experiments. The COFACTOR and COACH methods, both included in the I-TASSER pipeline, have demonstrated considerable success in community-wide ligand-binding site predictions and been ranked as the top function annotation methods in the 9-10th CASP and the CAMEO (Continuous Automated Model Evaluation) experiments, respectively. These results demonstrated the significant advantage of the I-TASSER pipeline over other state-of-the-art methods, which are now ready for use in genome-wide protein structure and function prediction.
+
+

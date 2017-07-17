@@ -1,0 +1,53 @@
+Report time：
+20170522
+
+Title：
+Integrated and systematic views of
+regulatory
+
+          DNA motif identification and analyses
+
+
+
+Time：
+2017年05月22日 （周一）下午 3:30-5:00
+
+
+
+Address：
+南开大学津南校区计算机与控制工程学院（信息东楼）328室
+
+
+
+Speaker：
+Qin Ma （美国南达科塔州立大学助理教授）
+
+
+
+Organizer：
+南开大学计算机与控制工程学院
+
+Biography：
+马勤, 博士毕业于山东大学数学学院, 于美国佐治亚大学徐鹰老师实验室进行博士后研究。目前为美国南达科塔州立大学终身制助理教授, 组建了南达科塔州内首个生物信息学实验室,主要从事大规模生物组学数据的分析和数学模型，以及相应的生物信息软件开发。在国内外的重要期刊上发表论文45 篇（25篇第一作者或者通讯作者论文），包括Bioinformatics, Nucleic Acids Research, 和Briefings in Bioinformatics等国际著名学术期刊；应邀在国际生物信息学相关的会议上和国内外知名大学做学术
+
+Abstract：
+Transcription
+factors are proteins that bind to specific DNA sequences and play important
+roles in controlling the expression levels of their target genes. Hence,
+prediction of transcription factor binding sites (TFBSs or motif for short)
+provides a solid foundation for inferring gene regulatory mechanisms and
+building regulatory networks for a genome. Motif identification and analyses
+are important and have been long-standing computational problems in
+bioinformatics. Substantial efforts have been made in this field during the
+past several decades. The bottleneck, however, is the lack of robust
+mathematical models, as well as efficient computational methods for motif
+prediction to make effective use of massive data sets in the public domain
+(e.g., ChIP-seq).
+In this talk, I
+will present an integrated platform, DMINDA 2.0, which contains: (i) five motif
+prediction and analyses algorithms, including a de-novo genome-scale prediction
+algorithm a phylogenetic footprinting framework; (ii) 2,125 species with
+complete genomes to support the above five functions, covering animals, plants,
+and bacteria; and (iii) regulatory systems prediction and visualization.
+
+

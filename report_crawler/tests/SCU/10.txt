@@ -1,0 +1,24 @@
+Report time：
+20170424
+
+Title：
+澳大利亚的科研评价
+
+Time：
+2017年4月24日14:30
+
+Address：
+学院报告厅（望江校区基础教学大楼B302） 
+
+Speaker：
+Henry B.L Duh（Professor, Department of Computer Science and Information Technology La Trobe University, Australia）
+
+Organizer：
+四川大学计算机学院
+
+Biography：
+Professor Duh is the Head and Professor of Department of Computer Science and Information Technology at La Trobe University; Visiting Professor in the Academy of Arts at Tsinghua University and Adjunct Professor in the Graduate Institute of Journalism at National Taiwan University. He received his degrees in psychology, industrial design and engineering respectively and did his postdoctoral training in NASA-Johnson Space Centre involving in virtual reality project. He was a faculty member in Nanyang Technological University and Interactive & Digital Media Institute, National University of Singapore. Prof. Duh is a Fellow of British Computer Society, the Institution of Engineering and Technology, Engineer Australia, ACM Distinguished Speaker; the Australian National Representative of IFIP TC on HCI; Steering committee member of IEEE ISMAR and ChineseCHI. He is the Editor-in-Chief, Journal of Visual Languages and Computing (Elsevier), editorial board members of HCI book series (Springer), and published more than 150 conference and journal papers in HCI area. Professor Duh has served the program/organizing committee for IEEE/ACM International Symposium of Mixed and Augmented Reality (ISMAR) and IEEE Virtual Reality for years. He is currently a member of Australian Council of Deans of ICT and a member of University Planning Committee, CSIRO/Data61. His research focuses on augmented/virtual reality, user experience and interaction design. 
+
+Abstract：
+With heavy investment on higher education, governments and societies start to look into how to assess the performance and return on investment. Various university ranking system look into different criteria and government agencies start to evaluate the development of disciplines. Australia Research Council (ARC) introduced the scheme of Excellence of Research Australia since 2008. The practice has been implemented for 4 times (ERA2008, ERA2010, ERA2012 and ERA2015). The talk is to introduce how research performance in computer science discipline is examined and impacts to researchers, scholars and students. 
+

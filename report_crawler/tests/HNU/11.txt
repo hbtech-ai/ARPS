@@ -1,0 +1,25 @@
+Report time：
+20170522
+
+Title：
+Real-time Analytics for Long-lifecycle Infrastructure
+
+Time：
+2017年5月 22日  周一 19：00 
+
+Address：
+信息科学与工程学院 542 报告厅
+
+Speaker：
+程亮 教授，里海大学
+
+Organizer：
+电子科技大学计算机科学与工程学院
+
+Biography：
+Dr. Liang Cheng has been the PrincipalInvestigator (PI) and a Co-PI of seventeen projects supported by the U.S.National Science Foundation (NSF), the Defense Advanced Research ProjectsAgency (DARPA), the U.S. Department of Energy (DOE), Pennsylvania Department ofCommunity and Economic Development, Agere Systems, Inc., East PennManufacturing Co., Inc., PPL Corporation, and ABB Inc.. His research is gearedtoward enabling smarter cities based on real-time sensing, model-driven dataanalytics, and distributed trust systems through inter-disciplinary projects,and he has authored/co-authored more than 100 papers. He has served as anexpert reviewer for project/grant proposals/panels for programs in U.S. such asNSF, DOE, NIH (National Institute of Health), and GENI (Global Environment forNetwork Innovations), and in Europe such as The Knowledge Foundation andAustrian Science Fund. Dr. Cheng is an Associate Professor at Lehigh Universityand he has advised six Ph.D. students to their graduation and supervised twopostdocs. Dr. Cheng was a Visiting Professor at TU Dortmund, Germany andUniversity of Science and Technology of China. More information about hisresearch and scholarship can be found at http://liangcheng.info.
+
+
+Abstract：
+In this talk I will provide a personal experience in real-time analytics for long-lifecycle infrastructure based on our projects sponsored by the National Science Foundation. Specifically, I will describe a real-time bridge-monitoring system employing distributed in-network data analysis algorithms for damage detection based on iterative modal identification. Then I will introduce a novel concept of wireless signal networks for temporally and spatially continuous underground sensing based on our proven hypothesis that the variation of the link quality between wireless sensor nodes can be used as an effective global sensing mechanism which reflects characteristics of geo-media subjected to various geo-events. Finally I will offer thoughts on how the new technological wave of real-time infrastructure analytics may evolve along with smarter cities development.
+

@@ -1,0 +1,31 @@
+Report time：
+20170724
+
+Title：
+Big Data Analytics in Business Environments 
+
+
+Time：
+2017年7月24日（周一）下午14:30 
+
+
+Address：
+清水河校区宾诺咖啡馆 
+
+
+Speaker：
+熊辉 教授 
+
+
+Organizer：
+电子科技大学计算机科学与工程学院
+
+Biography：
+熊辉教授目前为美国罗格斯－新泽西州立大学罗格斯商学院管理科学与信息系统系副系主任、罗格斯大学信息安全中心主任、正教授 (终身教授)、RBS院长讲席教授，并担任中国科学技术大学大师讲席教授。熊辉教授在研究领域成绩斐然，获得的部分奖项包括ACM杰出科学家，IBM 创新奖， 罗格斯-新泽西州立大学最高学术奖—the Rutgers University Board of Trustees Research Fellowship for Scholarly Excellence (2009)。 主要学术成果包括：1本专著；3本编著，其中Encyclopedia of GIS（Springer）被评为最受欢迎前十名的Springer华人作者的计算机著作； 学术论文200余篇，其中有70余篇发表在包括Data Mining and Knowledge Discovery Journal、IEEE Transactions on Knowledge and Data Engineering、VLDB Journal、IEEE Transactions on Fuzzy Systems、Machine Learning、IEEE Transactions on Systems, Man, and Cybernetics - Part B、IEEE Transactions on Mobile Computing在内的顶级权威刊物上，有39篇发表在数据挖掘的顶级学术会议 ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD)上。
+    熊辉教授目前担任Encyclopedia of GIS (Springer)的共同主编，并担任IEEE Transactions on Data and Knowledge Engineering (TKDE), IEEE Transactions on Big Data (TBD), ACM Transactions on Knowledge Discovery from Data (TKDD) and ACM Transactions on Management Information Systems (TMIS)的副主编，曾担任了多个会议的组织和程序委员，其中包括KDD-2012的企业及政府主题的共同程序主席， IEEE 2013 International Conference on Data Mining (ICDM)的共同程序主席， 以及IEEE-2015的共同大会主席。
+    熊辉教授的研究工作被Forbes, Xinhua News Agency, the Economist， Harvard Business Review， and the Wall Street Journal等媒体广泛报道。其中，经济学人杂志（the Economist）在2016年专文重点介绍了熊教授利用大数据技术预防犯罪的研究工作 (Economist Article 
+
+Abstract：
+Recent years have witnessed the big data movement throughout all the business sectors. As a result, awareness of the importance of data mining for business is becoming wide spread.  However, the big data are usually immense, fine-grained, diversified, dynamic, and sufficiently information-rich in nature, and thus demand a radical change in the philosophy of data analytics. In this talk, we introduce a set of scenarios for understanding and mining of business data in various business sectors. In particular, we will discuss the technical and domain challenges of big data analytics in business environments. The theme to be covered will include (1) the data mining problem formulation in different business applications, such as marketing, real estate, and mobile intelligence; (2) the challenging issues of data pre-processing and post-processing in business analytics; (3) how the underlying computational models can be adapted for managing the uncertainties in relation to big data process in a huge nebulous business environment. Finally, we will also show some promising research directions.
+
+
